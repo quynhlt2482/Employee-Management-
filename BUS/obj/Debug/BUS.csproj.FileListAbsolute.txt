@@ -1,0 +1,11 @@
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\BUS.dll
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\BUS.pdb
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\DAL.dll
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\DTO.dll
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\DAL.pdb
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\bin\Debug\DTO.pdb
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.Up2Date
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.dll
+C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.pdb
