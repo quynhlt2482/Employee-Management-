@@ -21,6 +21,7 @@ namespace QuanLyNhanVien
 
         private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //tien comment
             Application.Exit();
         }
     }

@@ -9,3 +9,14 @@ C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\De
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.Up2Date
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\BUS.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\BUS.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\DAL.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\DTO.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\DAL.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\bin\Debug\DTO.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.csproj.CopyComplete
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.pdb

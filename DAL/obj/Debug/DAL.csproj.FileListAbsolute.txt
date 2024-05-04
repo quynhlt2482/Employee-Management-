@@ -7,3 +7,12 @@ C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DAL\obj\De
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DAL\obj\Debug\DAL.csproj.Up2Date
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DAL\obj\Debug\DAL.dll
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DAL\obj\Debug\DAL.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DAL.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DAL.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DTO.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DTO.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.pdb
