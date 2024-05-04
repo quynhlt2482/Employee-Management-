@@ -18,7 +18,7 @@ namespace QuanLyNhanVien
             InitializeComponent();
 
         }
-
+        // ao thuat day
         private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
