@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "E:\\Employee-Management-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_confirmedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_confirmedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\gui_mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\gui_mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_logged.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_confirmedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_confirmedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Panel_Logged.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAASwB4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-05T15:37:06.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainScreen.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\MainScreen.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\MainScreen.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\MainScreen.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\MainScreen.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAXAAAA",
+              "DocumentIndex": 4,
+              "Title": "Panel_Logged.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_Logged.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-04T07:29:08.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T15:36:47.914Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Login.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Login.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Login.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Login.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Login.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Title": "GUI_MainScreen.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\GUI_MainScreen.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\GUI_MainScreen.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\GUI_MainScreen.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\GUI_MainScreen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T07:43:57.588Z"
+              "WhenOpened": "2024-05-05T14:56:22.084Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainScreen.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\MainScreen.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\MainScreen.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\MainScreen.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\MainScreen.cs [Design]",
+              "Title": "Panel_ConfirmEdit.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAASwCQAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T07:37:09.513Z"
+              "WhenOpened": "2024-05-05T14:55:58.741Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Login.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Login.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Login.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Login.cs [Design]",
+              "DocumentIndex": 5,
+              "Title": "Panel_ConfirmEdit.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ConfirmEdit.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T15:59:24.809Z"
+              "WhenOpened": "2024-05-05T13:58:36.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Panel_AllTimeKeeping.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_AllTimeKeeping.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_AllTimeKeeping.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_AllTimeKeeping.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_AllTimeKeeping.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T01:06:23.29Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

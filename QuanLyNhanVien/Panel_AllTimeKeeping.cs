@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ComponentFactory.Krypton.Toolkit;
 
 namespace QuanLyNhanVien
 {
-    public partial class MainScreen : KryptonForm
+    public partial class Panel_AllTimeKeeping : Form
     {
-        public MainScreen()
+        public Panel_AllTimeKeeping()
         {
             InitializeComponent();
-
-        }
-        // ao thuat day
-        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

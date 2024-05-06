@@ -9,3 +9,14 @@ C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\De
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.csproj.Up2Date
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\BUS\obj\Debug\BUS.pdb
+E:\Employee-Management-\BUS\bin\Debug\BUS.dll
+E:\Employee-Management-\BUS\bin\Debug\BUS.pdb
+E:\Employee-Management-\BUS\bin\Debug\DAL.dll
+E:\Employee-Management-\BUS\bin\Debug\DTO.dll
+E:\Employee-Management-\BUS\bin\Debug\DAL.pdb
+E:\Employee-Management-\BUS\bin\Debug\DTO.pdb
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.Up2Date
+E:\Employee-Management-\BUS\obj\Debug\BUS.dll
+E:\Employee-Management-\BUS\obj\Debug\BUS.pdb

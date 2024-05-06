@@ -24,3 +24,36 @@ C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhan
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.pdb
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.pdb
 C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.MainScreen.resources
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\BUS.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Docking.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Workspace.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\DTO.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\BUS.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\DTO.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.AssemblyReference.cache
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.GenerateResource.cache
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.Up2Date
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.GUI_Login.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.GUI_MainScreen.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfEmployee.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfDepartment.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfTimeWork.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ConfirmEdit.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_Logged.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_AllTimeKeeping.resources

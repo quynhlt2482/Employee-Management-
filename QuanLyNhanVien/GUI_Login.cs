@@ -11,9 +11,9 @@ using ComponentFactory.Krypton.Toolkit;
 
 namespace QuanLyNhanVien
 {
-    public partial class Login : KryptonForm
+    public partial class GUI_Login : KryptonForm
     {
-        public Login()
+        public GUI_Login()
         {
             InitializeComponent();
         }
@@ -25,7 +25,7 @@ namespace QuanLyNhanVien
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            MainScreen p = new MainScreen();
+            GUI_MainScreen p = new GUI_MainScreen();
             p.Show();
             this.Hide();
         }
