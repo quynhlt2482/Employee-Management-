@@ -66,10 +66,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Panel_AllTimeKeeping.cs">
+    <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel_AllTimeKeeping.Designer.cs">
+    <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.Designer.cs">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_Logged.cs">
@@ -122,7 +122,7 @@
     <EmbeddedResource Include="GUI_MainScreen.resx">
       <DependentUpon>GUI_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel_AllTimeKeeping.resx">
+    <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_Logged.resx">

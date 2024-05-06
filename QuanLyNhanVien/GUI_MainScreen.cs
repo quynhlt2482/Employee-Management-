@@ -73,6 +73,7 @@ namespace QuanLyNhanVien
         private void btn_chamcong_Click(object sender, EventArgs e)
         {
             DisableOtherButtons((Control)sender);
+            OpenChildForm(new Panel_AllTimeKeeping());
             lb_title.Text = "Bảng chấm công";
             ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\check in_out.png");
 

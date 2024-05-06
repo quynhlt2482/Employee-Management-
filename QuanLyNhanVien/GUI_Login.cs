@@ -25,6 +25,7 @@ namespace QuanLyNhanVien
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Đăng nhập thành công");
             GUI_MainScreen p = new GUI_MainScreen();
             p.Show();
             this.Hide();
