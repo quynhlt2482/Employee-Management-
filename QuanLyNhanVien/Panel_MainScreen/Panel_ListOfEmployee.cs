@@ -189,5 +189,36 @@ namespace QuanLyNhanVien
             Modal_AddEmployee p = new Modal_AddEmployee();
             p.Show();
         }
+
+        private void ptb_changeManager_Click(object sender, EventArgs e)
+        {
+            // Lấy selected item và kiểm tra nếu nó không null
+            if (departmentCB.SelectedItem != null)
+            {
+                var selectedDepartment = (Department)departmentCB.SelectedItem;
+
+                // Truyền cả DisplayMember và ValueMember
+                Modal_ChangeManager changeManagerForm = new Modal_ChangeManager(selectedDepartment);
+                changeManagerForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
+                changeManagerForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select a department first.");
+            }
+        }
+
+        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (departmentCB.SelectedItem is Department selectedDepartment)
+            {
+                LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -97,3 +97,4 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddE
 >>>>>>> origin/quynh
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfSalary.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_ChangeManager.resources
