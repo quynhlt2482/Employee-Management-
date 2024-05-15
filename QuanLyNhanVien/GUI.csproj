@@ -168,6 +168,10 @@
       <Project>{bbe21213-a3e6-4038-9e30-a9d13986d94c}</Project>
       <Name>BUS</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{07fa5862-edae-416d-a512-5fdbd07465df}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{f101a587-74c9-41ca-9d58-2c192b5fc099}</Project>
       <Name>DTO</Name>

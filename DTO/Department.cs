@@ -6,21 +6,19 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class Department
+    public class Department
     {
-        private string id;
-        private string name;
-        private string description;
+        private string departmentID;
+        private string departmentName;
 
-        public Department(string id, string name, string description)
+        public Department() { }
+        public Department(string id, string name)
         {
-            this.id = id;
-            this.name = name;
-            this.description = description;
+            this.DepartmentID = id;
+            this.DepartmentName = name;
         }
 
-        public string Id { get => id; set => id = value; }
-        public string Name { get => name; set => name = value; }
-        public string Description { get => description; set => description = value; }
+        public string DepartmentID { get => departmentID; set => departmentID = value; }
+        public string DepartmentName { get => departmentName; set => departmentName = value; }
     }
 }

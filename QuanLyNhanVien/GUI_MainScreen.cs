@@ -57,7 +57,7 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfEmployee());
             lb_title.Text = "Danh sách nhân viên";
-            ptb_title.Image = Image.FromFile("D:\\HOC TAP\\BAO MAT CSDL\\DO AN CUOI KI\\Employee-Management-\\QuanLyNhanVien\\Icon\\employee.png");
+            ptb_title.Image = Image.FromFile(@"D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\Icon\employee.png");
         
         }
 
