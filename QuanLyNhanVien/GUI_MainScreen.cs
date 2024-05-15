@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using QuanLyNhanVien.Panel_MainScreen;
 
 namespace QuanLyNhanVien
 {
@@ -91,6 +92,7 @@ namespace QuanLyNhanVien
         private void btn_luong_Click(object sender, EventArgs e)
         {
             DisableOtherButtons((Control)sender);
+            OpenChildForm(new Panel_ListOfSalary());
             lb_title.Text = "Danh sách lương nhận";
             ptb_title.Image = Image.FromFile("D:\\HOC TAP\\BAO MAT CSDL\\DO AN CUOI KI\\Employee-Management-\\QuanLyNhanVien\\Icon\\salary.png");
 

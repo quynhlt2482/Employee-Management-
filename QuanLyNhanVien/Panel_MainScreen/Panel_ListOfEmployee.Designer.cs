@@ -69,6 +69,7 @@
             this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_add.TabIndex = 4;
             this.ptb_add.TabStop = false;
+            this.ptb_add.Click += new System.EventHandler(this.ptb_add_Click);
             // 
             // ptb_delete
             // 

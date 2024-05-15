@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.Modal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,7 +47,7 @@ namespace QuanLyNhanVien
             PictureBox pictureBox = sender as PictureBox;
             if (pictureBox != null)
             {
-                pictureBox.Size = new Size(40, 40); 
+                pictureBox.Size = new Size(40, 40);
             }
         }
 
@@ -74,10 +75,11 @@ namespace QuanLyNhanVien
             List<Department> departments = new List<Department>();
             string query = "";
 
-            if(EmployeeDAL.employeeSession.DepartmentId == "dep3")
+            if (EmployeeDAL.employeeSession.DepartmentId == "dep3")
             {
                 query = "SELECT departmentID, departmentName FROM department";
-            } else
+            }
+            else
             {
                 query = $"SELECT departmentID, departmentName FROM department WHERE departmentID = '{EmployeeDAL.employeeSession.DepartmentId}'";
             }
@@ -181,6 +183,11 @@ namespace QuanLyNhanVien
                     }
                 }
             }
+        }
+        private void ptb_add_Click(object sender, EventArgs e)
+        {
+            Modal_AddEmployee p = new Modal_AddEmployee();
+            p.Show();
         }
     }
 }
