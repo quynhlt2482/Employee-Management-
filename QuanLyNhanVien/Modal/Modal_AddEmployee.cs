@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 
-namespace QuanLyNhanVien
+namespace QuanLyNhanVien.Modal
 {
-    public partial class MainScreen : KryptonForm
+    public partial class Modal_AddEmployee : KryptonForm
     {
-        public MainScreen()
+        public Modal_AddEmployee()
         {
             InitializeComponent();
 
         }
 
-        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
+        private void btn_them_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }
