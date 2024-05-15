@@ -72,11 +72,23 @@
     <Compile Include="Modal\Modal_AddEmployee.Designer.cs">
       <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.Designer.cs">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.Designer.cs">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.Designer.cs">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfSalary.cs">
       <SubType>Form</SubType>
@@ -137,8 +149,14 @@
     <EmbeddedResource Include="Modal\Modal_AddEmployee.resx">
       <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfContact.resx">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
       <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
@@ -250,6 +268,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

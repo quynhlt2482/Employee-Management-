@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GUI_MainScreen));
             this.pn_select = new System.Windows.Forms.Panel();
+            this.lb_logo = new System.Windows.Forms.Label();
             this.btn_ca = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.btn_luong = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.btn_theodoi = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
@@ -39,18 +40,22 @@
             this.btn_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.pn_title = new System.Windows.Forms.Panel();
             this.lb_title = new System.Windows.Forms.Label();
-            this.ptb_title = new System.Windows.Forms.PictureBox();
             this.pn_child = new System.Windows.Forms.Panel();
             this.UI_Main = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.lb_logo = new System.Windows.Forms.Label();
+            this.btn_hopdong = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptb_title = new System.Windows.Forms.PictureBox();
+            this.lb_tenuser = new System.Windows.Forms.Label();
             this.pn_select.SuspendLayout();
             this.pn_title.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_title)).BeginInit();
             this.SuspendLayout();
             // 
             // pn_select
             // 
             this.pn_select.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.pn_select.Controls.Add(this.btn_hopdong);
             this.pn_select.Controls.Add(this.lb_logo);
             this.pn_select.Controls.Add(this.btn_ca);
             this.pn_select.Controls.Add(this.btn_luong);
@@ -63,6 +68,18 @@
             this.pn_select.Name = "pn_select";
             this.pn_select.Size = new System.Drawing.Size(355, 953);
             this.pn_select.TabIndex = 0;
+            // 
+            // lb_logo
+            // 
+            this.lb_logo.AutoSize = true;
+            this.lb_logo.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_logo.ForeColor = System.Drawing.Color.White;
+            this.lb_logo.Location = new System.Drawing.Point(80, 33);
+            this.lb_logo.Name = "lb_logo";
+            this.lb_logo.Size = new System.Drawing.Size(185, 71);
+            this.lb_logo.TabIndex = 6;
+            this.lb_logo.Text = "Warrios";
+            this.lb_logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btn_ca
             // 
@@ -301,12 +318,14 @@
             // pn_title
             // 
             this.pn_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.pn_title.Controls.Add(this.lb_tenuser);
+            this.pn_title.Controls.Add(this.pictureBox1);
             this.pn_title.Controls.Add(this.lb_title);
             this.pn_title.Controls.Add(this.ptb_title);
             this.pn_title.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_title.Location = new System.Drawing.Point(355, 0);
             this.pn_title.Name = "pn_title";
-            this.pn_title.Size = new System.Drawing.Size(1527, 87);
+            this.pn_title.Size = new System.Drawing.Size(1227, 87);
             this.pn_title.TabIndex = 1;
             // 
             // lb_title
@@ -320,24 +339,13 @@
             this.lb_title.TabIndex = 1;
             this.lb_title.Text = "Trang chủ";
             // 
-            // ptb_title
-            // 
-            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
-            this.ptb_title.Location = new System.Drawing.Point(35, 21);
-            this.ptb_title.Name = "ptb_title";
-            this.ptb_title.Size = new System.Drawing.Size(45, 45);
-            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_title.TabIndex = 0;
-            this.ptb_title.TabStop = false;
-            // 
             // pn_child
             // 
             this.pn_child.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.pn_child.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_child.Location = new System.Drawing.Point(355, 87);
             this.pn_child.Name = "pn_child";
-            this.pn_child.Size = new System.Drawing.Size(1527, 866);
+            this.pn_child.Size = new System.Drawing.Size(1227, 866);
             this.pn_child.TabIndex = 2;
             // 
             // UI_Main
@@ -353,24 +361,83 @@
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // lb_logo
+            // btn_hopdong
             // 
-            this.lb_logo.AutoSize = true;
-            this.lb_logo.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_logo.ForeColor = System.Drawing.Color.White;
-            this.lb_logo.Location = new System.Drawing.Point(80, 33);
-            this.lb_logo.Name = "lb_logo";
-            this.lb_logo.Size = new System.Drawing.Size(185, 71);
-            this.lb_logo.TabIndex = 6;
-            this.lb_logo.Text = "Warrios";
-            this.lb_logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_hopdong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
+            this.btn_hopdong.Location = new System.Drawing.Point(0, 618);
+            this.btn_hopdong.Name = "btn_hopdong";
+            this.btn_hopdong.Size = new System.Drawing.Size(355, 70);
+            this.btn_hopdong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btn_hopdong.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btn_hopdong.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedNormal.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedNormal.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left;
+            this.btn_hopdong.StateCheckedNormal.Border.Rounding = 5;
+            this.btn_hopdong.StateCheckedNormal.Border.Width = 10;
+            this.btn_hopdong.StateCheckedNormal.Content.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedNormal.Content.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedNormal.Content.ShortText.Font = new System.Drawing.Font("Lucida Console", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hopdong.StateCheckedTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btn_hopdong.StateCheckedTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btn_hopdong.StateCheckedTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btn_hopdong.StateCheckedTracking.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left;
+            this.btn_hopdong.StateCheckedTracking.Border.Rounding = 5;
+            this.btn_hopdong.StateCheckedTracking.Border.Width = 10;
+            this.btn_hopdong.StateCommon.Content.ShortText.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.btn_hopdong.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btn_hopdong.StateCommon.Content.ShortText.Font = new System.Drawing.Font("Lucida Console", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hopdong.StateTracking.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(60)))), ((int)(((byte)(98)))));
+            this.btn_hopdong.StateTracking.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(60)))), ((int)(((byte)(98)))));
+            this.btn_hopdong.StateTracking.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(60)))), ((int)(((byte)(98)))));
+            this.btn_hopdong.StateTracking.Border.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(60)))), ((int)(((byte)(98)))));
+            this.btn_hopdong.StateTracking.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)(((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left)));
+            this.btn_hopdong.StateTracking.Content.ShortText.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.btn_hopdong.StateTracking.Content.ShortText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.btn_hopdong.StateTracking.Content.ShortText.Font = new System.Drawing.Font("Lucida Console", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hopdong.TabIndex = 7;
+            this.btn_hopdong.Values.Text = "Hợp đồng";
+            this.btn_hopdong.Click += new System.EventHandler(this.btn_hopdong_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::QuanLyNhanVien.Properties.Resources.User;
+            this.pictureBox1.Location = new System.Drawing.Point(1067, 16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(49, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ptb_title
+            // 
+            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
+            this.ptb_title.Location = new System.Drawing.Point(35, 21);
+            this.ptb_title.Name = "ptb_title";
+            this.ptb_title.Size = new System.Drawing.Size(45, 45);
+            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_title.TabIndex = 0;
+            this.ptb_title.TabStop = false;
+            // 
+            // lb_tenuser
+            // 
+            this.lb_tenuser.AutoSize = true;
+            this.lb_tenuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tenuser.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_tenuser.Location = new System.Drawing.Point(876, 30);
+            this.lb_tenuser.Name = "lb_tenuser";
+            this.lb_tenuser.Size = new System.Drawing.Size(174, 25);
+            this.lb_tenuser.TabIndex = 3;
+            this.lb_tenuser.Text = "Lê Thanh Quỳnh";
             // 
             // GUI_MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1882, 953);
+            this.ClientSize = new System.Drawing.Size(1582, 953);
             this.Controls.Add(this.pn_child);
             this.Controls.Add(this.pn_title);
             this.Controls.Add(this.pn_select);
@@ -386,6 +453,7 @@
             this.pn_select.PerformLayout();
             this.pn_title.ResumeLayout(false);
             this.pn_title.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_title)).EndInit();
             this.ResumeLayout(false);
 
@@ -405,5 +473,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton btn_ca;
         private System.Windows.Forms.Label lb_title;
         private System.Windows.Forms.Label lb_logo;
+        private ComponentFactory.Krypton.Toolkit.KryptonCheckButton btn_hopdong;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lb_tenuser;
     }
 }

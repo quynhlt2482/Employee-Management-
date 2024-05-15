@@ -1,5 +1,4 @@
-﻿using QuanLyNhanVien.Modal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyNhanVien
+namespace QuanLyNhanVien.Panel_MainScreen
 {
-    public partial class Panel_ListOfEmployee : Form
+    public partial class Panel_ListOfContact : Form
     {
-        public Panel_ListOfEmployee()
+        public Panel_ListOfContact()
         {
             InitializeComponent();
             AddMouseEventsToPictureBoxes();
@@ -43,20 +42,8 @@ namespace QuanLyNhanVien
             PictureBox pictureBox = sender as PictureBox;
             if (pictureBox != null)
             {
-                pictureBox.Size = new Size(40, 40); 
+                pictureBox.Size = new Size(40, 40);
             }
-        }
-
-        private void ptb_add_Click(object sender, EventArgs e)
-        {
-            Modal_AddEmployee p = new Modal_AddEmployee();
-            p.Show();
-        }
-
-        private void ptb_edit_Click(object sender, EventArgs e)
-        {
-            Modal_EditEmployee p = new Modal_EditEmployee();
-            p.Show();
         }
     }
 }

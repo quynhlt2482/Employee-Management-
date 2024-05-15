@@ -106,5 +106,12 @@ namespace QuanLyNhanVien
             ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\calendar.png");
         }
 
+        private void btn_hopdong_Click(object sender, EventArgs e)
+        {
+            DisableOtherButtons((Control)sender);
+            OpenChildForm(new Panel_ListOfContact());
+            lb_title.Text = "Hợp đồng";
+            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\contract.png");
+        }
     }
 }
