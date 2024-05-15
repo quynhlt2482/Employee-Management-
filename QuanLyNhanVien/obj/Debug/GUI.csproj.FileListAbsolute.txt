@@ -57,3 +57,5 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfTime
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ConfirmEdit.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_Logged.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_AllTimeKeeping.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfSalary.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources

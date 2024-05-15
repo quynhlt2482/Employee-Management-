@@ -66,11 +66,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modal\Modal_AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddEmployee.Designer.cs">
+      <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.Designer.cs">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfSalary.Designer.cs">
+      <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_Logged.cs">
       <SubType>Form</SubType>
@@ -122,8 +134,14 @@
     <EmbeddedResource Include="GUI_MainScreen.resx">
       <DependentUpon>GUI_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddEmployee.resx">
+      <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
+      <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_Logged.resx">
       <DependentUpon>Panel_Logged.cs</DependentUpon>

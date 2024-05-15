@@ -1,6 +1,6 @@
-﻿namespace QuanLyNhanVien
+﻿namespace QuanLyNhanVien.Panel_MainScreen
 {
-    partial class Panel_ListOfEmployee
+    partial class Panel_ListOfSalary
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,45 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtg_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.ptb_add = new System.Windows.Forms.PictureBox();
             this.ptb_delete = new System.Windows.Forms.PictureBox();
             this.ptb_edit = new System.Windows.Forms.PictureBox();
-            this.ptb_detail = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).BeginInit();
+            this.dtg_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_detail)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).BeginInit();
             this.SuspendLayout();
+            // 
+            // ptb_add
+            // 
+            this.ptb_add.Image = global::QuanLyNhanVien.Properties.Resources.add;
+            this.ptb_add.Location = new System.Drawing.Point(799, 20);
+            this.ptb_add.Name = "ptb_add";
+            this.ptb_add.Size = new System.Drawing.Size(50, 50);
+            this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_add.TabIndex = 18;
+            this.ptb_add.TabStop = false;
+            // 
+            // ptb_delete
+            // 
+            this.ptb_delete.Image = global::QuanLyNhanVien.Properties.Resources.delete__1_;
+            this.ptb_delete.Location = new System.Drawing.Point(1047, 20);
+            this.ptb_delete.Name = "ptb_delete";
+            this.ptb_delete.Size = new System.Drawing.Size(50, 50);
+            this.ptb_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_delete.TabIndex = 17;
+            this.ptb_delete.TabStop = false;
+            // 
+            // ptb_edit
+            // 
+            this.ptb_edit.Image = global::QuanLyNhanVien.Properties.Resources.edit_2;
+            this.ptb_edit.Location = new System.Drawing.Point(930, 19);
+            this.ptb_edit.Name = "ptb_edit";
+            this.ptb_edit.Size = new System.Drawing.Size(50, 50);
+            this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_edit.TabIndex = 16;
+            this.ptb_edit.TabStop = false;
             // 
             // dtg_nhanvien
             // 
@@ -51,50 +79,9 @@
             this.dtg_nhanvien.StateCommon.Background.Color1 = System.Drawing.Color.White;
             this.dtg_nhanvien.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.dtg_nhanvien.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.dtg_nhanvien.TabIndex = 0;
+            this.dtg_nhanvien.TabIndex = 15;
             // 
-            // ptb_add
-            // 
-            this.ptb_add.Image = global::QuanLyNhanVien.Properties.Resources.add_user__1_;
-            this.ptb_add.Location = new System.Drawing.Point(675, 19);
-            this.ptb_add.Name = "ptb_add";
-            this.ptb_add.Size = new System.Drawing.Size(50, 50);
-            this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_add.TabIndex = 4;
-            this.ptb_add.TabStop = false;
-            this.ptb_add.Click += new System.EventHandler(this.ptb_add_Click);
-            // 
-            // ptb_delete
-            // 
-            this.ptb_delete.Image = global::QuanLyNhanVien.Properties.Resources.delete__1_;
-            this.ptb_delete.Location = new System.Drawing.Point(1047, 20);
-            this.ptb_delete.Name = "ptb_delete";
-            this.ptb_delete.Size = new System.Drawing.Size(50, 50);
-            this.ptb_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_delete.TabIndex = 3;
-            this.ptb_delete.TabStop = false;
-            // 
-            // ptb_edit
-            // 
-            this.ptb_edit.Image = global::QuanLyNhanVien.Properties.Resources.edit_2;
-            this.ptb_edit.Location = new System.Drawing.Point(930, 19);
-            this.ptb_edit.Name = "ptb_edit";
-            this.ptb_edit.Size = new System.Drawing.Size(50, 50);
-            this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_edit.TabIndex = 2;
-            this.ptb_edit.TabStop = false;
-            // 
-            // ptb_detail
-            // 
-            this.ptb_detail.Image = global::QuanLyNhanVien.Properties.Resources.detail;
-            this.ptb_detail.Location = new System.Drawing.Point(804, 20);
-            this.ptb_detail.Name = "ptb_detail";
-            this.ptb_detail.Size = new System.Drawing.Size(50, 50);
-            this.ptb_detail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_detail.TabIndex = 1;
-            this.ptb_detail.TabStop = false;
-            // 
-            // Panel_ListOfEmployee
+            // Panel_ListOfSalary
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,25 +90,22 @@
             this.Controls.Add(this.ptb_add);
             this.Controls.Add(this.ptb_delete);
             this.Controls.Add(this.ptb_edit);
-            this.Controls.Add(this.ptb_detail);
             this.Controls.Add(this.dtg_nhanvien);
-            this.Name = "Panel_ListOfEmployee";
-            this.Text = "Panel_ListOfEmployee";
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).EndInit();
+            this.Name = "Panel_ListOfSalary";
+            this.Text = "Panel_ListOfSalary";
             ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_detail)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_nhanvien;
-        private System.Windows.Forms.PictureBox ptb_detail;
-        private System.Windows.Forms.PictureBox ptb_edit;
-        private System.Windows.Forms.PictureBox ptb_delete;
         private System.Windows.Forms.PictureBox ptb_add;
+        private System.Windows.Forms.PictureBox ptb_delete;
+        private System.Windows.Forms.PictureBox ptb_edit;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_nhanvien;
     }
 }
