@@ -190,6 +190,7 @@ namespace QuanLyNhanVien
             p.Show();
         }
 
+<<<<<<< HEAD
         private void ptb_changeManager_Click(object sender, EventArgs e)
         {
             // Lấy selected item và kiểm tra nếu nó không null
@@ -219,6 +220,12 @@ namespace QuanLyNhanVien
         private void label1_Click(object sender, EventArgs e)
         {
 
+=======
+        private void ptb_edit_Click(object sender, EventArgs e)
+        {
+            Modal_EditEmployee p = new Modal_EditEmployee();
+            p.Show();
+>>>>>>> origin/quynh
         }
     }
 }

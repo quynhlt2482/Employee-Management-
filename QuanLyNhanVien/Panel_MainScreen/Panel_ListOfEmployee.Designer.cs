@@ -119,6 +119,7 @@
             this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_edit.TabIndex = 2;
             this.ptb_edit.TabStop = false;
+            this.ptb_edit.Click += new System.EventHandler(this.ptb_edit_Click);
             // 
             // ptb_detail
             // 

@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\Employee-Management-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_adddepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_adddepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_editdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_editdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofdepartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Modal_AddEmployee.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBcAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Panel_ListOfDepartment.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAwDYAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T10:01:15.27Z",
+              "WhenOpened": "2024-05-16T03:05:13.835Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Modal_AddEmployee.Designer.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.Designer.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.Designer.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.Designer.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.Designer.cs",
-              "ViewState": "AQIAAFEBAAAAAAAAAAAYwGsBAABQAAAA",
+              "DocumentIndex": 3,
+              "Title": "Panel_ListOfDepartment.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfDepartment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T09:59:10.013Z",
+              "WhenOpened": "2024-05-16T03:05:12.295Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Modal_EditDepartment.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditDepartment.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_EditDepartment.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditDepartment.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_EditDepartment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T02:52:45.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Modal_AddEmployee.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddEmployee.cs [Design]",
+              "Title": "Modal_AddDepartment.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddDepartment.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddDepartment.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddDepartment.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddDepartment.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T09:04:01.416Z",
+              "WhenOpened": "2024-05-16T02:47:29.506Z",
               "EditorCaption": " [Design]"
             }
           ]

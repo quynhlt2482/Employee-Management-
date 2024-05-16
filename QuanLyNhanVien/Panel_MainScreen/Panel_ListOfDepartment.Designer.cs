@@ -76,6 +76,7 @@
             this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_edit.TabIndex = 7;
             this.ptb_edit.TabStop = false;
+            this.ptb_edit.Click += new System.EventHandler(this.ptb_edit_Click);
             // 
             // ptb_add
             // 
@@ -87,6 +88,7 @@
             this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_add.TabIndex = 15;
             this.ptb_add.TabStop = false;
+            this.ptb_add.Click += new System.EventHandler(this.ptb_add_Click);
             // 
             // Panel_ListOfDepartment
             // 

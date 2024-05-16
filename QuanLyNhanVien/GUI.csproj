@@ -66,6 +66,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modal\Modal_AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddDepartment.Designer.cs">
+      <DependentUpon>Modal_AddDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modal\Modal_AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,12 +83,29 @@
     </Compile>
     <Compile Include="Modal\Modal_ChangeManager.Designer.cs">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    <Compile Include="Modal\Modal_EditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditDepartment.Designer.cs">
+      <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.Designer.cs">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.Designer.cs">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.Designer.cs">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfSalary.cs">
       <SubType>Form</SubType>
@@ -140,14 +163,25 @@
     <EmbeddedResource Include="GUI_MainScreen.resx">
       <DependentUpon>GUI_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddDepartment.resx">
+      <DependentUpon>Modal_AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_AddEmployee.resx">
       <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_ChangeManager.resx">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    <EmbeddedResource Include="Modal\Modal_EditDepartment.resx">
+      <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfContact.resx">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
       <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
@@ -263,6 +297,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Icon\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\User.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
