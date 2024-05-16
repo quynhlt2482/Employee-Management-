@@ -41,8 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DepartmentDAL.cs" />
     <Compile Include="EmployeeDAL.cs" />
-    <Compile Include="EmployeeSession.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLConnector.cs" />
   </ItemGroup>

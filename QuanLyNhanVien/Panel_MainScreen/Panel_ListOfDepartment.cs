@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 ﻿using DAL;
-=======
 ﻿using QuanLyNhanVien.Modal;
->>>>>>> origin/quynh
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +51,6 @@ namespace QuanLyNhanVien
             }
         }
 
-<<<<<<< HEAD
         private void LoadDepartments()
         {
             // Tạo kết nối đến SQL Server
@@ -91,7 +87,7 @@ namespace QuanLyNhanVien
                     }
                 }
             }
-=======
+        }
         private void ptb_add_Click(object sender, EventArgs e)
         {
             Modal_AddDepartment p = new Modal_AddDepartment();
@@ -102,7 +98,6 @@ namespace QuanLyNhanVien
         {
             Modal_EditDepartment p = new Modal_EditDepartment();
             p.Show();
->>>>>>> origin/quynh
         }
     }
 }

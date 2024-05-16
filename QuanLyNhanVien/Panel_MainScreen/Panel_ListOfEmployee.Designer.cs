@@ -63,7 +63,6 @@
             this.dtg_nhanvien.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.dtg_nhanvien.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtg_nhanvien.TabIndex = 0;
-            this.dtg_nhanvien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_nhanvien_CellContentClick);
             // 
             // departmentCB
             // 
@@ -131,7 +130,6 @@
             this.ptb_detail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_detail.TabIndex = 1;
             this.ptb_detail.TabStop = false;
-            this.ptb_detail.Click += new System.EventHandler(this.ptb_detail_Click);
             // 
             // label1
             // 
@@ -143,7 +141,6 @@
             this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 8;
             this.label1.Text = "Phòng ban";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Panel_ListOfEmployee
             // 

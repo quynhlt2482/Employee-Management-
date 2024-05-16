@@ -16,7 +16,7 @@ namespace DAL
         public int CheckLogin(Employee employee)
         {
             int result = 0;
-            
+
             using (SqlConnection connection = SQLConnector.GetConnection(0))
             {
                 SqlCommand command = new SqlCommand("SP_CHECK_LOGIN", connection);
@@ -51,7 +51,7 @@ namespace DAL
                     employeeSession.Id = IdParameter.Value.ToString();
                     employeeSession.DepartmentId = departmentId.Value.ToString();
                     employeeSession.RoleId = roleId.Value.ToString();
-                    if(result == 1)
+                    if (result == 1)
                     {
                         employeeSession.SqlUsername = employee.Username;
                         employeeSession.SqlPassword = employee.Password;
@@ -64,6 +64,33 @@ namespace DAL
                 }
             }
             return result;
+        }
+
+        public DataTable GetEmployeesByDepartment(string departmentID)
+        {
+            DataTable dataTable = new DataTable();
+
+            using (SqlConnection connection = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand command = new SqlCommand("SP_SELECT_EMPLOYEE", connection))
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.Add(new SqlParameter("@departmentID", departmentID));
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+                    try
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new Exception("An error occurred while fetching employees: " + ex.Message);
+                    }
+                }
+            }
+
+            return dataTable;
         }
     }
 }

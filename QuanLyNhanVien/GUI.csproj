@@ -83,6 +83,7 @@
     </Compile>
     <Compile Include="Modal\Modal_ChangeManager.Designer.cs">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modal\Modal_EditDepartment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +172,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_ChangeManager.resx">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditDepartment.resx">
       <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
     </EmbeddedResource>

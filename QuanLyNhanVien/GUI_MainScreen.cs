@@ -94,8 +94,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfSalary());
             lb_title.Text = "Danh sách lương nhận";
-            ptb_title.Image = Image.FromFile("D:\\HOC TAP\\BAO MAT CSDL\\DO AN CUOI KI\\Employee-Management-\\QuanLyNhanVien\\Icon\\salary.png");
-
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "salary.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
 
         private void btn_ca_Click(object sender, EventArgs e)
@@ -103,7 +104,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfTimeWork());
             lb_title.Text = "Quản lý ca làm";
-            ptb_title.Image = Image.FromFile("D:\\HOC TAP\\BAO MAT CSDL\\DO AN CUOI KI\\Employee-Management-\\QuanLyNhanVien\\Icon\\calendar.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "calendar.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
 
         private void btn_hopdong_Click(object sender, EventArgs e)
@@ -111,7 +114,10 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfContact());
             lb_title.Text = "Hợp đồng";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\contract.png");
+
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "contract.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
     }
 }

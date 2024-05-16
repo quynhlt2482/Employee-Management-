@@ -10,10 +10,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
 using DTO;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace QuanLyNhanVien.Modal
 {
-    public partial class Modal_ChangeManager : Form
+    public partial class Modal_ChangeManager : KryptonForm
     {
         Department _department;
         Employee manager;
@@ -23,7 +24,9 @@ namespace QuanLyNhanVien.Modal
             InitializeComponent();
             _department = department;
             LoadEmployees();
+            CB_ListEmployee.DropDownStyle = ComboBoxStyle.DropDownList;
         }
+
 
         private void LoadEmployees()
         {
@@ -111,6 +114,11 @@ namespace QuanLyNhanVien.Modal
             {
                 this.Close();
             }
+        }
+
+        private void CB_ListEmployee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }
