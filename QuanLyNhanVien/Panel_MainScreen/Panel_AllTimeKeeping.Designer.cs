@@ -104,6 +104,7 @@
             this.ptb_detail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_detail.TabIndex = 23;
             this.ptb_detail.TabStop = false;
+            this.ptb_detail.Click += new System.EventHandler(this.ptb_detail_Click);
             // 
             // ptb_delete
             // 
@@ -124,6 +125,7 @@
             this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_add.TabIndex = 21;
             this.ptb_add.TabStop = false;
+            this.ptb_add.Click += new System.EventHandler(this.ptb_add_Click);
             // 
             // Panel_AllTimeKeeping
             // 

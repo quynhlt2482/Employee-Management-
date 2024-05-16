@@ -1,5 +1,4 @@
-﻿using QuanLyNhanVien.Modal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,16 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyNhanVien
+namespace QuanLyNhanVien.Panel_MainScreen
 {
-    public partial class Panel_ListOfTimeWork : Form
+    public partial class Panel_ListOfTimeKeepingDetail : Form
     {
-        public Panel_ListOfTimeWork()
+        public Panel_ListOfTimeKeepingDetail()
         {
             InitializeComponent();
             AddMouseEventsToPictureBoxes();
         }
-
         private void AddMouseEventsToPictureBoxes()
         {
             foreach (Control control in Controls)
@@ -48,20 +46,14 @@ namespace QuanLyNhanVien
             }
         }
 
-        private void ptb_add_Click(object sender, EventArgs e)
+        private void ptb_back_Click(object sender, EventArgs e)
         {
-            Modal_AddShift p = new Modal_AddShift();
-            p.Show();
-        }
+            GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
 
-        private void ptb_edit_Click(object sender, EventArgs e)
-        {
-            Modal_EditShift p = new Modal_EditShift();
-            p.Show();
+            if (mainScreen != null)
+            {
+                mainScreen.OpenChildForm(new Panel_AllTimeKeeping());
+            }
         }
     }
-
-
-
-
 }

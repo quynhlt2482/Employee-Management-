@@ -59,7 +59,9 @@ namespace QuanLyNhanVien
             OpenChildForm(new Panel_ListOfEmployee());
             lb_title.Text = "Danh sách nhân viên";
             ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\employee.png");
-        
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "employee.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
 
         private void btn_phongban_Click(object sender, EventArgs e)
@@ -67,7 +69,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfDepartment());
             lb_title.Text = "Danh sách phòng ban";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\department.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "department.png");
+            ptb_title.Image = Image.FromFile(imagePath);
 
         }
 
@@ -76,8 +80,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_AllTimeKeeping());
             lb_title.Text = "Bảng chấm công";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\check in_out.png");
-
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "check in_out.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
 
         private void btn_theodoi_Click(object sender, EventArgs e)
@@ -85,7 +90,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ConfirmEdit());
             lb_title.Text = "Giám sát chỉnh sửa";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\history.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "history.png");
+            ptb_title.Image = Image.FromFile(imagePath);
 
         }
 
@@ -94,7 +101,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfSalary());
             lb_title.Text = "Danh sách lương nhận";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\salary.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "salary.png");
+            ptb_title.Image = Image.FromFile(imagePath);
 
         }
 
@@ -103,7 +112,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfTimeWork());
             lb_title.Text = "Quản lý ca làm";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\calendar.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "calendar.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
 
         private void btn_hopdong_Click(object sender, EventArgs e)
@@ -111,7 +122,9 @@ namespace QuanLyNhanVien
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ListOfContact());
             lb_title.Text = "Hợp đồng";
-            ptb_title.Image = Image.FromFile("E:\\Employee-Management-\\QuanLyNhanVien\\Icon\\contract.png");
+            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
+            string imagePath = Path.Combine(projectDirectory, "Icon", "contract.png");
+            ptb_title.Image = Image.FromFile(imagePath);
         }
     }
 }

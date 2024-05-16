@@ -63,3 +63,7 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_Edit
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfContact.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddDepartment.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditDepartment.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
