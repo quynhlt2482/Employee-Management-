@@ -61,3 +61,5 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditEmployee.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfContact.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddDepartment.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditDepartment.resources

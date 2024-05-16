@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyNhanVien.Modal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,6 +46,18 @@ namespace QuanLyNhanVien
             {
                 pictureBox.Size = new Size(40, 40);
             }
+        }
+
+        private void ptb_add_Click(object sender, EventArgs e)
+        {
+            Modal_AddDepartment p = new Modal_AddDepartment();
+            p.Show();
+        }
+
+        private void ptb_edit_Click(object sender, EventArgs e)
+        {
+            Modal_EditDepartment p = new Modal_EditDepartment();
+            p.Show();
         }
     }
 }

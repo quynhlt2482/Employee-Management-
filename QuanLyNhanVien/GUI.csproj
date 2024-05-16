@@ -66,11 +66,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modal\Modal_AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddDepartment.Designer.cs">
+      <DependentUpon>Modal_AddDepartment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modal\Modal_AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modal\Modal_AddEmployee.Designer.cs">
       <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditDepartment.Designer.cs">
+      <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\Modal_EditEmployee.cs">
       <SubType>Form</SubType>
@@ -146,8 +158,14 @@
     <EmbeddedResource Include="GUI_MainScreen.resx">
       <DependentUpon>GUI_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddDepartment.resx">
+      <DependentUpon>Modal_AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_AddEmployee.resx">
       <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditDepartment.resx">
+      <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
       <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
