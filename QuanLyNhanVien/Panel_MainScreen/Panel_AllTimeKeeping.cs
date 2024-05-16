@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanLyNhanVien.Modal;
+using QuanLyNhanVien.Panel_MainScreen;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,5 +62,22 @@ namespace QuanLyNhanVien
                 cb_thang.Items.Add(i);
             }
         }
+
+        private void ptb_add_Click(object sender, EventArgs e)
+        {
+            Modal_AddTimeKeeping p = new Modal_AddTimeKeeping();
+            p.Show();
+        }
+
+        private void ptb_detail_Click(object sender, EventArgs e)
+        {
+            GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
+
+            if (mainScreen != null)
+            {
+                mainScreen.OpenChildForm(new Panel_ListOfTimeKeepingDetail());
+            }
+        }
+    
     }
 }

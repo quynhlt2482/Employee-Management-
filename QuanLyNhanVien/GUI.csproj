@@ -83,6 +83,24 @@
     </Compile>
     <Compile Include="Modal\Modal_ChangeManager.Designer.cs">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+      </Compile>
+    <Compile Include="Modal\Modal_AddShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddShift.Designer.cs">
+      <DependentUpon>Modal_AddShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeeping.Designer.cs">
+      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Modal_AddTimeKeepingDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\Modal_EditDepartment.cs">
       <SubType>Form</SubType>
@@ -95,6 +113,18 @@
     </Compile>
     <Compile Include="Modal\Modal_EditEmployee.Designer.cs">
       <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditShift.Designer.cs">
+      <DependentUpon>Modal_EditShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Modal_EditTimeKeepingDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
       <SubType>Form</SubType>
@@ -113,6 +143,12 @@
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfSalary.Designer.cs">
       <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_Logged.cs">
       <SubType>Form</SubType>
@@ -173,11 +209,26 @@
     <EmbeddedResource Include="Modal\Modal_ChangeManager.resx">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddShift.resx">
+      <DependentUpon>Modal_AddShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddTimeKeeping.resx">
+      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddTimeKeepingDetail.resx">
+      <DependentUpon>Modal_AddTimeKeepingDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditDepartment.resx">
       <DependentUpon>Modal_EditDepartment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
       <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditShift.resx">
+      <DependentUpon>Modal_EditShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditTimeKeepingDetail.resx">
+      <DependentUpon>Modal_EditTimeKeepingDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
       <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
@@ -187,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
       <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.resx">
+      <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_Logged.resx">
       <DependentUpon>Panel_Logged.cs</DependentUpon>

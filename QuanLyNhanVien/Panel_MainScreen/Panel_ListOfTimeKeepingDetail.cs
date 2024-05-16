@@ -9,16 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QuanLyNhanVien
+namespace QuanLyNhanVien.Panel_MainScreen
 {
-    public partial class Panel_ListOfTimeWork : Form
+    public partial class Panel_ListOfTimeKeepingDetail : Form
     {
-        public Panel_ListOfTimeWork()
+        public Panel_ListOfTimeKeepingDetail()
         {
             InitializeComponent();
             AddMouseEventsToPictureBoxes();
         }
-
         private void AddMouseEventsToPictureBoxes()
         {
             foreach (Control control in Controls)
@@ -48,20 +47,26 @@ namespace QuanLyNhanVien
             }
         }
 
+        private void ptb_back_Click(object sender, EventArgs e)
+        {
+            GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
+
+            if (mainScreen != null)
+            {
+                mainScreen.OpenChildForm(new Panel_AllTimeKeeping());
+            }
+        }
+
         private void ptb_add_Click(object sender, EventArgs e)
         {
-            Modal_AddShift p = new Modal_AddShift();
+            Modal_AddTimeKeepingDetail p = new Modal_AddTimeKeepingDetail();
             p.Show();
         }
 
         private void ptb_edit_Click(object sender, EventArgs e)
         {
-            Modal_EditShift p = new Modal_EditShift();
+            Modal_EditTimeKeepingDetail p = new Modal_EditTimeKeepingDetail();
             p.Show();
         }
     }
-
-
-
-
 }

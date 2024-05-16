@@ -149,7 +149,7 @@
             this.Palette = this.kryptonPalette1;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Modal_AddDepartment";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

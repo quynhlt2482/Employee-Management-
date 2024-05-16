@@ -106,3 +106,15 @@ D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\De
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditDepartment.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditEmployee.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfContact.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
