@@ -67,3 +67,5 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddS
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
