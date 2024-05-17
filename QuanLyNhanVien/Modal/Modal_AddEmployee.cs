@@ -56,7 +56,7 @@ namespace QuanLyNhanVien.Modal
 
             try
             {
-                departments = departmentBUS.GetDepartments();
+                departments = departmentBUS.GetAllDepartments();
 
                 cb_phongban.DataSource = departments;
                 cb_phongban.DisplayMember = "DepartmentName";

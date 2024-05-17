@@ -11,14 +11,19 @@ namespace BUS
     public class DepartmentBUS
     {
         private readonly DepartmentDAL departmentDAL = new DepartmentDAL();
-        public List<Department> GetDepartmentByID(string departmentId)
+        public Department GetDepartmentByID(string departmentId)
         {
             return departmentDAL.GetDepartmentByID(departmentId);
         }
 
-        public List<Department> GetDepartments()
+        public List<Department> GetAllDepartments()
         {
-            return departmentDAL.GetDepartments();
+            return departmentDAL.GetAllDepartments();
+        }
+
+        public void ChangeManager(string oldManagerID, string newManagerID)
+        {
+            departmentDAL.ChangeManager(oldManagerID, newManagerID);
         }
     }
 }

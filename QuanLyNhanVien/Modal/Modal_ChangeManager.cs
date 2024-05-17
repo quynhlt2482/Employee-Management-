@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DAL;
 using DTO;
+using BUS;
 using ComponentFactory.Krypton.Toolkit;
 
 namespace QuanLyNhanVien.Modal
@@ -17,16 +18,28 @@ namespace QuanLyNhanVien.Modal
     public partial class Modal_ChangeManager : KryptonForm
     {
         Department _department;
-        Employee manager;
+        Employee manager = new Employee();
+        DepartmentBUS departmentBUS = new DepartmentBUS();
+        EmployeeBUS employeeBUS = new EmployeeBUS();
         
         public Modal_ChangeManager(Department department)
         {
             InitializeComponent();
             _department = department;
             LoadEmployees();
+            LoadManager();
             CB_ListEmployee.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
+        private void btn_accept_Click(object sender, EventArgs e)
+        {
+            ChangeManager();
+        }
+
+        private void CB_ListEmployee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
 
         private void LoadEmployees()
         {
@@ -36,34 +49,11 @@ namespace QuanLyNhanVien.Modal
             {
                 try
                 {
-                    SqlCommand command = new SqlCommand("SP_SELECT_EMPLOYEE", connection);
-                    command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.AddWithValue("@departmentID", _department.DepartmentID);
-                    SqlDataReader reader = command.ExecuteReader();
-
-                    while (reader.Read())
-                    {
-                        Employee employee = new Employee
-                        {
-                            Id = reader["employeeID"].ToString(),
-                            Name = reader["employeeName"].ToString()
-                        };
-                        if (reader["roleId"].ToString() == "r1")
-                        {
-                            manager = employee;
-                            txt_currentManager.Text = manager.Name;
-                        }
-                        employees.Add(employee);
-                    }
-                    reader.Close();
+                    employees = employeeBUS.GetEmployeesByDepartment(_department.DepartmentID);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error: " + ex.Message);
-                }
-                finally
-                {
-                    connection.Close();
                 }
 
                 CB_ListEmployee.DataSource = employees;
@@ -72,9 +62,11 @@ namespace QuanLyNhanVien.Modal
             }
         }
 
-        private void btn_accept_Click(object sender, EventArgs e)
+        private void LoadManager()
         {
-            ChangeManager();
+            Employee manager = employeeBUS.GetManagerByDepartment(_department.DepartmentID);
+            txt_currentManager.Text = manager.Name;
+            this.manager = manager;
         }
 
         private void ChangeManager()
@@ -82,43 +74,19 @@ namespace QuanLyNhanVien.Modal
             var selectedEmployee = (Employee)CB_ListEmployee.SelectedItem;
             string oldManagerID = manager.Id;
             string newManagerID = selectedEmployee.Id;
-            if(oldManagerID != newManagerID)
+            try
             {
-                using (SqlConnection connection = SQLConnector.GetConnection(1))
+                if (oldManagerID != newManagerID)
                 {
-                    try
-                    {
-                        SqlCommand command = new SqlCommand("SP_CHANGE_MANAGER", connection);
-                        command.CommandType = CommandType.StoredProcedure;
-
-                        // Thêm các tham số cần thiết cho stored procedure
-                        command.Parameters.AddWithValue("@OldManagerID", oldManagerID);
-                        command.Parameters.AddWithValue("@NewManagerID", newManagerID);
-
-                        // Thực hiện stored procedure
-                        command.ExecuteNonQuery();
-
-                        MessageBox.Show("Đổi trưởng phòng thành công !");
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
-                    finally
-                    {
-                        connection.Close();
-                        this.Close();
-                    }
+                    departmentBUS.ChangeManager(oldManagerID, newManagerID);
+                    MessageBox.Show("Đổi trưởng phòng thành công !!!");
                 }
-            } else
-            {
                 this.Close();
             }
-        }
-
-        private void CB_ListEmployee_SelectedIndexChanged(object sender, EventArgs e)
-        {
-           
+            catch (Exception ex)
+            {
+                MessageBox.Show("Đổi trưởng phòng thất bại !!!");
+            }
         }
     }
 }

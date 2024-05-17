@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace DAL
 {
     public class DepartmentDAL
     {
-        public List<Department> GetDepartments()
+        public List<Department> GetAllDepartments()
         {
             var departments = new List<Department>();
             string query = "SELECT departmentID, departmentName FROM department";
@@ -39,9 +40,9 @@ namespace DAL
             return departments;
         }
 
-        public List<Department> GetDepartmentByID(string departmentId)
+        public Department GetDepartmentByID(string departmentId)
         {
-            var departments = new List<Department>();
+            Department department = new Department();
             string query = $"SELECT departmentID, departmentName FROM department WHERE departmentID = @departmentID";
 
             using (SqlConnection connection = SQLConnector.GetConnection(1))
@@ -58,7 +59,8 @@ namespace DAL
                     {
                         string id = reader.GetString(0);
                         string name = reader.GetString(1);
-                        departments.Add(new Department(id, name));
+                        department.DepartmentID = id;
+                        department.DepartmentName = name;
                     }
                 }
                 catch (Exception ex)
@@ -67,7 +69,34 @@ namespace DAL
                 }
             }
 
-            return departments;
+            return department;
+        }
+
+        public void ChangeManager(string oldManagerID, string newManagerID)
+        {
+            using (SqlConnection connection = SQLConnector.GetConnection(1))
+            {
+                try
+                {
+                    SqlCommand command = new SqlCommand("SP_CHANGE_MANAGER", connection);
+                    command.CommandType = CommandType.StoredProcedure;
+
+                    // Thêm các tham số cần thiết cho stored procedure
+                    command.Parameters.AddWithValue("@OldManagerID", oldManagerID);
+                    command.Parameters.AddWithValue("@NewManagerID", newManagerID);
+
+                    // Thực hiện stored procedure
+                    command.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("An error occurred at ChangeManager: " + ex.Message);
+                }
+                finally
+                {
+                    connection.Close();
+                }
+            }
         }
     }
 }

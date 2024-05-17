@@ -111,6 +111,7 @@ namespace DAL
                         }
                     }
                 }
+                conn.Close();
             }
             return employees;
         }
@@ -128,8 +129,8 @@ namespace DAL
                     command.Parameters.Add(new SqlParameter("@EmployeeName", employee.Name));
                     command.Parameters.Add(new SqlParameter("@Username", employee.Username));
                     command.Parameters.Add(new SqlParameter("@Password", employee.Password));
-                    command.Parameters.Add(new SqlParameter("@Email", (object)employee.Email ?? DBNull.Value));
-                    command.Parameters.Add(new SqlParameter("@DateOfBirth", (object)employee.DateOfBirth ?? DBNull.Value));
+                    command.Parameters.Add(new SqlParameter("@Email", employee.Email));
+                    command.Parameters.Add(new SqlParameter("@DateOfBirth", employee.DateOfBirth));
                     command.Parameters.Add(new SqlParameter("@TaxNumber", employee.TaxNumber));
                     command.Parameters.Add(new SqlParameter("@BasicSalary", employee.BasicSalary));
                     command.Parameters.Add(new SqlParameter("@DepartmentID", employee.DepartmentId));
@@ -142,13 +143,68 @@ namespace DAL
                     }
                     catch (Exception ex)
                     {
-                        // Handle the exception (logging, rethrowing, etc.)
-                        //throw new Exception("An error occurred while inserting the employee: " + ex.Message);
+                        throw new Exception("An error occurred while inserting the employee: " + ex.Message);
                     }
                 }
             }
 
             return result;
         }
+        public Employee GetManagerByDepartment(string departmentID)
+        {
+            string query = "SELECT * FROM employee WHERE @departmentId = departmentId AND roleId = 'R1'";
+
+            Employee employee = new Employee();
+
+            using (SqlConnection conn = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@departmentId", departmentID);
+
+                    // Execute the command and read the data
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Map the data to the Employee object
+                            employee.Id = reader["employeeID"].ToString();
+                            employee.Name = reader["employeeName"].ToString();
+                            employee.Username = reader["username"].ToString();
+                            employee.Email = reader["email"].ToString();
+                            employee.DateOfBirth = Convert.ToDateTime(reader["dateOfBirth"]);
+                            employee.TaxNumber = reader["taxNumber"].ToString();
+                            employee.DepartmentId = reader["departmentID"].ToString();
+                            employee.RoleId = reader["roleId"].ToString();
+                        }
+                    }
+                }
+            }
+
+            return employee;
+        }
+        public bool DeleteEmployee(string employeeId)
+        {
+
+            using (SqlConnection conn = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_DELETE_EMPLOYEE", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@EmployeeID", employeeId);
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
     }
 }
+

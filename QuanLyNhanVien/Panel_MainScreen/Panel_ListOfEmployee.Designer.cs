@@ -63,6 +63,7 @@
             this.dtg_nhanvien.StateCommon.Background.Color2 = System.Drawing.Color.White;
             this.dtg_nhanvien.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.dtg_nhanvien.TabIndex = 0;
+            this.dtg_nhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_nhanvien_CellClick);
             // 
             // departmentCB
             // 
@@ -107,6 +108,7 @@
             this.ptb_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_delete.TabIndex = 3;
             this.ptb_delete.TabStop = false;
+            this.ptb_delete.Click += new System.EventHandler(this.ptb_delete_Click);
             // 
             // ptb_edit
             // 

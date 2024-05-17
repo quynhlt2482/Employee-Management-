@@ -19,6 +19,7 @@ namespace QuanLyNhanVien
     {
         private readonly EmployeeBUS employeeBUS = new EmployeeBUS();
         private readonly DepartmentBUS departmentBUS = new DepartmentBUS();
+        private string selectedEmployeeID;
         public Panel_ListOfEmployee()
         {
             InitializeComponent();
@@ -64,25 +65,112 @@ namespace QuanLyNhanVien
             }
         }
 
+        private void ptb_add_Click(object sender, EventArgs e)
+        {
+            Modal_AddEmployee addEmployeeForm = new Modal_AddEmployee(employeeBUS, departmentBUS);
+            addEmployeeForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
+            addEmployeeForm.Show();
+        }
+
+        private void ptb_changeManager_Click(object sender, EventArgs e)
+        {
+            // Lấy selected item và kiểm tra nếu nó không null
+            if (departmentCB.SelectedItem != null)
+            {
+                var selectedDepartment = (Department)departmentCB.SelectedItem;
+
+                // Truyền cả DisplayMember và ValueMember
+                Modal_ChangeManager changeManagerForm = new Modal_ChangeManager(selectedDepartment);
+                changeManagerForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
+                changeManagerForm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn phòng ban.");
+            }
+        }
+
+        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (departmentCB.SelectedItem is Department selectedDepartment)
+            {
+                LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
+            }
+        }
+
+        private void ptb_edit_Click(object sender, EventArgs e)
+        {
+            Modal_EditEmployee editEmployeeForm = new Modal_EditEmployee(employeeBUS, departmentBUS);
+            editEmployeeForm.Show();
+        }
+
+        private void dtg_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtg_nhanvien.Rows[e.RowIndex];
+                selectedEmployeeID = row.Cells["Mã NV"].Value.ToString();
+            }
+        }
+
+        private void ptb_delete_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(selectedEmployeeID))
+            {
+                MessageBox.Show("Bạn chưa chọn nhân viên cần xóa !!!");
+                return;
+            }
+
+            DialogResult dialogResult = MessageBox.Show("Bạn có muốn xóa nhân viên này ?",
+                                                    "Xác nhận xóa",
+                                                    MessageBoxButtons.YesNo,
+                                                    MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.Yes)
+            {
+                try
+                {
+                    bool isDeleted = employeeBUS.DeleteEmployee(selectedEmployeeID, EmployeeDAL.employeeSession.DepartmentId, EmployeeDAL.employeeSession.RoleId);
+                    if (isDeleted)
+                    {
+                        MessageBox.Show("Xóa nhân viên thành công !");
+                        if (departmentCB.SelectedItem is Department selectedDepartment)
+                        {
+                            LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóa nhân viên thất bại !!!");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error at delelte btn: " + ex.Message);
+                }
+            }
+        }
+
         private void LoadDepartments()
         {
-            List<Department> departments;
-
             try
             {
                 string departmentId = EmployeeDAL.employeeSession.DepartmentId;
                 if (departmentId.ToLower() == "dep3")
                 {
-                    departments = departmentBUS.GetDepartments();
+                    List<Department> departments = departmentBUS.GetAllDepartments();
+                    departmentCB.DataSource = departments;
+                    departmentCB.DisplayMember = "DepartmentName";
+                    departmentCB.ValueMember = "DepartmentID";
                 }
                 else
                 {
-                    departments = departmentBUS.GetDepartmentByID(departmentId);
+                    Department department = departmentBUS.GetDepartmentByID(departmentId);
+                    List<Department> departmentList = new List<Department>
+                    { department };
+                    departmentCB.DataSource = departmentList;
+                    departmentCB.DisplayMember = "DepartmentName";
+                    departmentCB.ValueMember = "DepartmentID";
                 }
-
-                departmentCB.DataSource = departments;
-                departmentCB.DisplayMember = "DepartmentName";
-                departmentCB.ValueMember = "DepartmentID";
             }
             catch (Exception ex)
             {
@@ -96,7 +184,6 @@ namespace QuanLyNhanVien
             {
                 List<Employee> employees = employeeBUS.GetEmployeesByDepartment(departmentID);
                 dtg_nhanvien.DataSource = ConvertToDataTable(employees);
-
             }
             catch (Exception ex)
             {
@@ -129,7 +216,7 @@ namespace QuanLyNhanVien
                     employee.BasicSalary,
 
                     employee.RoleId
-                ); 
+                );
             }
 
             FormatDataGridColumns(dataTable);
@@ -175,46 +262,6 @@ namespace QuanLyNhanVien
 
             // Đổi tên cột tạm thời thành "Lương cơ bản"
             dataTable.Columns["TempLương cơ bản"].ColumnName = "Lương cơ bản";
-        }
-
-
-        private void ptb_add_Click(object sender, EventArgs e)
-        {
-            Modal_AddEmployee addEmployeeForm = new Modal_AddEmployee(employeeBUS, departmentBUS);
-            addEmployeeForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
-            addEmployeeForm.Show();
-        }
-
-        private void ptb_changeManager_Click(object sender, EventArgs e)
-        {
-            // Lấy selected item và kiểm tra nếu nó không null
-            if (departmentCB.SelectedItem != null)
-            {
-                var selectedDepartment = (Department)departmentCB.SelectedItem;
-
-                // Truyền cả DisplayMember và ValueMember
-                Modal_ChangeManager changeManagerForm = new Modal_ChangeManager(selectedDepartment);
-                changeManagerForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
-                changeManagerForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn phòng ban.");
-            }
-        }
-
-        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (departmentCB.SelectedItem is Department selectedDepartment)
-            {
-                LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
-            }
-        }
-
-        private void ptb_edit_Click(object sender, EventArgs e)
-        {
-            Modal_EditEmployee editEmployeeForm = new Modal_EditEmployee(employeeBUS, departmentBUS);
-            editEmployeeForm.Show();
         }
     }
 

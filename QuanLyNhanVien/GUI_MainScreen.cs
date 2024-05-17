@@ -10,17 +10,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
 using QuanLyNhanVien.Panel_MainScreen;
+using DAL;
 
 namespace QuanLyNhanVien
 {
     public partial class GUI_MainScreen : KryptonForm
     {
-
         private Form currentChildForm;
         public GUI_MainScreen()
         {
             InitializeComponent();
-
+            lb_username.Text = EmployeeDAL.employeeSession.SqlUsername;
         }
         private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -38,21 +38,6 @@ namespace QuanLyNhanVien
             }
         }
 
-        public void OpenChildForm(Form childForm)
-        {
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            pn_child.Controls.Add(childForm);
-            pn_child.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
             DisableOtherButtons((Control)sender);
@@ -124,6 +109,22 @@ namespace QuanLyNhanVien
             string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
             string imagePath = Path.Combine(projectDirectory, "Icon", "contract.png");
             ptb_title.Image = Image.FromFile(imagePath);
+        }
+
+        public void OpenChildForm(Form childForm)
+        {
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
+            currentChildForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            pn_child.Controls.Add(childForm);
+            pn_child.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }
