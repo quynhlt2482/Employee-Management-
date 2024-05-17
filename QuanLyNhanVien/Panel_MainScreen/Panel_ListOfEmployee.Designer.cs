@@ -67,7 +67,7 @@
             // departmentCB
             // 
             this.departmentCB.DropDownWidth = 121;
-            this.departmentCB.Location = new System.Drawing.Point(32, 36);
+            this.departmentCB.Location = new System.Drawing.Point(32, 40);
             this.departmentCB.Name = "departmentCB";
             this.departmentCB.Size = new System.Drawing.Size(121, 21);
             this.departmentCB.TabIndex = 5;

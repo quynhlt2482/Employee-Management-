@@ -50,10 +50,9 @@
             this.tb_taikhoan = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.cb_phongban = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
-            this.cb_chucvu = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.btn_them = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.txt_chucvu = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.cb_phongban)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_chucvu)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -85,8 +84,9 @@
             // 
             this.tb_manv.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_manv.Location = new System.Drawing.Point(24, 102);
-            this.tb_manv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_manv.Margin = new System.Windows.Forms.Padding(2);
             this.tb_manv.Name = "tb_manv";
+            this.tb_manv.ReadOnly = true;
             this.tb_manv.Size = new System.Drawing.Size(243, 33);
             this.tb_manv.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_manv.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -114,7 +114,7 @@
             // 
             this.tb_tennv.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_tennv.Location = new System.Drawing.Point(328, 102);
-            this.tb_tennv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_tennv.Margin = new System.Windows.Forms.Padding(2);
             this.tb_tennv.Name = "tb_tennv";
             this.tb_tennv.Size = new System.Drawing.Size(243, 33);
             this.tb_tennv.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -155,7 +155,7 @@
             // 
             this.tb_email.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_email.Location = new System.Drawing.Point(24, 181);
-            this.tb_email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_email.Margin = new System.Windows.Forms.Padding(2);
             this.tb_email.Name = "tb_email";
             this.tb_email.Size = new System.Drawing.Size(243, 33);
             this.tb_email.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -184,7 +184,7 @@
             // 
             this.tb_luong.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_luong.Location = new System.Drawing.Point(328, 258);
-            this.tb_luong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_luong.Margin = new System.Windows.Forms.Padding(2);
             this.tb_luong.Name = "tb_luong";
             this.tb_luong.Size = new System.Drawing.Size(243, 33);
             this.tb_luong.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -213,7 +213,7 @@
             // 
             this.tb_masothue.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_masothue.Location = new System.Drawing.Point(24, 258);
-            this.tb_masothue.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_masothue.Margin = new System.Windows.Forms.Padding(2);
             this.tb_masothue.Name = "tb_masothue";
             this.tb_masothue.Size = new System.Drawing.Size(243, 33);
             this.tb_masothue.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -240,8 +240,9 @@
             // 
             // dtp_ngaysinh
             // 
+            this.dtp_ngaysinh.CalendarTodayDate = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
             this.dtp_ngaysinh.Location = new System.Drawing.Point(327, 181);
-            this.dtp_ngaysinh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtp_ngaysinh.Margin = new System.Windows.Forms.Padding(2);
             this.dtp_ngaysinh.Name = "dtp_ngaysinh";
             this.dtp_ngaysinh.Size = new System.Drawing.Size(244, 31);
             this.dtp_ngaysinh.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -281,9 +282,9 @@
             // 
             this.tb_matkhau.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_matkhau.Location = new System.Drawing.Point(332, 425);
-            this.tb_matkhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_matkhau.Margin = new System.Windows.Forms.Padding(2);
             this.tb_matkhau.Name = "tb_matkhau";
-            this.tb_matkhau.PasswordChar = '*';
+            this.tb_matkhau.PasswordChar = '♥';
             this.tb_matkhau.Size = new System.Drawing.Size(243, 33);
             this.tb_matkhau.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_matkhau.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -311,7 +312,7 @@
             // 
             this.tb_taikhoan.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_taikhoan.Location = new System.Drawing.Point(28, 425);
-            this.tb_taikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_taikhoan.Margin = new System.Windows.Forms.Padding(2);
             this.tb_taikhoan.Name = "tb_taikhoan";
             this.tb_taikhoan.Size = new System.Drawing.Size(243, 33);
             this.tb_taikhoan.StateCommon.Back.Color1 = System.Drawing.Color.White;
@@ -340,7 +341,7 @@
             // 
             this.cb_phongban.DropDownWidth = 312;
             this.cb_phongban.Location = new System.Drawing.Point(328, 343);
-            this.cb_phongban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cb_phongban.Margin = new System.Windows.Forms.Padding(2);
             this.cb_phongban.Name = "cb_phongban";
             this.cb_phongban.Size = new System.Drawing.Size(243, 33);
             this.cb_phongban.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
@@ -351,25 +352,10 @@
             this.cb_phongban.TabIndex = 53;
             this.cb_phongban.Text = "kryptonComboBox1";
             // 
-            // cb_chucvu
-            // 
-            this.cb_chucvu.DropDownWidth = 324;
-            this.cb_chucvu.Location = new System.Drawing.Point(24, 343);
-            this.cb_chucvu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cb_chucvu.Name = "cb_chucvu";
-            this.cb_chucvu.Size = new System.Drawing.Size(243, 31);
-            this.cb_chucvu.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.cb_chucvu.StateCommon.ComboBox.Border.Rounding = 15;
-            this.cb_chucvu.StateCommon.ComboBox.Border.Width = 1;
-            this.cb_chucvu.TabIndex = 54;
-            this.cb_chucvu.Text = "kryptonComboBox2";
-            // 
             // btn_them
             // 
             this.btn_them.Location = new System.Drawing.Point(441, 486);
-            this.btn_them.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_them.Margin = new System.Windows.Forms.Padding(2);
             this.btn_them.Name = "btn_them";
             this.btn_them.Size = new System.Drawing.Size(97, 35);
             this.btn_them.StateCommon.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -385,6 +371,24 @@
             this.btn_them.Values.Text = "Thêm";
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
+            // txt_chucvu
+            // 
+            this.txt_chucvu.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
+            this.txt_chucvu.Location = new System.Drawing.Point(23, 343);
+            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_chucvu.Name = "txt_chucvu";
+            this.txt_chucvu.ReadOnly = true;
+            this.txt_chucvu.Size = new System.Drawing.Size(243, 33);
+            this.txt_chucvu.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.txt_chucvu.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.txt_chucvu.StateCommon.Border.Rounding = 15;
+            this.txt_chucvu.StateCommon.Border.Width = 1;
+            this.txt_chucvu.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_chucvu.TabIndex = 41;
+            this.txt_chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Modal_AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -392,7 +396,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 543);
             this.Controls.Add(this.btn_them);
-            this.Controls.Add(this.cb_chucvu);
             this.Controls.Add(this.cb_phongban);
             this.Controls.Add(this.tb_matkhau);
             this.Controls.Add(this.label9);
@@ -403,6 +406,7 @@
             this.Controls.Add(this.dtp_ngaysinh);
             this.Controls.Add(this.tb_luong);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_chucvu);
             this.Controls.Add(this.tb_masothue);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -414,7 +418,7 @@
             this.Controls.Add(this.tb_manv);
             this.Controls.Add(this.lb_thang);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Modal_AddEmployee";
@@ -423,7 +427,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.cb_phongban)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cb_chucvu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -452,7 +455,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_taikhoan;
         private System.Windows.Forms.Label label10;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cb_phongban;
-        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cb_chucvu;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_them;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_chucvu;
     }
 }

@@ -14,69 +14,99 @@ namespace BUS
         private readonly EmployeeDAL employeeDAL = new EmployeeDAL();
         public int CheckLogin(Employee employee)
         {
-            if(employee.Username == "" || employee.Password == "")
+            if (employee.Username == "" || employee.Password == "")
             {
                 return -1;
             }
             return employeeDAL.CheckLogin(employee);
         }
-
-        public DataTable GetEmployeesByDepartment(string departmentID)
+        public int InsertEmployee(Employee employee)
         {
-            DataTable dataTable = employeeDAL.GetEmployeesByDepartment(departmentID);
+            return employeeDAL.InsertEmployee(employee);
+        }
 
-            // Remove the departmentID column if it exists
-            if (dataTable.Columns.Contains("departmentID"))
+        public List<Employee> GetEmployeesByDepartment(string departmentID)
+        {
+            return employeeDAL.GetEmployeesByDepartment(departmentID);
+        }
+
+        public DataTable GetDatableEmployeesByDepartment(string departmentID)
+        {
+            List<Employee> employees = employeeDAL.GetEmployeesByDepartment(departmentID);
+
+            return ConvertToDataTable(employees);
+        }
+
+        private DataTable ConvertToDataTable(List<Employee> employees)
+        {
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("Mã NV");
+            dataTable.Columns.Add("Tên NV");
+            dataTable.Columns.Add("Tên đăng nhập");
+            dataTable.Columns.Add("Email");
+            dataTable.Columns.Add("Ngày sinh");
+            dataTable.Columns.Add("Mã số thuế");
+            dataTable.Columns.Add("Lương cơ bản", typeof(double));
+            dataTable.Columns.Add("Chức vụ");
+
+            foreach (var employee in employees)
             {
-                dataTable.Columns.Remove("departmentID");
+                dataTable.Rows.Add(
+                    employee.Id,
+                    employee.Name,
+                    employee.Username,
+                    employee.Email,
+                    employee.DateOfBirth.ToString("dd-MM-yyyy"),
+                    employee.TaxNumber,
+                    employee.BasicSalary,
+                    employee.RoleId
+                );
             }
 
-            // Change column headers
-            ChangeColumnHeaders(dataTable);
-
-            // Convert roleId to readable format
-            ConvertRoleIds(dataTable);
+            FormatDataGridColumns(dataTable);
 
             return dataTable;
         }
 
-        private void ChangeColumnHeaders(DataTable dataTable)
+        private void FormatDataGridColumns(DataTable dataTable)
         {
-            if (dataTable.Columns.Contains("employeeID"))
-                dataTable.Columns["employeeID"].ColumnName = "Mã NV";
-
-            if (dataTable.Columns.Contains("employeeName"))
-                dataTable.Columns["employeeName"].ColumnName = "Tên NV";
-
-            if (dataTable.Columns.Contains("username"))
-                dataTable.Columns["username"].ColumnName = "Tên đăng nhập";
-
-            if (dataTable.Columns.Contains("email"))
-                dataTable.Columns["email"].ColumnName = "Email";
-
-            if (dataTable.Columns.Contains("dateOfBirth"))
-                dataTable.Columns["dateOfBirth"].ColumnName = "Ngày sinh";
-
-            if (dataTable.Columns.Contains("taxNumber"))
-                dataTable.Columns["taxNumber"].ColumnName = "Mã số thuế";
-
-            if (dataTable.Columns.Contains("roleId"))
-                dataTable.Columns["roleId"].ColumnName = "Chức vụ";
-        }
-
-        private void ConvertRoleIds(DataTable dataTable)
-        {
+            // Format "Chức vụ" column
             foreach (DataRow row in dataTable.Rows)
             {
-                if (row["Chức vụ"].ToString() == "r0")
+                if (row["Chức vụ"].ToString().ToLower() == "r0")
                 {
                     row["Chức vụ"] = "Nhân viên";
                 }
-                else if (row["Chức vụ"].ToString() == "r1")
+                else if (row["Chức vụ"].ToString().ToLower() == "r1")
                 {
                     row["Chức vụ"] = "Trưởng phòng";
                 }
             }
+
+            // Format "Lương cơ bản" column
+            dataTable.Columns.Add("TempLương cơ bản", typeof(string));
+
+            foreach (DataRow row in dataTable.Rows)
+            {
+                // Chuyển đổi giá trị "Lương cơ bản"
+                if (row.IsNull("Lương cơ bản"))
+                {
+                    row["TempLương cơ bản"] = "*********";
+                }
+                else
+                {
+                    // Format the salary with thousands separators
+                    double salary = Convert.ToDouble(row["Lương cơ bản"]);
+                    row["TempLương cơ bản"] = salary.ToString("N0");
+                }
+            }
+
+            // Xóa cột gốc "Lương cơ bản"
+            dataTable.Columns.Remove("Lương cơ bản");
+
+            // Đổi tên cột tạm thời thành "Lương cơ bản"
+            dataTable.Columns["TempLương cơ bản"].ColumnName = "Lương cơ bản";
         }
     }
 }

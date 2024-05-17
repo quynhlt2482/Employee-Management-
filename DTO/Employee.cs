@@ -24,29 +24,18 @@ namespace DTO
 
         public Employee() { }
 
-        public Employee(string id, string name, string username, string email, DateTime dateOfBirth, string taxNumber, string departmentId, string roleId)
+        public Employee(string id, string name, string username, string password, string email, DateTime dateOfBirth, string taxNumber, float basicSalary, string departmentId, string roleId)
         {
             Id = id;
             Name = name;
             Username = username;
+            Password = password;
             Email = email;
             DateOfBirth = dateOfBirth;
             TaxNumber = taxNumber;
+            BasicSalary = basicSalary;
             DepartmentId = departmentId;
             RoleId = roleId;
-        }
-        public Employee(string id, string name, string username, string password, string email, DateTime dateOfBirth, string taxNumber, float basicSalary, string departmentId, string roleId)
-        {
-            this.id = id;
-            this.name = name;
-            this.username = username;
-            this.password = password;  
-            this.email = email;
-            this.dateOfBirth = dateOfBirth;
-            this.taxNumber = taxNumber;
-            this.basicSalary = basicSalary;
-            this.departmentId = departmentId;
-            this.roleId = roleId;
         }
 
         public string Id { get => id; set => id = value; }

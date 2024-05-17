@@ -66,31 +66,89 @@ namespace DAL
             return result;
         }
 
-        public DataTable GetEmployeesByDepartment(string departmentID)
+        public List<Employee> GetEmployeesByDepartment(string departmentID)
         {
-            DataTable dataTable = new DataTable();
+            List<Employee> employees = new List<Employee>();
+
+            using (SqlConnection conn = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_SELECT_EMPLOYEE", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@departmentID", departmentID);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Employee employee = new Employee();
+                            employee.Id = reader["employeeID"].ToString();
+                            employee.Name = reader["employeeName"].ToString();
+                            employee.Username = reader["username"].ToString();
+                            employee.Email = reader["email"].ToString();
+                            employee.DateOfBirth = (DateTime)reader["dateOfBirth"];
+                            employee.TaxNumber = reader["taxNumber"].ToString();
+                            if (!reader.IsDBNull(reader.GetOrdinal("basicSalary")))
+                            {
+                                object rawValue = reader.GetValue(reader.GetOrdinal("basicSalary"));
+                                if (rawValue.GetType() == typeof(float))
+                                {
+                                    employee.BasicSalary = (float)rawValue;
+                                }
+                                else if (rawValue.GetType() == typeof(double))
+                                {
+                                    employee.BasicSalary = Convert.ToSingle((double)rawValue);
+                                }
+                                else if (rawValue.GetType() == typeof(decimal))
+                                {
+                                    employee.BasicSalary = Convert.ToSingle((decimal)rawValue);
+                                }
+                            }
+                            employee.DepartmentId = reader["departmentID"].ToString();
+                            employee.RoleId = reader["roleId"].ToString();
+
+                            employees.Add(employee);
+                        }
+                    }
+                }
+            }
+            return employees;
+        }
+        public int InsertEmployee(Employee employee)
+        {
+            int result = 0;
 
             using (SqlConnection connection = SQLConnector.GetConnection(1))
             {
-                using (SqlCommand command = new SqlCommand("SP_SELECT_EMPLOYEE", connection))
+                using (SqlCommand command = new SqlCommand("SP_INSERT_EMPLOYEE", connection))
                 {
                     command.CommandType = CommandType.StoredProcedure;
-                    command.Parameters.Add(new SqlParameter("@departmentID", departmentID));
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    command.Parameters.Add(new SqlParameter("@EmployeeID", employee.Id));
+                    command.Parameters.Add(new SqlParameter("@EmployeeName", employee.Name));
+                    command.Parameters.Add(new SqlParameter("@Username", employee.Username));
+                    command.Parameters.Add(new SqlParameter("@Password", employee.Password));
+                    command.Parameters.Add(new SqlParameter("@Email", (object)employee.Email ?? DBNull.Value));
+                    command.Parameters.Add(new SqlParameter("@DateOfBirth", (object)employee.DateOfBirth ?? DBNull.Value));
+                    command.Parameters.Add(new SqlParameter("@TaxNumber", employee.TaxNumber));
+                    command.Parameters.Add(new SqlParameter("@BasicSalary", employee.BasicSalary));
+                    command.Parameters.Add(new SqlParameter("@DepartmentID", employee.DepartmentId));
+                    command.Parameters.Add(new SqlParameter("@RoleID", employee.RoleId));
 
                     try
                     {
-                        adapter.Fill(dataTable);
+                        command.ExecuteNonQuery();
+                        result = 1;
                     }
                     catch (Exception ex)
                     {
-                        throw new Exception("An error occurred while fetching employees: " + ex.Message);
+                        // Handle the exception (logging, rethrowing, etc.)
+                        //throw new Exception("An error occurred while inserting the employee: " + ex.Message);
                     }
                 }
             }
 
-            return dataTable;
+            return result;
         }
     }
 }
