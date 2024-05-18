@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DepartmentDAL.cs" />
+    <Compile Include="EmployeeContractDAL.cs" />
     <Compile Include="EmployeeDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLConnector.cs" />

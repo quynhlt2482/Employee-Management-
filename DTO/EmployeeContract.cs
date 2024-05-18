@@ -6,30 +6,32 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class EmployeeContract
+    public class EmployeeContract
     {
-        private string id;
+        private string contractId;
         private DateTime startDate;
         private DateTime endDate;
         private bool status;
         private string employeeId;
-        private string contractTypeId;
+        private string contractType;
 
-        public EmployeeContract(string id, DateTime startDate, DateTime endDate, bool status, string employeeId, string ContractTypeId)
+
+        public EmployeeContract() {}
+        public EmployeeContract(string contractID, DateTime startDate, DateTime endDate, bool status, string employeeId, string ContractType)
         {
-            this.id = id;
+            this.contractId = contractID;
             this.startDate = startDate;
             this.endDate = endDate;
             this.status = status;
             this.employeeId = employeeId;
-            this.contractTypeId = ContractTypeId;
+            this.contractType = ContractType;
         }
 
-        public string Id { get => id; set => id = value; }
+        public string contractID{ get => contractId; set => contractId = value; }
         public DateTime StartDate { get => startDate; set => startDate = value; }
         public DateTime EndDate { get => endDate; set => endDate = value; }
         public bool Status { get => status; set => status = value; }
         public string EmployeeId { get => employeeId; set => employeeId = value; }
-        public string ContractTypeId { get => contractTypeId; set => contractTypeId = value; }
+        public string ContractType { get => contractType; set => contractType = value; }
     }
 }

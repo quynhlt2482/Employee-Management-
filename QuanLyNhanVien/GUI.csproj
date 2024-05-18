@@ -83,7 +83,7 @@
     </Compile>
     <Compile Include="Modal\Modal_ChangeManager.Designer.cs">
       <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
-      </Compile>
+    </Compile>
     <Compile Include="Modal\Modal_AddShift.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using BUS;
 using DTO;
 using DAL;
+using QuanLyNhanVien.Panel_MainScreen;
 
 namespace QuanLyNhanVien
 {
@@ -262,6 +263,24 @@ namespace QuanLyNhanVien
 
             // Đổi tên cột tạm thời thành "Lương cơ bản"
             dataTable.Columns["TempLương cơ bản"].ColumnName = "Lương cơ bản";
+        }
+
+        private void ptb_detail_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(selectedEmployeeID))
+            {
+                MessageBox.Show("Bạn chưa chọn nhân viên cần xem !!!");
+                return;
+            } else
+            {
+                GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
+
+                if (mainScreen != null)
+                {
+                    mainScreen.OpenChildForm(new Panel_ListOfContact(selectedEmployeeID));
+                }
+            }
+            
         }
     }
 

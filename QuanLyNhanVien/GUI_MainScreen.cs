@@ -100,17 +100,6 @@ namespace QuanLyNhanVien
             ptb_title.Image = Image.FromFile(imagePath);
         }
 
-        private void btn_hopdong_Click(object sender, EventArgs e)
-        {
-            DisableOtherButtons((Control)sender);
-            OpenChildForm(new Panel_ListOfContact());
-            lb_title.Text = "Hợp đồng";
-
-            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
-            string imagePath = Path.Combine(projectDirectory, "Icon", "contract.png");
-            ptb_title.Image = Image.FromFile(imagePath);
-        }
-
         public void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
