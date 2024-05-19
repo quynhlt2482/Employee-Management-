@@ -35,15 +35,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tb_maca = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lb_thang = new System.Windows.Forms.Label();
-            this.tb_gioketthuc = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb_giobatdau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_tongtime = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_hesoluong = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_them = new ComponentFactory.Krypton.Toolkit.KryptonButton();
+            this.dtp_timestart = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.dtp_timeend = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -124,22 +124,6 @@
             this.lb_thang.TabIndex = 36;
             this.lb_thang.Text = "Mã ca làm";
             // 
-            // tb_gioketthuc
-            // 
-            this.tb_gioketthuc.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_gioketthuc.Location = new System.Drawing.Point(443, 215);
-            this.tb_gioketthuc.Name = "tb_gioketthuc";
-            this.tb_gioketthuc.Size = new System.Drawing.Size(324, 37);
-            this.tb_gioketthuc.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_gioketthuc.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_gioketthuc.StateCommon.Border.Rounding = 15;
-            this.tb_gioketthuc.StateCommon.Border.Width = 1;
-            this.tb_gioketthuc.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_gioketthuc.TabIndex = 44;
-            this.tb_gioketthuc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -150,22 +134,6 @@
             this.label3.Size = new System.Drawing.Size(99, 20);
             this.label3.TabIndex = 43;
             this.label3.Text = "Giờ kết thúc";
-            // 
-            // tb_giobatdau
-            // 
-            this.tb_giobatdau.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_giobatdau.Location = new System.Drawing.Point(38, 215);
-            this.tb_giobatdau.Name = "tb_giobatdau";
-            this.tb_giobatdau.Size = new System.Drawing.Size(324, 37);
-            this.tb_giobatdau.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_giobatdau.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_giobatdau.StateCommon.Border.Rounding = 15;
-            this.tb_giobatdau.StateCommon.Border.Width = 1;
-            this.tb_giobatdau.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_giobatdau.TabIndex = 42;
-            this.tb_giobatdau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -180,6 +148,7 @@
             // 
             // tb_tongtime
             // 
+            this.tb_tongtime.Enabled = false;
             this.tb_tongtime.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_tongtime.Location = new System.Drawing.Point(443, 325);
             this.tb_tongtime.Name = "tb_tongtime";
@@ -248,6 +217,35 @@
             this.btn_them.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btn_them.TabIndex = 56;
             this.btn_them.Values.Text = "Thêm";
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
+            // 
+            // dtp_timestart
+            // 
+            this.dtp_timestart.Location = new System.Drawing.Point(34, 217);
+            this.dtp_timestart.Name = "dtp_timestart";
+            this.dtp_timestart.Size = new System.Drawing.Size(325, 35);
+            this.dtp_timestart.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtp_timestart.StateCommon.Border.Rounding = 15;
+            this.dtp_timestart.StateCommon.Border.Width = 1;
+            this.dtp_timestart.StateCommon.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.dtp_timestart.TabIndex = 100;
+            this.dtp_timestart.ValueNullable = new System.DateTime(2024, 5, 15, 16, 28, 0, 0);
+            // 
+            // dtp_timeend
+            // 
+            this.dtp_timeend.Location = new System.Drawing.Point(443, 217);
+            this.dtp_timeend.Name = "dtp_timeend";
+            this.dtp_timeend.Size = new System.Drawing.Size(325, 35);
+            this.dtp_timeend.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtp_timeend.StateCommon.Border.Rounding = 15;
+            this.dtp_timeend.StateCommon.Border.Width = 1;
+            this.dtp_timeend.StateCommon.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.dtp_timeend.TabIndex = 101;
+            this.dtp_timeend.ValueNullable = new System.DateTime(2024, 5, 15, 16, 28, 0, 0);
             // 
             // Modal_AddShift
             // 
@@ -255,14 +253,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 467);
+            this.Controls.Add(this.dtp_timeend);
+            this.Controls.Add(this.dtp_timestart);
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.tb_tongtime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_hesoluong);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tb_gioketthuc);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_giobatdau);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_tenca);
             this.Controls.Add(this.label1);
@@ -289,14 +287,14 @@
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_maca;
         private System.Windows.Forms.Label lb_thang;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_gioketthuc;
         private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_giobatdau;
         private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_tongtime;
         private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_hesoluong;
         private System.Windows.Forms.Label label6;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_them;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtp_timestart;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtp_timeend;
     }
 }

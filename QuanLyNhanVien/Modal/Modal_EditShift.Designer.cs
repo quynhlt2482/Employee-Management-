@@ -35,15 +35,15 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tb_hesoluong = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tb_gioketthuc = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tb_giobatdau = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.tb_tenca = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_maca = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lb_thang = new System.Windows.Forms.Label();
+            this.dtp_timeend = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.dtp_timestart = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -75,9 +75,11 @@
             this.btn_them.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btn_them.TabIndex = 70;
             this.btn_them.Values.Text = "Xác nhận";
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // tb_tongtime
             // 
+            this.tb_tongtime.Enabled = false;
             this.tb_tongtime.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_tongtime.Location = new System.Drawing.Point(445, 316);
             this.tb_tongtime.Name = "tb_tongtime";
@@ -130,60 +132,6 @@
             this.label6.TabIndex = 66;
             this.label6.Text = "Hệ số lương";
             // 
-            // tb_gioketthuc
-            // 
-            this.tb_gioketthuc.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_gioketthuc.Location = new System.Drawing.Point(445, 206);
-            this.tb_gioketthuc.Name = "tb_gioketthuc";
-            this.tb_gioketthuc.Size = new System.Drawing.Size(324, 37);
-            this.tb_gioketthuc.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_gioketthuc.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_gioketthuc.StateCommon.Border.Rounding = 15;
-            this.tb_gioketthuc.StateCommon.Border.Width = 1;
-            this.tb_gioketthuc.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_gioketthuc.TabIndex = 65;
-            this.tb_gioketthuc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(440, 178);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "Giờ kết thúc";
-            // 
-            // tb_giobatdau
-            // 
-            this.tb_giobatdau.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_giobatdau.Location = new System.Drawing.Point(40, 206);
-            this.tb_giobatdau.Name = "tb_giobatdau";
-            this.tb_giobatdau.Size = new System.Drawing.Size(324, 37);
-            this.tb_giobatdau.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_giobatdau.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
-            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_giobatdau.StateCommon.Border.Rounding = 15;
-            this.tb_giobatdau.StateCommon.Border.Width = 1;
-            this.tb_giobatdau.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_giobatdau.TabIndex = 63;
-            this.tb_giobatdau.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(35, 178);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 20);
-            this.label4.TabIndex = 62;
-            this.label4.Text = "Giờ bắt đầu";
-            // 
             // tb_tenca
             // 
             this.tb_tenca.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
@@ -224,6 +172,7 @@
             // 
             // tb_maca
             // 
+            this.tb_maca.Enabled = false;
             this.tb_maca.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
             this.tb_maca.Location = new System.Drawing.Point(37, 112);
             this.tb_maca.Name = "tb_maca";
@@ -249,21 +198,71 @@
             this.lb_thang.TabIndex = 57;
             this.lb_thang.Text = "Mã ca làm";
             // 
+            // dtp_timeend
+            // 
+            this.dtp_timeend.Location = new System.Drawing.Point(445, 212);
+            this.dtp_timeend.Name = "dtp_timeend";
+            this.dtp_timeend.Size = new System.Drawing.Size(325, 35);
+            this.dtp_timeend.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtp_timeend.StateCommon.Border.Rounding = 15;
+            this.dtp_timeend.StateCommon.Border.Width = 1;
+            this.dtp_timeend.StateCommon.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.dtp_timeend.TabIndex = 105;
+            this.dtp_timeend.ValueNullable = new System.DateTime(2024, 5, 15, 16, 28, 0, 0);
+            // 
+            // dtp_timestart
+            // 
+            this.dtp_timestart.Location = new System.Drawing.Point(36, 212);
+            this.dtp_timestart.Name = "dtp_timestart";
+            this.dtp_timestart.Size = new System.Drawing.Size(325, 35);
+            this.dtp_timestart.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtp_timestart.StateCommon.Border.Rounding = 15;
+            this.dtp_timestart.StateCommon.Border.Width = 1;
+            this.dtp_timestart.StateCommon.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.dtp_timestart.TabIndex = 104;
+            this.dtp_timestart.ValueNullable = new System.DateTime(2024, 5, 15, 16, 28, 0, 0);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(440, 182);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(99, 20);
+            this.label3.TabIndex = 103;
+            this.label3.Text = "Giờ kết thúc";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Gray;
+            this.label4.Location = new System.Drawing.Point(35, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(95, 20);
+            this.label4.TabIndex = 102;
+            this.label4.Text = "Giờ bắt đầu";
+            // 
             // Modal_EditShift
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 466);
+            this.Controls.Add(this.dtp_timeend);
+            this.Controls.Add(this.dtp_timestart);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.tb_tongtime);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tb_hesoluong);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tb_gioketthuc);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_giobatdau);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.tb_tenca);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
@@ -289,14 +288,14 @@
         private System.Windows.Forms.Label label5;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_hesoluong;
         private System.Windows.Forms.Label label6;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_gioketthuc;
-        private System.Windows.Forms.Label label3;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_giobatdau;
-        private System.Windows.Forms.Label label4;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_tenca;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_maca;
         private System.Windows.Forms.Label lb_thang;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtp_timeend;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtp_timestart;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

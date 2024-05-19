@@ -118,3 +118,9 @@ D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\De
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\DAL.dll
+E:\Employee-Management-\QuanLyNhanVien\bin\Debug\DAL.pdb
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_ChangeManager.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddContact.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddContract.resources
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditContract.resources

@@ -9,22 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
-using QuanLyNhanVien.Panel_MainScreen;
 using DAL;
+using QuanLyNhanVien.Panel_MainScreen;
 
 namespace QuanLyNhanVien
 {
     public partial class GUI_MainScreen : KryptonForm
     {
         private Form currentChildForm;
+
         public GUI_MainScreen()
         {
             InitializeComponent();
             lb_username.Text = EmployeeDAL.employeeSession.SqlUsername;
-        }
-        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
 
         private void DisableOtherButtons(Control clickedButton)
@@ -99,17 +96,6 @@ namespace QuanLyNhanVien
             ptb_title.Image = Image.FromFile(imagePath);
         }
 
-        private void btn_hopdong_Click(object sender, EventArgs e)
-        {
-            DisableOtherButtons((Control)sender);
-            OpenChildForm(new Panel_ListOfContact());
-            lb_title.Text = "Hợp đồng";
-
-            string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
-            string imagePath = Path.Combine(projectDirectory, "Icon", "contract.png");
-            ptb_title.Image = Image.FromFile(imagePath);
-        }
-
         public void OpenChildForm(Form childForm)
         {
             if (currentChildForm != null)
@@ -126,9 +112,14 @@ namespace QuanLyNhanVien
             childForm.Show();
         }
 
-        private void GUI_MainScreen_Load(object sender, EventArgs e)
+        private void ptb_logout_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show("Bạn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
     }
 }

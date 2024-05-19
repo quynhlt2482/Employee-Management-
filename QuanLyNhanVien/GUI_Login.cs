@@ -40,6 +40,7 @@ namespace QuanLyNhanVien
             if (checkLogin == 1)
             {
                 GUI_MainScreen p = new GUI_MainScreen();
+                p.FormClosed += GUI_MainScreen_FormClosed;
                 p.Show();
                 this.Hide();
             } else if (checkLogin == 0)
@@ -49,6 +50,11 @@ namespace QuanLyNhanVien
             {
                 MessageBox.Show("Tai khoan hoac mat khau khong duoc de trong");
             }
+        }
+
+        private void GUI_MainScreen_FormClosed (object sender, FormClosedEventArgs e)
+        {
+            this.Show();
         }
     }
 }
