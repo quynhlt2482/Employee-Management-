@@ -3,60 +3,28 @@
   "WorkspaceRootPath": "E:\\Employee-Management-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_editpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_editpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|e:\\employee-management-\\bus\\payrollbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|solutionrelative:bus\\payrollbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|e:\\employee-management-\\dal\\payrolldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\payrolldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_editpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_editpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listoftimework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addpayroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F101A587-74C9-41CA-9D58-2C192B5FC099}|DTO\\DTO.csproj|e:\\employee-management-\\dto\\payroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F101A587-74C9-41CA-9D58-2C192B5FC099}|DTO\\DTO.csproj|solutionrelative:dto\\payroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\modal\\modal_addshift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\modal\\modal_addshift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofsalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofsalary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|e:\\employee-management-\\dal\\timekeepingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\timekeepingdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimekeepingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|E:\\Employee-Management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimekeepingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listoftimekeepingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|E:\\Employee-Management-\\dal\\timekeepingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\timekeepingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|E:\\Employee-Management-\\bus\\timekeepingdetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|solutionrelative:bus\\timekeepingdetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|E:\\Employee-Management-\\dal\\shiftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\shiftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,187 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Panel_ListOfPayroll.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs [Design]",
+              "DocumentIndex": 0,
+              "Title": "Panel_AllTimeKeeping.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:44:48.436Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-05-19T09:51:04.264Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PayrollDAL.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\PayrollDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\PayrollDAL.cs",
-              "ToolTip": "E:\\Employee-Management-\\DAL\\PayrollDAL.cs",
-              "RelativeToolTip": "DAL\\PayrollDAL.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAiwCkAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:08:28.426Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Panel_ListOfPayroll.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfPayroll.cs",
-              "ViewState": "AQIAAJIAAAAAAAAAAAAtwM0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:46:27.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Modal_EditPayroll.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAMwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:13:13.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Modal_AddPayroll.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwDAAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:30:43.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PayrollBUS.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\BUS\\PayrollBUS.cs",
-              "RelativeDocumentMoniker": "BUS\\PayrollBUS.cs",
-              "ToolTip": "E:\\Employee-Management-\\BUS\\PayrollBUS.cs",
-              "RelativeToolTip": "BUS\\PayrollBUS.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAIAwwCkAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:05:43.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Modal_EditPayroll.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_EditPayroll.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T20:12:56.132Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Panel_ListOfTimeWork.cs",
               "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
               "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
               "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
               "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwEYAAAA+AAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowE0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:10:03.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T09:49:20.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Modal_AddPayroll.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddPayroll.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "TimeKeepingDetailBUS.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\BUS\\TimeKeepingDetailBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\TimeKeepingDetailBUS.cs",
+              "ToolTip": "E:\\Employee-Management-\\BUS\\TimeKeepingDetailBUS.cs",
+              "RelativeToolTip": "BUS\\TimeKeepingDetailBUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:53:44.245Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-19T09:48:08.515Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Payroll.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\DTO\\Payroll.cs",
-              "RelativeDocumentMoniker": "DTO\\Payroll.cs",
-              "ToolTip": "E:\\Employee-Management-\\DTO\\Payroll.cs",
-              "RelativeToolTip": "DTO\\Payroll.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAwAAAAiAAAA",
+              "DocumentIndex": 3,
+              "Title": "TimeKeepingDetailDAL.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\TimeKeepingDetailDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\TimeKeepingDetailDAL.cs",
+              "ToolTip": "E:\\Employee-Management-\\DAL\\TimeKeepingDetailDAL.cs",
+              "RelativeToolTip": "DAL\\TimeKeepingDetailDAL.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAASwBoAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:51:56.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T09:40:00.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Modal_AddShift.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddShift.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Modal\\Modal_AddShift.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Modal\\Modal_AddShift.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Modal\\Modal_AddShift.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAgwDIAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:02:46.504Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Panel_ListOfSalary.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfSalary.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfSalary.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfSalary.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfSalary.cs",
-              "ViewState": "AQIAAKEAAAAAAAAAAAAmwLEAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:44:43.154Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TimeKeepingDAL.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\TimeKeepingDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\TimeKeepingDAL.cs",
-              "ToolTip": "E:\\Employee-Management-\\DAL\\TimeKeepingDAL.cs",
-              "RelativeToolTip": "DAL\\TimeKeepingDAL.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACwAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T19:38:26.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "Panel_ListOfTimeKeepingDetail.cs",
               "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
               "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
               "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
               "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAMwIEAAAAIAAAA",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAuwHMAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:23:16.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-19T08:00:19.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShiftDAL.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\ShiftDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ShiftDAL.cs",
+              "ToolTip": "E:\\Employee-Management-\\DAL\\ShiftDAL.cs",
+              "RelativeToolTip": "DAL\\ShiftDAL.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwEsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:16:45.974Z"
             }
           ]
         }

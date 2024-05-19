@@ -65,6 +65,10 @@ E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.GUI_MainScreen.r
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_ChangeManager.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
+<<<<<<< Updated upstream
+=======
+E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+>>>>>>> Stashed changes
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditEmployee.resources
 E:\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
