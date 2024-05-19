@@ -39,13 +39,15 @@
             this.btn_phongban = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.btn_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.pn_title = new System.Windows.Forms.Panel();
+            this.ptb_logout = new System.Windows.Forms.PictureBox();
             this.lb_username = new System.Windows.Forms.Label();
+            this.ptb_avatar = new System.Windows.Forms.PictureBox();
             this.lb_title = new System.Windows.Forms.Label();
+            this.ptb_title = new System.Windows.Forms.PictureBox();
             this.pn_child = new System.Windows.Forms.Panel();
             this.UI_Main = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
-            this.ptb_logout = new System.Windows.Forms.PictureBox();
-            this.ptb_avatar = new System.Windows.Forms.PictureBox();
-            this.ptb_title = new System.Windows.Forms.PictureBox();
+            this.lb_role = new System.Windows.Forms.Label();
+            this.lb_dep = new System.Windows.Forms.Label();
             this.pn_select.SuspendLayout();
             this.pn_title.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_logout)).BeginInit();
@@ -65,9 +67,9 @@
             this.pn_select.Controls.Add(this.btn_nhanvien);
             this.pn_select.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_select.Location = new System.Drawing.Point(0, 0);
-            this.pn_select.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_select.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_select.Name = "pn_select";
-            this.pn_select.Size = new System.Drawing.Size(355, 953);
+            this.pn_select.Size = new System.Drawing.Size(266, 774);
             this.pn_select.TabIndex = 0;
             // 
             // lb_logo
@@ -75,9 +77,10 @@
             this.lb_logo.AutoSize = true;
             this.lb_logo.Font = new System.Drawing.Font("Mistral", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_logo.ForeColor = System.Drawing.Color.White;
-            this.lb_logo.Location = new System.Drawing.Point(80, 33);
+            this.lb_logo.Location = new System.Drawing.Point(60, 27);
+            this.lb_logo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_logo.Name = "lb_logo";
-            this.lb_logo.Size = new System.Drawing.Size(185, 71);
+            this.lb_logo.Size = new System.Drawing.Size(149, 57);
             this.lb_logo.TabIndex = 6;
             this.lb_logo.Text = "Warrios";
             this.lb_logo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -85,10 +88,10 @@
             // btn_ca
             // 
             this.btn_ca.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_ca.Location = new System.Drawing.Point(0, 542);
-            this.btn_ca.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_ca.Location = new System.Drawing.Point(0, 440);
+            this.btn_ca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_ca.Name = "btn_ca";
-            this.btn_ca.Size = new System.Drawing.Size(355, 70);
+            this.btn_ca.Size = new System.Drawing.Size(266, 57);
             this.btn_ca.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_ca.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_ca.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -125,10 +128,10 @@
             // btn_luong
             // 
             this.btn_luong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_luong.Location = new System.Drawing.Point(0, 466);
-            this.btn_luong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_luong.Location = new System.Drawing.Point(0, 379);
+            this.btn_luong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_luong.Name = "btn_luong";
-            this.btn_luong.Size = new System.Drawing.Size(355, 70);
+            this.btn_luong.Size = new System.Drawing.Size(266, 57);
             this.btn_luong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_luong.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_luong.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -165,10 +168,10 @@
             // btn_theodoi
             // 
             this.btn_theodoi.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_theodoi.Location = new System.Drawing.Point(0, 390);
-            this.btn_theodoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_theodoi.Location = new System.Drawing.Point(0, 317);
+            this.btn_theodoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_theodoi.Name = "btn_theodoi";
-            this.btn_theodoi.Size = new System.Drawing.Size(355, 70);
+            this.btn_theodoi.Size = new System.Drawing.Size(266, 57);
             this.btn_theodoi.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_theodoi.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_theodoi.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -205,10 +208,10 @@
             // btn_chamcong
             // 
             this.btn_chamcong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_chamcong.Location = new System.Drawing.Point(0, 314);
-            this.btn_chamcong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_chamcong.Location = new System.Drawing.Point(0, 255);
+            this.btn_chamcong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_chamcong.Name = "btn_chamcong";
-            this.btn_chamcong.Size = new System.Drawing.Size(355, 70);
+            this.btn_chamcong.Size = new System.Drawing.Size(266, 57);
             this.btn_chamcong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_chamcong.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_chamcong.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
@@ -245,10 +248,10 @@
             // btn_phongban
             // 
             this.btn_phongban.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_phongban.Location = new System.Drawing.Point(0, 238);
-            this.btn_phongban.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_phongban.Location = new System.Drawing.Point(0, 193);
+            this.btn_phongban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_phongban.Name = "btn_phongban";
-            this.btn_phongban.Size = new System.Drawing.Size(355, 70);
+            this.btn_phongban.Size = new System.Drawing.Size(266, 57);
             this.btn_phongban.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_phongban.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_phongban.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -285,10 +288,10 @@
             // btn_nhanvien
             // 
             this.btn_nhanvien.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
-            this.btn_nhanvien.Location = new System.Drawing.Point(0, 162);
-            this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_nhanvien.Location = new System.Drawing.Point(0, 132);
+            this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_nhanvien.Name = "btn_nhanvien";
-            this.btn_nhanvien.Size = new System.Drawing.Size(355, 70);
+            this.btn_nhanvien.Size = new System.Drawing.Size(266, 57);
             this.btn_nhanvien.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_nhanvien.StateCheckedNormal.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.btn_nhanvien.StateCheckedNormal.Border.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
@@ -325,49 +328,88 @@
             // pn_title
             // 
             this.pn_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.pn_title.Controls.Add(this.lb_dep);
             this.pn_title.Controls.Add(this.ptb_logout);
+            this.pn_title.Controls.Add(this.lb_role);
             this.pn_title.Controls.Add(this.lb_username);
             this.pn_title.Controls.Add(this.ptb_avatar);
             this.pn_title.Controls.Add(this.lb_title);
             this.pn_title.Controls.Add(this.ptb_title);
             this.pn_title.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pn_title.Location = new System.Drawing.Point(355, 0);
-            this.pn_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_title.Location = new System.Drawing.Point(266, 0);
+            this.pn_title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_title.Name = "pn_title";
-            this.pn_title.Size = new System.Drawing.Size(1226, 87);
+            this.pn_title.Size = new System.Drawing.Size(920, 71);
             this.pn_title.TabIndex = 1;
+            // 
+            // ptb_logout
+            // 
+            this.ptb_logout.Image = global::QuanLyNhanVien.Properties.Resources._out;
+            this.ptb_logout.Location = new System.Drawing.Point(804, 14);
+            this.ptb_logout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_logout.Name = "ptb_logout";
+            this.ptb_logout.Size = new System.Drawing.Size(37, 41);
+            this.ptb_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_logout.TabIndex = 4;
+            this.ptb_logout.TabStop = false;
+            this.ptb_logout.Click += new System.EventHandler(this.ptb_logout_Click);
             // 
             // lb_username
             // 
             this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_username.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_username.Location = new System.Drawing.Point(789, 31);
+            this.lb_username.Location = new System.Drawing.Point(647, 14);
+            this.lb_username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(174, 25);
+            this.lb_username.Size = new System.Drawing.Size(140, 20);
             this.lb_username.TabIndex = 3;
             this.lb_username.Text = "Lê Thanh Quỳnh";
             this.lb_username.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // ptb_avatar
+            // 
+            this.ptb_avatar.Image = global::QuanLyNhanVien.Properties.Resources.User;
+            this.ptb_avatar.Location = new System.Drawing.Point(750, 14);
+            this.ptb_avatar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_avatar.Name = "ptb_avatar";
+            this.ptb_avatar.Size = new System.Drawing.Size(37, 41);
+            this.ptb_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_avatar.TabIndex = 2;
+            this.ptb_avatar.TabStop = false;
             // 
             // lb_title
             // 
             this.lb_title.AutoSize = true;
             this.lb_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_title.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_title.Location = new System.Drawing.Point(119, 25);
+            this.lb_title.Location = new System.Drawing.Point(89, 20);
+            this.lb_title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(150, 32);
+            this.lb_title.Size = new System.Drawing.Size(117, 26);
             this.lb_title.TabIndex = 1;
             this.lb_title.Text = "Trang chủ";
+            // 
+            // ptb_title
+            // 
+            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
+            this.ptb_title.Location = new System.Drawing.Point(26, 17);
+            this.ptb_title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_title.Name = "ptb_title";
+            this.ptb_title.Size = new System.Drawing.Size(34, 37);
+            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_title.TabIndex = 0;
+            this.ptb_title.TabStop = false;
             // 
             // pn_child
             // 
             this.pn_child.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.pn_child.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pn_child.Location = new System.Drawing.Point(355, 87);
-            this.pn_child.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pn_child.Location = new System.Drawing.Point(266, 71);
+            this.pn_child.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pn_child.Name = "pn_child";
-            this.pn_child.Size = new System.Drawing.Size(1226, 866);
+            this.pn_child.Size = new System.Drawing.Size(920, 703);
             this.pn_child.TabIndex = 2;
             // 
             // UI_Main
@@ -383,52 +425,41 @@
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
-            // ptb_logout
+            // lb_role
             // 
-            this.ptb_logout.Image = global::QuanLyNhanVien.Properties.Resources._out;
-            this.ptb_logout.Location = new System.Drawing.Point(1072, 17);
-            this.ptb_logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptb_logout.Name = "ptb_logout";
-            this.ptb_logout.Size = new System.Drawing.Size(49, 50);
-            this.ptb_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_logout.TabIndex = 4;
-            this.ptb_logout.TabStop = false;
-            this.ptb_logout.Click += new System.EventHandler(this.ptb_logout_Click);
+            this.lb_role.AutoSize = true;
+            this.lb_role.BackColor = System.Drawing.Color.Transparent;
+            this.lb_role.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_role.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_role.Location = new System.Drawing.Point(542, 17);
+            this.lb_role.Name = "lb_role";
+            this.lb_role.Size = new System.Drawing.Size(32, 17);
+            this.lb_role.TabIndex = 5;
+            this.lb_role.Text = "role";
             // 
-            // ptb_avatar
+            // lb_dep
             // 
-            this.ptb_avatar.Image = global::QuanLyNhanVien.Properties.Resources.User;
-            this.ptb_avatar.Location = new System.Drawing.Point(1000, 17);
-            this.ptb_avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptb_avatar.Name = "ptb_avatar";
-            this.ptb_avatar.Size = new System.Drawing.Size(49, 50);
-            this.ptb_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_avatar.TabIndex = 2;
-            this.ptb_avatar.TabStop = false;
-            // 
-            // ptb_title
-            // 
-            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
-            this.ptb_title.Location = new System.Drawing.Point(35, 21);
-            this.ptb_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptb_title.Name = "ptb_title";
-            this.ptb_title.Size = new System.Drawing.Size(45, 46);
-            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_title.TabIndex = 0;
-            this.ptb_title.TabStop = false;
+            this.lb_dep.AutoSize = true;
+            this.lb_dep.BackColor = System.Drawing.Color.Transparent;
+            this.lb_dep.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_dep.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lb_dep.Location = new System.Drawing.Point(646, 39);
+            this.lb_dep.Name = "lb_dep";
+            this.lb_dep.Size = new System.Drawing.Size(32, 17);
+            this.lb_dep.TabIndex = 5;
+            this.lb_dep.Text = "dep";
             // 
             // GUI_MainScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(1581, 953);
+            this.ClientSize = new System.Drawing.Size(1186, 774);
             this.Controls.Add(this.pn_child);
             this.Controls.Add(this.pn_title);
             this.Controls.Add(this.pn_select);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GUI_MainScreen";
@@ -463,5 +494,7 @@
         private System.Windows.Forms.PictureBox ptb_avatar;
         private System.Windows.Forms.Label lb_username;
         private System.Windows.Forms.PictureBox ptb_logout;
+        private System.Windows.Forms.Label lb_dep;
+        private System.Windows.Forms.Label lb_role;
     }
 }

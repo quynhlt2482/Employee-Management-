@@ -39,21 +39,13 @@ namespace QuanLyNhanVien.Modal
             dtp_ngaysinh.Value = employee.DateOfBirth;
             tb_department.Text = employee.DepartmentName;
             tb_role.Text = employee.RoleName;
-            if(employee.BasicSalary != null)
-            {
-                double salary = Convert.ToDouble(employee.BasicSalary);
-                string salaryString = salary.ToString("N0");
-                tb_luong.Text = salaryString;
-            }
+            tb_luong.Text = employee.BasicSalary.ToString();
         }
 
         private void btn_them_Click(object sender, EventArgs e)
         {
             try
             {
-                string salaryString = tb_luong.Text.Replace(",", "");
-                float salary = float.Parse(salaryString, CultureInfo.InvariantCulture);
-
                 Employee employee = new Employee
                 {
                     Id = tb_manv.Text,
@@ -61,7 +53,7 @@ namespace QuanLyNhanVien.Modal
                     Email = tb_email.Text,
                     TaxNumber = tb_masothue.Text,
                     DateOfBirth = dtp_ngaysinh.Value,
-                    BasicSalary = salary,
+                    BasicSalary = float.Parse(tb_luong.Text),
                     Password = tb_matkhau.Text
                 };
 

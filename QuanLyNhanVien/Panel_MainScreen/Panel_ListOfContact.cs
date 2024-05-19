@@ -79,14 +79,21 @@ namespace QuanLyNhanVien.Panel_MainScreen
 
         public void LoadInformation()
         {
-            EmployeeContract p = employeeContractBUS.GetEmployeeContract(manv);
+            try
+            {
+                EmployeeContract p = employeeContractBUS.GetEmployeeContract(manv);
 
-            tb_mahopdong.Text = p.contractID;
-            tb_manv.Text = p.EmployeeId;
-            dtp_ngaybatdau.Value = p.StartDate;
-            dtp_ngayketthuc.Value = p.EndDate;
-            tb_trangthai.Text = p.Status.ToString();
-            tb_loaihopdong.Text = p.ContractType;
+                tb_mahopdong.Text = p.contractID;
+                tb_manv.Text = p.EmployeeId;
+                dtp_ngaybatdau.Value = p.StartDate;
+                dtp_ngayketthuc.Value = p.EndDate;
+                tb_trangthai.Text = p.Status.ToString();
+                tb_loaihopdong.Text = p.ContractType;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Panel_ListOfContact_Load(object sender, EventArgs e)
@@ -117,15 +124,20 @@ namespace QuanLyNhanVien.Panel_MainScreen
 
         private void ptb_checked_Click(object sender, EventArgs e)
         {
-            actionEdit();
-            bool trangthai;
-            if (tb_trangthai.Text == "false")
-                trangthai = false;
-            else
-                trangthai = true;
-            employeeContractBUS.UpdateEmployeeContract(tb_mahopdong.Text,dtp_ngaybatdau.Value,dtp_ngayketthuc.Value,trangthai,tb_loaihopdong.Text);
-
-
+            try
+            {
+                actionEdit();
+                bool trangthai;
+                if (tb_trangthai.Text == "false")
+                    trangthai = false;
+                else
+                    trangthai = true;
+                employeeContractBUS.UpdateEmployeeContract(tb_mahopdong.Text, dtp_ngaybatdau.Value, dtp_ngayketthuc.Value, trangthai, tb_loaihopdong.Text);
+            } catch (Exception ex)
+            {
+                MessageBox.Show("error at checked click: " + ex.Message);
+            }
         }
+
     }
 }

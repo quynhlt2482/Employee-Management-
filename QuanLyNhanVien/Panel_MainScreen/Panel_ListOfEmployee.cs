@@ -123,7 +123,7 @@ namespace QuanLyNhanVien
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("error at edit click: "+ex.Message);
                 }
             }
         }
@@ -216,7 +216,7 @@ namespace QuanLyNhanVien
             dataTable.Columns.Add("Email");
             dataTable.Columns.Add("Ngày sinh");
             dataTable.Columns.Add("Mã số thuế");
-            dataTable.Columns.Add("Lương cơ bản", typeof(double));
+            dataTable.Columns.Add("Lương cơ bản");
             dataTable.Columns.Add("Chức vụ");
 
             foreach (var employee in employees)
@@ -254,29 +254,29 @@ namespace QuanLyNhanVien
                 }
             }
 
-            // Format "Lương cơ bản" column
-            dataTable.Columns.Add("TempLương cơ bản", typeof(string));
+            //// Format "Lương cơ bản" column
+            //dataTable.Columns.Add("TempLương cơ bản", typeof(string));
 
-            foreach (DataRow row in dataTable.Rows)
-            {
-                // Chuyển đổi giá trị "Lương cơ bản"
-                if (row["Lương cơ bản"].ToString() == "0")
-                {
-                    row["templương cơ bản"] = "*********";
-                }
-                else
-                {
-                    // Format the salary with thousands separators
-                    double salary = Convert.ToDouble(row["Lương cơ bản"]);
-                    row["TempLương cơ bản"] = salary.ToString("N0");
-                }
-            }
+            //foreach (DataRow row in dataTable.Rows)
+            //{
+            //    // Chuyển đổi giá trị "Lương cơ bản"
+            //    if (row["Lương cơ bản"].ToString() == "0")
+            //    {
+            //        row["templương cơ bản"] = "*********";
+            //    }
+            //    else
+            //    {
+            //        // Format the salary with thousands separators
+            //        double salary = Convert.ToDouble(row["Lương cơ bản"]);
+            //        row["TempLương cơ bản"] = salary.ToString("N0");
+            //    }
+            //}
 
-            // Xóa cột gốc "Lương cơ bản"
-            dataTable.Columns.Remove("Lương cơ bản");
+            //// Xóa cột gốc "Lương cơ bản"
+            //dataTable.Columns.Remove("Lương cơ bản");
 
-            // Đổi tên cột tạm thời thành "Lương cơ bản"
-            dataTable.Columns["TempLương cơ bản"].ColumnName = "Lương cơ bản";
+            //// Đổi tên cột tạm thời thành "Lương cơ bản"
+            //dataTable.Columns["TempLương cơ bản"].ColumnName = "Lương cơ bản";
         }
 
         private void ptb_detail_Click(object sender, EventArgs e)
@@ -284,7 +284,6 @@ namespace QuanLyNhanVien
             if (string.IsNullOrEmpty(selectedEmployeeID))
             {
                 MessageBox.Show("Bạn chưa chọn nhân viên cần xem !!!");
-                return;
             } else
             {
                 GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;

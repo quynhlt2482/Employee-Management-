@@ -54,9 +54,10 @@
             // ptb_edit
             // 
             this.ptb_edit.Image = global::QuanLyNhanVien.Properties.Resources.edit_2;
-            this.ptb_edit.Location = new System.Drawing.Point(1000, 34);
+            this.ptb_edit.Location = new System.Drawing.Point(750, 28);
+            this.ptb_edit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptb_edit.Name = "ptb_edit";
-            this.ptb_edit.Size = new System.Drawing.Size(50, 50);
+            this.ptb_edit.Size = new System.Drawing.Size(38, 41);
             this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_edit.TabIndex = 17;
             this.ptb_edit.TabStop = false;
@@ -67,19 +68,20 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(359, 34);
+            this.label2.Location = new System.Drawing.Point(269, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(445, 42);
+            this.label2.Size = new System.Drawing.Size(355, 36);
             this.label2.TabIndex = 34;
             this.label2.Text = "HỢP ĐỒNG LAO ĐỘNG";
             // 
             // dtp_ngayketthuc
             // 
             this.dtp_ngayketthuc.CalendarTodayDate = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
-            this.dtp_ngayketthuc.Location = new System.Drawing.Point(629, 318);
-            this.dtp_ngayketthuc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_ngayketthuc.Location = new System.Drawing.Point(472, 258);
+            this.dtp_ngayketthuc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_ngayketthuc.Name = "dtp_ngayketthuc";
-            this.dtp_ngayketthuc.Size = new System.Drawing.Size(325, 35);
+            this.dtp_ngayketthuc.Size = new System.Drawing.Size(244, 31);
             this.dtp_ngayketthuc.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -92,10 +94,10 @@
             // dtp_ngaybatdau
             // 
             this.dtp_ngaybatdau.CalendarTodayDate = new System.DateTime(2024, 5, 16, 0, 0, 0, 0);
-            this.dtp_ngaybatdau.Location = new System.Drawing.Point(225, 318);
-            this.dtp_ngaybatdau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_ngaybatdau.Location = new System.Drawing.Point(169, 258);
+            this.dtp_ngaybatdau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtp_ngaybatdau.Name = "dtp_ngaybatdau";
-            this.dtp_ngaybatdau.Size = new System.Drawing.Size(325, 35);
+            this.dtp_ngaybatdau.Size = new System.Drawing.Size(244, 31);
             this.dtp_ngaybatdau.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -108,9 +110,10 @@
             // tb_trangthai
             // 
             this.tb_trangthai.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_trangthai.Location = new System.Drawing.Point(226, 460);
+            this.tb_trangthai.Location = new System.Drawing.Point(170, 374);
+            this.tb_trangthai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_trangthai.Name = "tb_trangthai";
-            this.tb_trangthai.Size = new System.Drawing.Size(324, 37);
+            this.tb_trangthai.Size = new System.Drawing.Size(243, 33);
             this.tb_trangthai.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_trangthai.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -126,9 +129,10 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(221, 432);
+            this.label5.Location = new System.Drawing.Point(166, 351);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 20);
+            this.label5.Size = new System.Drawing.Size(73, 17);
             this.label5.TabIndex = 79;
             this.label5.Text = "Trạng thái";
             // 
@@ -137,9 +141,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Gray;
-            this.label6.Location = new System.Drawing.Point(624, 140);
+            this.label6.Location = new System.Drawing.Point(468, 114);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 20);
+            this.label6.Size = new System.Drawing.Size(93, 17);
             this.label6.TabIndex = 78;
             this.label6.Text = "Mã nhân viên";
             // 
@@ -148,9 +153,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(625, 284);
+            this.label3.Location = new System.Drawing.Point(469, 231);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(111, 20);
+            this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 77;
             this.label3.Text = "Ngày kết thúc";
             // 
@@ -159,18 +165,22 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(220, 284);
+            this.label4.Location = new System.Drawing.Point(165, 231);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 20);
+            this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 76;
             this.label4.Text = "Ngày bắt đầu";
             // 
             // tb_mahopdong
             // 
+            this.tb_mahopdong.Enabled = false;
             this.tb_mahopdong.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_mahopdong.Location = new System.Drawing.Point(224, 168);
+            this.tb_mahopdong.Location = new System.Drawing.Point(168, 136);
+            this.tb_mahopdong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_mahopdong.Name = "tb_mahopdong";
-            this.tb_mahopdong.Size = new System.Drawing.Size(324, 37);
+            this.tb_mahopdong.ReadOnly = true;
+            this.tb_mahopdong.Size = new System.Drawing.Size(243, 33);
             this.tb_mahopdong.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_mahopdong.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -186,18 +196,20 @@
             this.lb_thang.AutoSize = true;
             this.lb_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_thang.ForeColor = System.Drawing.Color.Gray;
-            this.lb_thang.Location = new System.Drawing.Point(219, 140);
+            this.lb_thang.Location = new System.Drawing.Point(164, 114);
+            this.lb_thang.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lb_thang.Name = "lb_thang";
-            this.lb_thang.Size = new System.Drawing.Size(105, 20);
+            this.lb_thang.Size = new System.Drawing.Size(91, 17);
             this.lb_thang.TabIndex = 74;
             this.lb_thang.Text = "Mã hợp đồng";
             // 
             // ptb_back
             // 
             this.ptb_back.Image = global::QuanLyNhanVien.Properties.Resources.undo1;
-            this.ptb_back.Location = new System.Drawing.Point(60, 34);
+            this.ptb_back.Location = new System.Drawing.Point(45, 28);
+            this.ptb_back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptb_back.Name = "ptb_back";
-            this.ptb_back.Size = new System.Drawing.Size(50, 50);
+            this.ptb_back.Size = new System.Drawing.Size(38, 41);
             this.ptb_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_back.TabIndex = 84;
             this.ptb_back.TabStop = false;
@@ -205,10 +217,12 @@
             // 
             // tb_manv
             // 
+            this.tb_manv.Enabled = false;
             this.tb_manv.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_manv.Location = new System.Drawing.Point(629, 168);
+            this.tb_manv.Location = new System.Drawing.Point(472, 136);
+            this.tb_manv.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_manv.Name = "tb_manv";
-            this.tb_manv.Size = new System.Drawing.Size(324, 37);
+            this.tb_manv.Size = new System.Drawing.Size(243, 33);
             this.tb_manv.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_manv.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -222,9 +236,10 @@
             // tb_loaihopdong
             // 
             this.tb_loaihopdong.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_loaihopdong.Location = new System.Drawing.Point(630, 460);
+            this.tb_loaihopdong.Location = new System.Drawing.Point(472, 374);
+            this.tb_loaihopdong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tb_loaihopdong.Name = "tb_loaihopdong";
-            this.tb_loaihopdong.Size = new System.Drawing.Size(324, 37);
+            this.tb_loaihopdong.Size = new System.Drawing.Size(243, 33);
             this.tb_loaihopdong.StateCommon.Back.Color1 = System.Drawing.Color.White;
             this.tb_loaihopdong.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
@@ -240,18 +255,20 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(625, 432);
+            this.label1.Location = new System.Drawing.Point(469, 351);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 20);
+            this.label1.Size = new System.Drawing.Size(99, 17);
             this.label1.TabIndex = 86;
             this.label1.Text = "Loại hợp đồng";
             // 
             // ptb_cancel
             // 
             this.ptb_cancel.Image = global::QuanLyNhanVien.Properties.Resources.x_button;
-            this.ptb_cancel.Location = new System.Drawing.Point(1079, 34);
+            this.ptb_cancel.Location = new System.Drawing.Point(809, 28);
+            this.ptb_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptb_cancel.Name = "ptb_cancel";
-            this.ptb_cancel.Size = new System.Drawing.Size(50, 50);
+            this.ptb_cancel.Size = new System.Drawing.Size(38, 41);
             this.ptb_cancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_cancel.TabIndex = 88;
             this.ptb_cancel.TabStop = false;
@@ -260,9 +277,10 @@
             // ptb_checked
             // 
             this.ptb_checked.Image = global::QuanLyNhanVien.Properties.Resources._checked;
-            this.ptb_checked.Location = new System.Drawing.Point(921, 34);
+            this.ptb_checked.Location = new System.Drawing.Point(691, 28);
+            this.ptb_checked.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ptb_checked.Name = "ptb_checked";
-            this.ptb_checked.Size = new System.Drawing.Size(50, 50);
+            this.ptb_checked.Size = new System.Drawing.Size(38, 41);
             this.ptb_checked.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_checked.TabIndex = 89;
             this.ptb_checked.TabStop = false;
@@ -270,10 +288,10 @@
             // 
             // Panel_ListOfContact
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.ClientSize = new System.Drawing.Size(1185, 819);
+            this.ClientSize = new System.Drawing.Size(889, 665);
             this.Controls.Add(this.ptb_checked);
             this.Controls.Add(this.ptb_cancel);
             this.Controls.Add(this.tb_loaihopdong);
@@ -291,6 +309,7 @@
             this.Controls.Add(this.lb_thang);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ptb_edit);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Panel_ListOfContact";
             this.Text = "Panel_ListOfContact";
             this.Load += new System.EventHandler(this.Panel_ListOfContact_Load);

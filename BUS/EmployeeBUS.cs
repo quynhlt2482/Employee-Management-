@@ -37,7 +37,7 @@ namespace BUS
             //nhân viên phòng HR không thể update trên phòng HR
             if (EmployeeDAL.employeeSession.DepartmentId.ToLower() == "dep3" &&
                 EmployeeDAL.employeeSession.RoleId.ToLower() == "r0" &&
-                departmentID.ToLower() == "dep3")
+                departmentID.ToLower() == "phòng nhân sự")
             {
                 return false;
             }

@@ -138,17 +138,11 @@
     <Compile Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.Designer.cs">
       <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
     </Compile>
-    <Compile Include="Panel_MainScreen\Panel_Logged.cs">
+    <Compile Include="Panel_MainScreen\Panel_ActionLog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Panel_MainScreen\Panel_Logged.Designer.cs">
-      <DependentUpon>Panel_Logged.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Panel_MainScreen\Panel_ConfirmEdit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Panel_MainScreen\Panel_ConfirmEdit.Designer.cs">
-      <DependentUpon>Panel_ConfirmEdit.cs</DependentUpon>
+    <Compile Include="Panel_MainScreen\Panel_ActionLog.Designer.cs">
+      <DependentUpon>Panel_ActionLog.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfTimeWork.cs">
       <SubType>Form</SubType>
@@ -224,11 +218,8 @@
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.resx">
       <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Panel_MainScreen\Panel_Logged.resx">
-      <DependentUpon>Panel_Logged.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Panel_MainScreen\Panel_ConfirmEdit.resx">
-      <DependentUpon>Panel_ConfirmEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ActionLog.resx">
+      <DependentUpon>Panel_ActionLog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfTimeWork.resx">
       <DependentUpon>Panel_ListOfTimeWork.cs</DependentUpon>

@@ -22,6 +22,27 @@ namespace QuanLyNhanVien
         {
             InitializeComponent();
             lb_username.Text = EmployeeDAL.employeeSession.SqlUsername;
+            if(EmployeeDAL.employeeSession.DepartmentId == "dep1")
+            {
+                lb_dep.Text = "Phòng nhân viên";
+            }
+            else if (EmployeeDAL.employeeSession.DepartmentId == "dep2")
+            {
+                lb_dep.Text = "Phòng kế toán";
+            }
+            else
+            {
+                lb_dep.Text = "Phòng nhân sự";
+            }
+
+            if (EmployeeDAL.employeeSession.RoleId == "r1")
+            {
+                lb_role.Text = "Trưởng phòng";
+            }
+            else
+            {
+                lb_role.Text = "Nhân viên";
+            }
         }
 
         private void DisableOtherButtons(Control clickedButton)
@@ -70,7 +91,7 @@ namespace QuanLyNhanVien
         {
             DisableOtherButtons((Control)sender);
             OpenChildForm(new Panel_ConfirmEdit());
-            lb_title.Text = "Giám sát chỉnh sửa";
+            lb_title.Text = "Giám sát";
             string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
             string imagePath = Path.Combine(projectDirectory, "Icon", "history.png");
             ptb_title.Image = Image.FromFile(imagePath);

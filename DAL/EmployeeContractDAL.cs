@@ -17,7 +17,6 @@ namespace DAL
         public EmployeeContractDAL() { }
 
         public EmployeeContract GetInformation(string manv)
-
         {
             EmployeeContract contract = new EmployeeContract();
             using (SqlConnection conn = SQLConnector.GetConnection(1))
@@ -34,7 +33,6 @@ namespace DAL
                         if (reader.Read())
                         {
                             {
-
                                 contract.contractID = reader["contractID"].ToString();
                                 contract.StartDate = Convert.ToDateTime(reader["startDate"]);
                                 contract.EndDate = Convert.ToDateTime(reader["endDate"]);
