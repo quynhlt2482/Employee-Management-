@@ -72,7 +72,7 @@ namespace DAL
 
             using (SqlConnection conn = SQLConnector.GetConnection(1))
             {
-                using (SqlCommand cmd = new SqlCommand("SP_SELECT_EMPLOYEE", conn))
+                using (SqlCommand cmd = new SqlCommand("SP_SELECT_EMPLOYEE_BY_DEPARTMENT", conn))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@departmentID", departmentID);
@@ -115,10 +115,8 @@ namespace DAL
             }
             return employees;
         }
-        public int InsertEmployee(Employee employee)
+        public bool InsertEmployee(Employee employee)
         {
-            int result = 0;
-
             using (SqlConnection connection = SQLConnector.GetConnection(1))
             {
                 using (SqlCommand command = new SqlCommand("SP_INSERT_EMPLOYEE", connection))
@@ -139,7 +137,7 @@ namespace DAL
                     try
                     {
                         command.ExecuteNonQuery();
-                        result = 1;
+                        return true;
                     }
                     catch (Exception ex)
                     {
@@ -148,8 +146,47 @@ namespace DAL
                 }
             }
 
-            return result;
+            return false;
         }
+        public Employee GetEmployeeByID(string employeeID)
+        {
+            Employee employee = null;
+
+            using (SqlConnection con = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_SELECT_EMPLOYEE_BY_ID", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@employeeID", employeeID);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            employee = new Employee
+                            {
+                                Id = reader["employeeID"].ToString(),
+                                Name = reader["employeeName"].ToString(),
+                                Username = reader["username"].ToString(),
+                                Email = reader["email"].ToString(),
+                                DateOfBirth = Convert.ToDateTime(reader["dateOfBirth"]),
+                                TaxNumber = reader["taxNumber"].ToString(),
+                                BasicSalary = (float)reader.GetDouble(reader.GetOrdinal("basicSalary")),
+                                DepartmentId = reader["departmentID"].ToString(),
+                                RoleId = reader["roleId"].ToString(),
+                                DepartmentName = reader["departmentName"].ToString(),
+                                RoleName = reader["roleName"].ToString()
+                            };
+                        }
+                    }
+                }
+
+                con.Close();
+            }
+
+            return employee;
+        }
+
         public Employee GetManagerByDepartment(string departmentID)
         {
             string query = "SELECT * FROM employee WHERE @departmentId = departmentId AND roleId = 'R1'";
@@ -205,6 +242,39 @@ namespace DAL
                 }
             }
         }
+        public bool UpdateEmployee(Employee employee)
+        {
+            using (SqlConnection con = SQLConnector.GetConnection(1))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_UPDATE_EMPLOYEE", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@EmployeeID", employee.Id);
+                    cmd.Parameters.AddWithValue("@EmployeeName", (object)employee.Name ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Password", (object)employee.Password ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@Email", (object)employee.Email ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@DateOfBirth", (object)employee.DateOfBirth ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@TaxNumber", (object)employee.TaxNumber ?? DBNull.Value);
+                    cmd.Parameters.AddWithValue("@BasicSalary", (object)employee.BasicSalary ?? DBNull.Value);
+
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                        return false;
+                    }
+                    finally 
+                    {
+                        con.Close();
+                    }
+                }
+            }
+        }
+
+
     }
 }
 

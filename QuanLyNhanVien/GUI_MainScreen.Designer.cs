@@ -65,7 +65,7 @@
             this.pn_select.Controls.Add(this.btn_nhanvien);
             this.pn_select.Dock = System.Windows.Forms.DockStyle.Left;
             this.pn_select.Location = new System.Drawing.Point(0, 0);
-            this.pn_select.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_select.Margin = new System.Windows.Forms.Padding(2);
             this.pn_select.Name = "pn_select";
             this.pn_select.Size = new System.Drawing.Size(266, 774);
             this.pn_select.TabIndex = 0;
@@ -74,7 +74,7 @@
             // 
             this.btn_hopdong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_hopdong.Location = new System.Drawing.Point(0, 502);
-            this.btn_hopdong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_hopdong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_hopdong.Name = "btn_hopdong";
             this.btn_hopdong.Size = new System.Drawing.Size(266, 57);
             this.btn_hopdong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -127,7 +127,7 @@
             // 
             this.btn_ca.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_ca.Location = new System.Drawing.Point(0, 440);
-            this.btn_ca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ca.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ca.Name = "btn_ca";
             this.btn_ca.Size = new System.Drawing.Size(266, 57);
             this.btn_ca.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -167,7 +167,7 @@
             // 
             this.btn_luong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_luong.Location = new System.Drawing.Point(0, 379);
-            this.btn_luong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_luong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_luong.Name = "btn_luong";
             this.btn_luong.Size = new System.Drawing.Size(266, 57);
             this.btn_luong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -207,7 +207,7 @@
             // 
             this.btn_theodoi.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_theodoi.Location = new System.Drawing.Point(0, 317);
-            this.btn_theodoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_theodoi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_theodoi.Name = "btn_theodoi";
             this.btn_theodoi.Size = new System.Drawing.Size(266, 57);
             this.btn_theodoi.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -247,7 +247,7 @@
             // 
             this.btn_chamcong.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_chamcong.Location = new System.Drawing.Point(0, 255);
-            this.btn_chamcong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_chamcong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_chamcong.Name = "btn_chamcong";
             this.btn_chamcong.Size = new System.Drawing.Size(266, 57);
             this.btn_chamcong.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -287,7 +287,7 @@
             // 
             this.btn_phongban.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_phongban.Location = new System.Drawing.Point(0, 193);
-            this.btn_phongban.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_phongban.Margin = new System.Windows.Forms.Padding(2);
             this.btn_phongban.Name = "btn_phongban";
             this.btn_phongban.Size = new System.Drawing.Size(266, 57);
             this.btn_phongban.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -327,7 +327,7 @@
             // 
             this.btn_nhanvien.ButtonStyle = ComponentFactory.Krypton.Toolkit.ButtonStyle.Form;
             this.btn_nhanvien.Location = new System.Drawing.Point(0, 132);
-            this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_nhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btn_nhanvien.Name = "btn_nhanvien";
             this.btn_nhanvien.Size = new System.Drawing.Size(266, 57);
             this.btn_nhanvien.StateCheckedNormal.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
@@ -372,7 +372,7 @@
             this.pn_title.Controls.Add(this.ptb_title);
             this.pn_title.Dock = System.Windows.Forms.DockStyle.Top;
             this.pn_title.Location = new System.Drawing.Point(266, 0);
-            this.pn_title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_title.Margin = new System.Windows.Forms.Padding(2);
             this.pn_title.Name = "pn_title";
             this.pn_title.Size = new System.Drawing.Size(920, 71);
             this.pn_title.TabIndex = 1;
@@ -394,7 +394,7 @@
             // 
             this.pictureBox1.Image = global::QuanLyNhanVien.Properties.Resources.User;
             this.pictureBox1.Location = new System.Drawing.Point(800, 13);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(37, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -418,7 +418,7 @@
             this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
             this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
             this.ptb_title.Location = new System.Drawing.Point(26, 17);
-            this.ptb_title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ptb_title.Margin = new System.Windows.Forms.Padding(2);
             this.ptb_title.Name = "ptb_title";
             this.ptb_title.Size = new System.Drawing.Size(34, 37);
             this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -430,7 +430,7 @@
             this.pn_child.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.pn_child.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pn_child.Location = new System.Drawing.Point(266, 71);
-            this.pn_child.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pn_child.Margin = new System.Windows.Forms.Padding(2);
             this.pn_child.Name = "pn_child";
             this.pn_child.Size = new System.Drawing.Size(920, 703);
             this.pn_child.TabIndex = 2;
@@ -458,7 +458,7 @@
             this.Controls.Add(this.pn_title);
             this.Controls.Add(this.pn_select);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "GUI_MainScreen";
@@ -466,6 +466,7 @@
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreen_FormClosing);
+            this.Load += new System.EventHandler(this.GUI_MainScreen_Load);
             this.pn_select.ResumeLayout(false);
             this.pn_select.PerformLayout();
             this.pn_title.ResumeLayout(false);

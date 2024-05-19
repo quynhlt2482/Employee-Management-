@@ -97,19 +97,33 @@ namespace QuanLyNhanVien
                 LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
             }
         }
-
-        private void ptb_edit_Click(object sender, EventArgs e)
-        {
-            Modal_EditEmployee editEmployeeForm = new Modal_EditEmployee(employeeBUS, departmentBUS);
-            editEmployeeForm.Show();
-        }
-
         private void dtg_nhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 DataGridViewRow row = dtg_nhanvien.Rows[e.RowIndex];
                 selectedEmployeeID = row.Cells["Mã NV"].Value.ToString();
+            }
+        }
+
+        private void ptb_edit_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(selectedEmployeeID))
+            {
+                MessageBox.Show("Bạn chưa chọn nhân viên !!!");
+            }
+            else
+            {
+                try
+                {
+                    Modal_EditEmployee editEmployeeForm = new Modal_EditEmployee(employeeBUS, departmentBUS, selectedEmployeeID);
+                    editEmployeeForm.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
+                    editEmployeeForm.Show();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -129,7 +143,7 @@ namespace QuanLyNhanVien
             {
                 try
                 {
-                    bool isDeleted = employeeBUS.DeleteEmployee(selectedEmployeeID, EmployeeDAL.employeeSession.DepartmentId, EmployeeDAL.employeeSession.RoleId);
+                    bool isDeleted = employeeBUS.DeleteEmployee(selectedEmployeeID, departmentCB.SelectedValue.ToString());
                     if (isDeleted)
                     {
                         MessageBox.Show("Xóa nhân viên thành công !");
@@ -245,9 +259,9 @@ namespace QuanLyNhanVien
             foreach (DataRow row in dataTable.Rows)
             {
                 // Chuyển đổi giá trị "Lương cơ bản"
-                if (row.IsNull("Lương cơ bản"))
+                if (row["Lương cơ bản"].ToString() == "0")
                 {
-                    row["TempLương cơ bản"] = "*********";
+                    row["templương cơ bản"] = "*********";
                 }
                 else
                 {

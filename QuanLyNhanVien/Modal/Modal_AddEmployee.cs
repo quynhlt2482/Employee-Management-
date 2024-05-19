@@ -18,6 +18,7 @@ namespace QuanLyNhanVien.Modal
     {
         private readonly EmployeeBUS employeeBUS;
         private readonly DepartmentBUS departmentBUS;
+        private readonly RoleBUS roleBUS = new RoleBUS();
         public Modal_AddEmployee(EmployeeBUS employeeBUS, DepartmentBUS departmentBUS)
         {
             InitializeComponent();
@@ -27,9 +28,11 @@ namespace QuanLyNhanVien.Modal
         }
         private void Load()
         {
-            txt_chucvu.Text = "Nhân viên";
             LoadDepartments();
+            LoadRoles();
             tb_manv.Text = GenerateRandomId();
+            cb_chucvu.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb_phongban.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         public string GenerateRandomId()
@@ -49,6 +52,22 @@ namespace QuanLyNhanVien.Modal
             return "NV_" + shortId;
         }
 
+        private void LoadRoles()
+        {
+            List<Role> roles;
+            try
+            {
+                roles = roleBUS.GetAllRoles();
+
+                cb_chucvu.DataSource = roles;
+                cb_chucvu.DisplayMember = "RoleName";
+                cb_chucvu.ValueMember = "RoleID";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error at LoadRoles: " + ex.Message);
+            }
+        }
 
         private void LoadDepartments()
         {
@@ -83,12 +102,12 @@ namespace QuanLyNhanVien.Modal
                     tb_masothue.Text,
                     float.Parse(tb_luong.Text),
                     cb_phongban.SelectedValue.ToString(),
-                    "R0"
+                    cb_chucvu.SelectedValue.ToString()
                 );
 
-                int result = employeeBUS.InsertEmployee(employee);
+                bool isInserted = employeeBUS.InsertEmployee(employee);
 
-                if (result == 1)
+                if (isInserted)
                 {
                     MessageBox.Show("Thêm nhân viên mới thành công !");
                     this.Close();

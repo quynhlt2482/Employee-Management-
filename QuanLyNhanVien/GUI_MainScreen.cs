@@ -77,7 +77,6 @@ namespace QuanLyNhanVien
             string projectDirectory = Path.GetDirectoryName(Path.GetDirectoryName(Application.StartupPath));
             string imagePath = Path.Combine(projectDirectory, "Icon", "history.png");
             ptb_title.Image = Image.FromFile(imagePath);
-
         }
 
         private void btn_luong_Click(object sender, EventArgs e)
@@ -125,6 +124,11 @@ namespace QuanLyNhanVien
             pn_child.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void GUI_MainScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

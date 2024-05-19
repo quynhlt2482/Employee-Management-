@@ -21,7 +21,7 @@ namespace QuanLyNhanVien.Modal
         Employee manager = new Employee();
         DepartmentBUS departmentBUS = new DepartmentBUS();
         EmployeeBUS employeeBUS = new EmployeeBUS();
-        
+
         public Modal_ChangeManager(Department department)
         {
             InitializeComponent();
@@ -76,11 +76,8 @@ namespace QuanLyNhanVien.Modal
             string newManagerID = selectedEmployee.Id;
             try
             {
-                if (oldManagerID != newManagerID)
-                {
-                    departmentBUS.ChangeManager(oldManagerID, newManagerID);
-                    MessageBox.Show("Đổi trưởng phòng thành công !!!");
-                }
+                departmentBUS.ChangeManager(oldManagerID, newManagerID);
+                MessageBox.Show("Đổi trưởng phòng thành công !!!");
                 this.Close();
             }
             catch (Exception ex)

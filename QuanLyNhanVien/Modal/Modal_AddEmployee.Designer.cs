@@ -51,8 +51,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.cb_phongban = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             this.btn_them = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.txt_chucvu = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.cb_chucvu = new ComponentFactory.Krypton.Toolkit.KryptonComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.cb_phongban)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_chucvu)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonPalette1
@@ -371,23 +372,20 @@
             this.btn_them.Values.Text = "Thêm";
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // txt_chucvu
+            // cb_chucvu
             // 
-            this.txt_chucvu.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.txt_chucvu.Location = new System.Drawing.Point(23, 343);
-            this.txt_chucvu.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_chucvu.Name = "txt_chucvu";
-            this.txt_chucvu.ReadOnly = true;
-            this.txt_chucvu.Size = new System.Drawing.Size(243, 33);
-            this.txt_chucvu.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.txt_chucvu.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.cb_chucvu.DropDownWidth = 312;
+            this.cb_chucvu.Location = new System.Drawing.Point(23, 343);
+            this.cb_chucvu.Margin = new System.Windows.Forms.Padding(2);
+            this.cb_chucvu.Name = "cb_chucvu";
+            this.cb_chucvu.Size = new System.Drawing.Size(243, 33);
+            this.cb_chucvu.StateCommon.ComboBox.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.txt_chucvu.StateCommon.Border.Rounding = 15;
-            this.txt_chucvu.StateCommon.Border.Width = 1;
-            this.txt_chucvu.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_chucvu.TabIndex = 41;
-            this.txt_chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cb_chucvu.StateCommon.ComboBox.Border.Rounding = 20;
+            this.cb_chucvu.StateCommon.ComboBox.Border.Width = 1;
+            this.cb_chucvu.TabIndex = 53;
+            this.cb_chucvu.Text = "kryptonComboBox1";
             // 
             // Modal_AddEmployee
             // 
@@ -396,6 +394,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 543);
             this.Controls.Add(this.btn_them);
+            this.Controls.Add(this.cb_chucvu);
             this.Controls.Add(this.cb_phongban);
             this.Controls.Add(this.tb_matkhau);
             this.Controls.Add(this.label9);
@@ -406,7 +405,6 @@
             this.Controls.Add(this.dtp_ngaysinh);
             this.Controls.Add(this.tb_luong);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txt_chucvu);
             this.Controls.Add(this.tb_masothue);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -427,6 +425,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
             ((System.ComponentModel.ISupportInitialize)(this.cb_phongban)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cb_chucvu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,6 +455,6 @@
         private System.Windows.Forms.Label label10;
         private ComponentFactory.Krypton.Toolkit.KryptonComboBox cb_phongban;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_them;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox txt_chucvu;
+        private ComponentFactory.Krypton.Toolkit.KryptonComboBox cb_chucvu;
     }
 }

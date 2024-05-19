@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using DAL;
 using DTO;
 
+
 namespace BUS
 {
     public class EmployeeBUS
@@ -20,13 +21,34 @@ namespace BUS
             }
             return employeeDAL.CheckLogin(employee);
         }
-        public int InsertEmployee(Employee employee)
+        public bool InsertEmployee(Employee employee)
         {
+            //nhân viên phòng HR không thể insert trên phòng HR
+            if (EmployeeDAL.employeeSession.DepartmentId.ToLower() == "dep3" && 
+                EmployeeDAL.employeeSession.RoleId.ToLower() == "r0" &&
+                employee.DepartmentId.ToLower() == "dep3")
+            {
+                return false;
+            }
             return employeeDAL.InsertEmployee(employee);
         }
-        public bool DeleteEmployee(string employeeId, string departmentId, string roleId)
+        public bool UpdateEmployee(Employee employee, string departmentID)
         {
-            if(departmentId.ToLower() == "dep3" && roleId.ToLower() == "r0")
+            //nhân viên phòng HR không thể update trên phòng HR
+            if (EmployeeDAL.employeeSession.DepartmentId.ToLower() == "dep3" &&
+                EmployeeDAL.employeeSession.RoleId.ToLower() == "r0" &&
+                departmentID.ToLower() == "dep3")
+            {
+                return false;
+            }
+            return employeeDAL.UpdateEmployee(employee);
+        }
+        public bool DeleteEmployee(string employeeId, string departmentID)
+        {
+            //nhân viên phòng HR không thể delete trên phòng HR
+            if (EmployeeDAL.employeeSession.DepartmentId.ToLower() == "dep3" &&
+                EmployeeDAL.employeeSession.RoleId.ToLower() == "r0" &&
+                departmentID.ToLower() == "dep3")
             {
                 return false;
             }
@@ -41,6 +63,10 @@ namespace BUS
         public Employee GetManagerByDepartment(string departmentID)
         {
             return employeeDAL.GetManagerByDepartment(departmentID);
+        }
+        public Employee GetEmployeeByID(string employeeID)
+        {
+            return employeeDAL.GetEmployeeByID(employeeID);
         }
     }
 }

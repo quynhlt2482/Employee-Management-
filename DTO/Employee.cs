@@ -19,6 +19,9 @@ namespace DTO
         private string departmentId;
         private string roleId;
 
+        private string departmentName;
+        private string roleName;
+
         private string sqlUsername;
         private string sqlPassword;
 
@@ -50,5 +53,7 @@ namespace DTO
         public string RoleId { get => roleId; set => roleId = value; }
         public string SqlUsername { get => sqlUsername; set => sqlUsername = value; }
         public string SqlPassword { get => sqlPassword; set => sqlPassword = value; }
+        public string DepartmentName { get => departmentName; set => departmentName = value; }
+        public string RoleName { get => roleName; set => roleName = value; }
     }
 }

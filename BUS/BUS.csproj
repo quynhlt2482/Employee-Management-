@@ -44,6 +44,7 @@
     <Compile Include="DepartmentBUS.cs" />
     <Compile Include="EmployeeBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleBUS.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

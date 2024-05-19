@@ -88,16 +88,5 @@ namespace QuanLyNhanVien
                 }
             }
         }
-        private void ptb_add_Click(object sender, EventArgs e)
-        {
-            Modal_AddDepartment p = new Modal_AddDepartment();
-            p.Show();
-        }
-
-        private void ptb_edit_Click(object sender, EventArgs e)
-        {
-            Modal_EditDepartment p = new Modal_EditDepartment();
-            p.Show();
-        }
     }
 }
