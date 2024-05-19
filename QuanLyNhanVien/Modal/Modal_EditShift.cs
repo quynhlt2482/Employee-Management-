@@ -66,6 +66,7 @@ namespace QuanLyNhanVien.Modal
             shiftBUS.UpdateInformationShift(shift);
 
             MessageBox.Show("Sửa thông tin thành công!!!!");
+            LoadingData();
             this.Close();
         }
     }

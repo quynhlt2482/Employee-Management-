@@ -28,58 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptb_add = new System.Windows.Forms.PictureBox();
-            this.ptb_delete = new System.Windows.Forms.PictureBox();
-            this.ptb_edit = new System.Windows.Forms.PictureBox();
-            this.dtg_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lb_thang = new System.Windows.Forms.Label();
+            this.cb_thang = new System.Windows.Forms.ComboBox();
+            this.tb_nam = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.dtg_bangchamcong = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.ptb_detail = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_bangchamcong)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_detail)).BeginInit();
             this.SuspendLayout();
             // 
-            // ptb_add
+            // label1
             // 
-            this.ptb_add.Image = global::QuanLyNhanVien.Properties.Resources.add;
-            this.ptb_add.Location = new System.Drawing.Point(799, 20);
-            this.ptb_add.Name = "ptb_add";
-            this.ptb_add.Size = new System.Drawing.Size(50, 50);
-            this.ptb_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_add.TabIndex = 18;
-            this.ptb_add.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(393, 52);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 25);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Năm";
             // 
-            // ptb_delete
+            // lb_thang
             // 
-            this.ptb_delete.Image = global::QuanLyNhanVien.Properties.Resources.delete__1_;
-            this.ptb_delete.Location = new System.Drawing.Point(1047, 20);
-            this.ptb_delete.Name = "ptb_delete";
-            this.ptb_delete.Size = new System.Drawing.Size(50, 50);
-            this.ptb_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_delete.TabIndex = 17;
-            this.ptb_delete.TabStop = false;
+            this.lb_thang.AutoSize = true;
+            this.lb_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_thang.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lb_thang.Location = new System.Drawing.Point(85, 52);
+            this.lb_thang.Name = "lb_thang";
+            this.lb_thang.Size = new System.Drawing.Size(69, 25);
+            this.lb_thang.TabIndex = 33;
+            this.lb_thang.Text = "Tháng";
             // 
-            // ptb_edit
+            // cb_thang
             // 
-            this.ptb_edit.Image = global::QuanLyNhanVien.Properties.Resources.edit_2;
-            this.ptb_edit.Location = new System.Drawing.Point(930, 19);
-            this.ptb_edit.Name = "ptb_edit";
-            this.ptb_edit.Size = new System.Drawing.Size(50, 50);
-            this.ptb_edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_edit.TabIndex = 16;
-            this.ptb_edit.TabStop = false;
+            this.cb_thang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_thang.FormattingEnabled = true;
+            this.cb_thang.Location = new System.Drawing.Point(196, 49);
+            this.cb_thang.Name = "cb_thang";
+            this.cb_thang.Size = new System.Drawing.Size(135, 28);
+            this.cb_thang.TabIndex = 32;
+            this.cb_thang.SelectedIndexChanged += new System.EventHandler(this.cb_thang_SelectedIndexChanged);
             // 
-            // dtg_nhanvien
+            // tb_nam
             // 
-            this.dtg_nhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_nhanvien.Location = new System.Drawing.Point(43, 119);
-            this.dtg_nhanvien.Name = "dtg_nhanvien";
-            this.dtg_nhanvien.RowHeadersWidth = 51;
-            this.dtg_nhanvien.RowTemplate.Height = 24;
-            this.dtg_nhanvien.Size = new System.Drawing.Size(1103, 598);
-            this.dtg_nhanvien.StateCommon.Background.Color1 = System.Drawing.Color.White;
-            this.dtg_nhanvien.StateCommon.Background.Color2 = System.Drawing.Color.White;
-            this.dtg_nhanvien.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.dtg_nhanvien.TabIndex = 15;
+            this.tb_nam.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
+            this.tb_nam.Location = new System.Drawing.Point(484, 49);
+            this.tb_nam.Name = "tb_nam";
+            this.tb_nam.Size = new System.Drawing.Size(144, 27);
+            this.tb_nam.TabIndex = 31;
+            this.tb_nam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_nam_KeyDown);
+            // 
+            // dtg_bangchamcong
+            // 
+            this.dtg_bangchamcong.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_bangchamcong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_bangchamcong.Location = new System.Drawing.Point(41, 125);
+            this.dtg_bangchamcong.Name = "dtg_bangchamcong";
+            this.dtg_bangchamcong.RowHeadersWidth = 51;
+            this.dtg_bangchamcong.RowTemplate.Height = 24;
+            this.dtg_bangchamcong.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtg_bangchamcong.Size = new System.Drawing.Size(1103, 598);
+            this.dtg_bangchamcong.StateCommon.Background.Color1 = System.Drawing.Color.White;
+            this.dtg_bangchamcong.StateCommon.Background.Color2 = System.Drawing.Color.White;
+            this.dtg_bangchamcong.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.dtg_bangchamcong.TabIndex = 28;
+            this.dtg_bangchamcong.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_bangchamcong_CellClick);
+            // 
+            // ptb_detail
+            // 
+            this.ptb_detail.Image = global::QuanLyNhanVien.Properties.Resources.seo;
+            this.ptb_detail.Location = new System.Drawing.Point(1017, 40);
+            this.ptb_detail.Name = "ptb_detail";
+            this.ptb_detail.Size = new System.Drawing.Size(50, 50);
+            this.ptb_detail.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_detail.TabIndex = 30;
+            this.ptb_detail.TabStop = false;
+            this.ptb_detail.Click += new System.EventHandler(this.ptb_detail_Click);
             // 
             // Panel_ListOfSalary
             // 
@@ -87,25 +112,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(1185, 819);
-            this.Controls.Add(this.ptb_add);
-            this.Controls.Add(this.ptb_delete);
-            this.Controls.Add(this.ptb_edit);
-            this.Controls.Add(this.dtg_nhanvien);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_thang);
+            this.Controls.Add(this.cb_thang);
+            this.Controls.Add(this.tb_nam);
+            this.Controls.Add(this.ptb_detail);
+            this.Controls.Add(this.dtg_bangchamcong);
             this.Name = "Panel_ListOfSalary";
             this.Text = "Panel_ListOfSalary";
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).EndInit();
+            this.Load += new System.EventHandler(this.Panel_ListOfSalary_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_bangchamcong)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_detail)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox ptb_add;
-        private System.Windows.Forms.PictureBox ptb_delete;
-        private System.Windows.Forms.PictureBox ptb_edit;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_nhanvien;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_thang;
+        private System.Windows.Forms.ComboBox cb_thang;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_nam;
+        private System.Windows.Forms.PictureBox ptb_detail;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_bangchamcong;
     }
 }

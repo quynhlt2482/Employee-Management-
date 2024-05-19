@@ -18,9 +18,12 @@ namespace QuanLyNhanVien.Panel_MainScreen
     {
         private readonly TimeKeepingDetailBUS timeKeepingDetailBUS = new TimeKeepingDetailBUS();
         private readonly DepartmentBUS departmentBUS = new DepartmentBUS();
+        private readonly EmployeeBUS employeeBUS = new EmployeeBUS();
+        private readonly ShiftBUS shiftBUS = new ShiftBUS();
 
         private string selectedTimeKeepingDetailID;
         private string TimeKeepingID;
+        private string selectedEmployeeID;
         public Panel_ListOfTimeKeepingDetail(string ID)
         {
             this.TimeKeepingID = ID;
@@ -58,6 +61,10 @@ namespace QuanLyNhanVien.Panel_MainScreen
             }
         }
 
+        private void ChildForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            LoadTimeKeeping();
+        }
         private void ptb_back_Click(object sender, EventArgs e)
         {
             GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
@@ -68,15 +75,12 @@ namespace QuanLyNhanVien.Panel_MainScreen
             }
         }
 
-        private void ptb_add_Click(object sender, EventArgs e)
-        {
-            Modal_AddTimeKeepingDetail p = new Modal_AddTimeKeepingDetail();
-            p.Show();
-        }
 
         private void ptb_edit_Click(object sender, EventArgs e)
         {
-            Modal_EditTimeKeepingDetail p = new Modal_EditTimeKeepingDetail();
+
+            Modal_EditTimeKeepingDetail p = new Modal_EditTimeKeepingDetail(TimeKeepingID,selectedTimeKeepingDetailID,selectedEmployeeID);
+            p.FormClosed += new FormClosedEventHandler(ChildForm_FormClosed);
             p.Show();
         }
 
@@ -109,6 +113,20 @@ namespace QuanLyNhanVien.Panel_MainScreen
             }
         }
 
+        private void LoadEmployeesByDepartment(string departmentID)
+        {
+            try
+            {
+                List<Employee> employees = employeeBUS.GetEmployeesByDepartment(departmentID);
+                cb_nhanvien.DataSource = employees;
+                cb_nhanvien.DisplayMember = "name";
+                cb_nhanvien.ValueMember = "id";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadEmployeesByDepartment : {ex.Message}");
+            }
+        }
         private void LoadTimeKeeping()
         {
             try
@@ -118,7 +136,20 @@ namespace QuanLyNhanVien.Panel_MainScreen
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+                MessageBox.Show($"Error at LoadTimeKeeping : {ex.Message}");
+            }
+        }
+
+        private void LoadTimeKeepingEmployee()
+        {
+            try
+            {
+                List<TimekeepingDetail> timekeepingDetails = timeKeepingDetailBUS.GetAllTimeKeepingDetailEmployee(TimeKeepingID,selectedEmployeeID);
+                dtg_chamcongchitiet.DataSource = ConvertToDataTable(timekeepingDetails);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadTimeKeeping : {ex.Message}");
             }
         }
         private DataTable ConvertToDataTable(List<TimekeepingDetail> timekeepingDetails)
@@ -136,8 +167,9 @@ namespace QuanLyNhanVien.Panel_MainScreen
 
             foreach (var TimekeepingDetail in timekeepingDetails)
             {
-
-                dataTable.Rows.Add(
+                if (TimekeepingDetail.ShiftId == null)
+                {
+                    dataTable.Rows.Add(
                     TimekeepingDetail.TkDetailID,
                     TimekeepingDetail.DayOfweek,
                     TimekeepingDetail.CheckIn.ToString("hh\\:mm"),
@@ -145,7 +177,21 @@ namespace QuanLyNhanVien.Panel_MainScreen
                     TimekeepingDetail.Late.ToString("hh\\:mm"),
                     TimekeepingDetail.ShiftId,
                     TimekeepingDetail.EmployeeID
-                );
+                    );
+                }
+                else
+                {
+                    dataTable.Rows.Add(
+                    TimekeepingDetail.TkDetailID,
+                    TimekeepingDetail.DayOfweek,
+                    TimekeepingDetail.CheckIn.ToString("hh\\:mm"),
+                    TimekeepingDetail.CheckOut.ToString("hh\\:mm"),
+                    TimekeepingDetail.Late.ToString("hh\\:mm"),
+                    shiftBUS.GetInformationShift(TimekeepingDetail.ShiftId).ShiftName,
+                    TimekeepingDetail.EmployeeID
+                    );
+                }
+                
             }
 
             return dataTable;
@@ -156,6 +202,24 @@ namespace QuanLyNhanVien.Panel_MainScreen
             {
                 DataGridViewRow row = dtg_chamcongchitiet.Rows[e.RowIndex];
                 selectedTimeKeepingDetailID = row.Cells["Ngày công"].Value.ToString();
+                selectedEmployeeID = row.Cells["Mã nhân viên"].Value.ToString();
+            }
+        }
+
+        private void departmentCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (departmentCB.SelectedItem is Department selectedDepartment)
+            {
+                LoadEmployeesByDepartment(selectedDepartment.DepartmentID);
+            }
+        }
+
+        private void cb_nhanvien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cb_nhanvien.SelectedItem is Employee selectedEmployee)
+            {
+                selectedEmployeeID = selectedEmployee.Id;
+                LoadTimeKeepingEmployee();
             }
         }
     }

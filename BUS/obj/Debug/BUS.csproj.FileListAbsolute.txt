@@ -9,3 +9,14 @@ D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.csp
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.csproj.CopyComplete
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.dll
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\BUS\obj\Debug\BUS.pdb
+E:\Employee-Management-\BUS\bin\Debug\BUS.dll
+E:\Employee-Management-\BUS\bin\Debug\BUS.pdb
+E:\Employee-Management-\BUS\bin\Debug\DAL.dll
+E:\Employee-Management-\BUS\bin\Debug\DTO.dll
+E:\Employee-Management-\BUS\bin\Debug\DAL.pdb
+E:\Employee-Management-\BUS\bin\Debug\DTO.pdb
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.AssemblyReference.cache
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\Employee-Management-\BUS\obj\Debug\BUS.csproj.Up2Date
+E:\Employee-Management-\BUS\obj\Debug\BUS.dll
+E:\Employee-Management-\BUS\obj\Debug\BUS.pdb
