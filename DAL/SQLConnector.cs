@@ -10,7 +10,7 @@ namespace DAL
 {
     public class SQLConnector
     {
-        private static readonly string server = @"MSI\SQLEXPRESS";
+        private static readonly string server = @"ADMIN\SQLEXPRESS";
         private static readonly string databaseName = "EMPLOYEE_MANAGEMENT";
 
         public static SqlConnection GetConnection(int type)

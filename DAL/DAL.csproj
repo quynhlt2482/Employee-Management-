@@ -44,6 +44,7 @@
     <Compile Include="DepartmentDAL.cs" />
     <Compile Include="EmployeeContractDAL.cs" />
     <Compile Include="EmployeeDAL.cs" />
+    <Compile Include="PayrollDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RoleDAL.cs" />
     <Compile Include="ShiftDAL.cs" />

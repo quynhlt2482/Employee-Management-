@@ -19,6 +19,7 @@ namespace QuanLyNhanVien
     {
 
         private string selectedTimeKeepingID;
+        private int selectedMonth;
 
         private readonly TimeKeepingBUS timeKeepingBUS = new TimeKeepingBUS();
 
@@ -90,8 +91,54 @@ namespace QuanLyNhanVien
                 MessageBox.Show($"Error at LoadShift : {ex.Message}");
             }
         }
+
+        private void LoadTimeKeepingYear(int year)
+        {
+            try
+            {
+                List<Timekeeping> timekeepings = timeKeepingBUS.GetAllTimeKeepingYear(year);
+                dtg_bangchamcong.DataSource = ConvertToDataTable(timekeepings);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+            }
+        }
+
+        private void LoadTimeKeepingYearMonth(int year, int month)
+        {
+            try
+            {
+                List<Timekeeping> timekeepings = timeKeepingBUS.GetAllTimeKeepingYearMonth(year, month);
+                dtg_bangchamcong.DataSource = ConvertToDataTable(timekeepings);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+            }
+        }
+
+        private void LoadTimeKeepingMonth(int month)
+        {
+            try
+            {
+                List<Timekeeping> timekeepings = timeKeepingBUS.GetAllTimeKeepingMonth(month);
+                dtg_bangchamcong.DataSource = ConvertToDataTable(timekeepings);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+            }
+        }
         private void cb_thang_SelectedIndexChanged(object sender, EventArgs e)
         {
+            selectedMonth = cb_thang.SelectedIndex + 1;
+            if (tb_nam.Text == "")
+            {
+                LoadTimeKeepingMonth(selectedMonth);
+            }
+            else
+                LoadTimeKeepingYearMonth(int.Parse(tb_nam.Text), selectedMonth);
 
         }
 
@@ -141,6 +188,15 @@ namespace QuanLyNhanVien
             {
                 DataGridViewRow row = dtg_bangchamcong.Rows[e.RowIndex];
                 selectedTimeKeepingID = row.Cells["Mã Chấm Công"].Value.ToString();
+            }
+        }
+
+        private void tb_nam_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                LoadTimeKeepingYear(int.Parse(tb_nam.Text));
+                e.Handled = true;
             }
         }
     }

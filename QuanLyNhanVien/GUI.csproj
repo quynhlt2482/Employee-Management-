@@ -84,11 +84,11 @@
     <Compile Include="Modal\Modal_AddShift.Designer.cs">
       <DependentUpon>Modal_AddShift.cs</DependentUpon>
     </Compile>
-    <Compile Include="Modal\Modal_AddTimeKeeping.cs">
+    <Compile Include="Modal\Modal_AddPayroll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Modal\Modal_AddTimeKeeping.Designer.cs">
-      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    <Compile Include="Modal\Modal_AddPayroll.Designer.cs">
+      <DependentUpon>Modal_AddPayroll.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\Modal_AddTimeKeepingDetail.cs">
       <SubType>Form</SubType>
@@ -101,6 +101,12 @@
     </Compile>
     <Compile Include="Modal\Modal_EditEmployee.Designer.cs">
       <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditPayroll.Designer.cs">
+      <DependentUpon>Modal_EditPayroll.cs</DependentUpon>
     </Compile>
     <Compile Include="Modal\Modal_EditShift.cs">
       <SubType>Form</SubType>
@@ -125,6 +131,12 @@
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfContact.Designer.cs">
       <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfPayroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfPayroll.Designer.cs">
+      <DependentUpon>Panel_ListOfPayroll.cs</DependentUpon>
     </Compile>
     <Compile Include="Panel_MainScreen\Panel_ListOfSalary.cs">
       <SubType>Form</SubType>
@@ -197,14 +209,17 @@
     <EmbeddedResource Include="Modal\Modal_AddShift.resx">
       <DependentUpon>Modal_AddShift.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Modal\Modal_AddTimeKeeping.resx">
-      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    <EmbeddedResource Include="Modal\Modal_AddPayroll.resx">
+      <DependentUpon>Modal_AddPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_AddTimeKeepingDetail.resx">
       <DependentUpon>Modal_AddTimeKeepingDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
       <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditPayroll.resx">
+      <DependentUpon>Modal_EditPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modal\Modal_EditShift.resx">
       <DependentUpon>Modal_EditShift.cs</DependentUpon>
@@ -217,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfContact.resx">
       <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfPayroll.resx">
+      <DependentUpon>Panel_ListOfPayroll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
       <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
