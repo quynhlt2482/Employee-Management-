@@ -6,36 +6,25 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    internal class Timekeeping
+    public class Timekeeping
     {
-        private string id;
+        private string timeKeepingID;
         private int year;
         private int month;
-        private bool status;
-        private int workDayAmount;
-        private int dayOff;
-        private int workDay;
-        private string employeeId;
 
-        public Timekeeping(string id, int year, int month, bool status, int workDayAmount, int dayOff, int workDay, string employeeId)
+        public Timekeeping()
         {
-            this.id = id;
+        }
+        public Timekeeping(string timeKeepingID, int year, int month)
+        {
+            this.timeKeepingID = timeKeepingID;
             this.year = year;
             this.month = month;
-            this.status = status;
-            this.workDayAmount = workDayAmount;
-            this.dayOff = dayOff;
-            this.workDay = workDay;
-            this.EmployeeId = employeeId;
         }
 
-        public string Id { get => id; set => id = value; }
+        public string TimeKeepingID { get => timeKeepingID; set => timeKeepingID = value; }
         public int Year { get => year; set => year = value; }
         public int Month { get => month; set => month = value; }
-        public bool Status { get => status; set => status = value; }
-        public int WorkDayAmount { get => workDayAmount; set => workDayAmount = value; }
-        public int DayOff { get => dayOff; set => dayOff = value; }
-        public int WorkDay { get => workDay; set => workDay = value; }
-        public string EmployeeId { get => employeeId; set => employeeId = value; }
+       
     }
 }

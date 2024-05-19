@@ -1,4 +1,6 @@
-﻿using QuanLyNhanVien.Modal;
+﻿using BUS;
+using DTO;
+using QuanLyNhanVien.Modal;
 using QuanLyNhanVien.Panel_MainScreen;
 using System;
 using System.Collections.Generic;
@@ -15,10 +17,16 @@ namespace QuanLyNhanVien
 {
     public partial class Panel_AllTimeKeeping : Form
     {
+
+        private string selectedTimeKeepingID;
+
+        private readonly TimeKeepingBUS timeKeepingBUS = new TimeKeepingBUS();
+
         public Panel_AllTimeKeeping()
         {
             InitializeComponent();
             AddMouseEventsToPictureBoxes();
+            LoadTimeKeeping();
         }
 
         private void AddMouseEventsToPictureBoxes()
@@ -50,6 +58,38 @@ namespace QuanLyNhanVien
             }
         }
 
+        private DataTable ConvertToDataTable(List<Timekeeping> timekeepings)
+        {
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("Mã Chấm Công");
+            dataTable.Columns.Add("Tháng");
+            dataTable.Columns.Add("Năm");
+
+            foreach (var Timekeeping in timekeepings)
+            {
+
+                dataTable.Rows.Add(
+                    Timekeeping.TimeKeepingID,
+                    Timekeeping.Month.ToString(),
+                    Timekeeping.Year.ToString()  
+                ) ;
+            }
+
+            return dataTable;
+        }
+        private void LoadTimeKeeping()
+        {
+            try
+            {
+                List<Timekeeping> timekeepings = timeKeepingBUS.GetAllTimeKeeping();
+                dtg_bangchamcong.DataSource = ConvertToDataTable(timekeepings);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+            }
+        }
         private void cb_thang_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -65,19 +105,43 @@ namespace QuanLyNhanVien
 
         private void ptb_add_Click(object sender, EventArgs e)
         {
-            Modal_AddTimeKeeping p = new Modal_AddTimeKeeping();
-            p.Show();
+            if (timeKeepingBUS.ExitstTimeKeeping())
+            {
+                MessageBox.Show("Đã có bảng công tháng này rồi");
+            } else
+            {
+                timeKeepingBUS.InsertTimeKeeping();
+                MessageBox.Show("Thêm chấm công mới thành công");
+                LoadTimeKeeping();
+            }       
+            
         }
 
         private void ptb_detail_Click(object sender, EventArgs e)
         {
-            GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
-
-            if (mainScreen != null)
+            if (string.IsNullOrEmpty(selectedTimeKeepingID))
             {
-                mainScreen.OpenChildForm(new Panel_ListOfTimeKeepingDetail());
+                MessageBox.Show("Bạn chưa chọn bảng công nào !!!");
+                return;
+            } else
+            {
+                GUI_MainScreen mainScreen = this.ParentForm as GUI_MainScreen;
+
+                if (mainScreen != null)
+                {
+                    mainScreen.OpenChildForm(new Panel_ListOfTimeKeepingDetail(selectedTimeKeepingID));
+                }
+            }
+            
+        }
+
+        private void dtg_bangchamcong_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtg_bangchamcong.Rows[e.RowIndex];
+                selectedTimeKeepingID = row.Cells["Mã Chấm Công"].Value.ToString();
             }
         }
-    
     }
 }

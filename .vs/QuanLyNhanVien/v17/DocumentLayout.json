@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "E:\\Employee-Management-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|e:\\employee-management-\\dal\\employeecontractdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\employeecontractdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_alltimekeeping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listoftimework.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|e:\\employee-management-\\bus\\employeecontractbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|solutionrelative:bus\\employeecontractbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listoftimekeepingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listoftimekeepingdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\panel_mainscreen\\panel_listofcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\panel_mainscreen\\panel_listofcontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|e:\\employee-management-\\dal\\timekeepingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\timekeepingdetaildal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|e:\\employee-management-\\quanlynhanvien\\gui_mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3AF1828-63FA-4163-89CA-2F3BECFF90D3}|QuanLyNhanVien\\GUI.csproj|solutionrelative:quanlynhanvien\\gui_mainscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|e:\\employee-management-\\bus\\timekeepingdetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBE21213-A3E6-4038-9E30-A9D13986D94C}|BUS\\BUS.csproj|solutionrelative:bus\\timekeepingdetailbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|e:\\employee-management-\\dal\\shiftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07FA5862-EDAE-416D-A512-5FDBD07465DF}|DAL\\DAL.csproj|solutionrelative:dal\\shiftdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,65 +39,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EmployeeContractDAL.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\EmployeeContractDAL.cs",
-              "RelativeDocumentMoniker": "DAL\\EmployeeContractDAL.cs",
-              "ToolTip": "E:\\Employee-Management-\\DAL\\EmployeeContractDAL.cs",
-              "RelativeToolTip": "DAL\\EmployeeContractDAL.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAqwEAAAABHAAAA",
+              "Title": "Panel_AllTimeKeeping.cs [Design]",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs [Design]",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_AllTimeKeeping.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T10:41:56.635Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GUI_MainScreen.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\GUI_MainScreen.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\GUI_MainScreen.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\GUI_MainScreen.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\GUI_MainScreen.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwC0AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:39:25.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Panel_ListOfContact.cs [Design]",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs [Design]",
-              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T09:28:55.505Z",
+              "WhenOpened": "2024-05-19T09:51:04.264Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Panel_ListOfContact.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfContact.cs",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAH0AAACTAAAA",
+              "Title": "Panel_ListOfTimeWork.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeWork.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowE0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T08:59:02.254Z",
+              "WhenOpened": "2024-05-19T09:49:20.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeKeepingDetailBUS.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\BUS\\TimeKeepingDetailBUS.cs",
+              "RelativeDocumentMoniker": "BUS\\TimeKeepingDetailBUS.cs",
+              "ToolTip": "E:\\Employee-Management-\\BUS\\TimeKeepingDetailBUS.cs",
+              "RelativeToolTip": "BUS\\TimeKeepingDetailBUS.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:48:08.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeKeepingDetailDAL.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\TimeKeepingDetailDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\TimeKeepingDetailDAL.cs",
+              "ToolTip": "E:\\Employee-Management-\\DAL\\TimeKeepingDetailDAL.cs",
+              "RelativeToolTip": "DAL\\TimeKeepingDetailDAL.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAASwBoAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:40:00.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "EmployeeContractBUS.cs",
-              "DocumentMoniker": "E:\\Employee-Management-\\BUS\\EmployeeContractBUS.cs",
-              "RelativeDocumentMoniker": "BUS\\EmployeeContractBUS.cs",
-              "ToolTip": "E:\\Employee-Management-\\BUS\\EmployeeContractBUS.cs",
-              "RelativeToolTip": "BUS\\EmployeeContractBUS.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBUAAABgAAAA",
+              "Title": "Panel_ListOfTimeKeepingDetail.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
+              "ToolTip": "E:\\Employee-Management-\\QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\Panel_MainScreen\\Panel_ListOfTimeKeepingDetail.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAuwHMAAABpAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-18T07:40:32.647Z",
+              "WhenOpened": "2024-05-19T08:00:19.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ShiftDAL.cs",
+              "DocumentMoniker": "E:\\Employee-Management-\\DAL\\ShiftDAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ShiftDAL.cs",
+              "ToolTip": "E:\\Employee-Management-\\DAL\\ShiftDAL.cs",
+              "RelativeToolTip": "DAL\\ShiftDAL.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAgwEsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:16:45.974Z",
               "EditorCaption": ""
             }
           ]

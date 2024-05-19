@@ -17,14 +17,11 @@ namespace QuanLyNhanVien
     public partial class GUI_MainScreen : KryptonForm
     {
         private Form currentChildForm;
+
         public GUI_MainScreen()
         {
             InitializeComponent();
             lb_username.Text = EmployeeDAL.employeeSession.SqlUsername;
-        }
-        private void MainScreen_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
 
         private void DisableOtherButtons(Control clickedButton)
@@ -114,6 +111,16 @@ namespace QuanLyNhanVien
             pn_child.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void ptb_logout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
+            
         }
     }
 }

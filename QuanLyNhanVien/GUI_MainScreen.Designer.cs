@@ -40,14 +40,16 @@
             this.btn_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonCheckButton();
             this.pn_title = new System.Windows.Forms.Panel();
             this.lb_username = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_title = new System.Windows.Forms.Label();
-            this.ptb_title = new System.Windows.Forms.PictureBox();
             this.pn_child = new System.Windows.Forms.Panel();
             this.UI_Main = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.ptb_logout = new System.Windows.Forms.PictureBox();
+            this.ptb_avatar = new System.Windows.Forms.PictureBox();
+            this.ptb_title = new System.Windows.Forms.PictureBox();
             this.pn_select.SuspendLayout();
             this.pn_title.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_logout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_avatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_title)).BeginInit();
             this.SuspendLayout();
             // 
@@ -323,8 +325,9 @@
             // pn_title
             // 
             this.pn_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.pn_title.Controls.Add(this.ptb_logout);
             this.pn_title.Controls.Add(this.lb_username);
-            this.pn_title.Controls.Add(this.pictureBox1);
+            this.pn_title.Controls.Add(this.ptb_avatar);
             this.pn_title.Controls.Add(this.lb_title);
             this.pn_title.Controls.Add(this.ptb_title);
             this.pn_title.Dock = System.Windows.Forms.DockStyle.Top;
@@ -339,23 +342,12 @@
             this.lb_username.AutoSize = true;
             this.lb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_username.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lb_username.Location = new System.Drawing.Point(875, 31);
+            this.lb_username.Location = new System.Drawing.Point(789, 31);
             this.lb_username.Name = "lb_username";
             this.lb_username.Size = new System.Drawing.Size(174, 25);
             this.lb_username.TabIndex = 3;
             this.lb_username.Text = "Lê Thanh Quỳnh";
             this.lb_username.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::QuanLyNhanVien.Properties.Resources.User;
-            this.pictureBox1.Location = new System.Drawing.Point(1067, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
             // 
             // lb_title
             // 
@@ -367,18 +359,6 @@
             this.lb_title.Size = new System.Drawing.Size(150, 32);
             this.lb_title.TabIndex = 1;
             this.lb_title.Text = "Trang chủ";
-            // 
-            // ptb_title
-            // 
-            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
-            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
-            this.ptb_title.Location = new System.Drawing.Point(35, 21);
-            this.ptb_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ptb_title.Name = "ptb_title";
-            this.ptb_title.Size = new System.Drawing.Size(45, 46);
-            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptb_title.TabIndex = 0;
-            this.ptb_title.TabStop = false;
             // 
             // pn_child
             // 
@@ -403,6 +383,41 @@
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.UI_Main.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
+            // ptb_logout
+            // 
+            this.ptb_logout.Image = global::QuanLyNhanVien.Properties.Resources._out;
+            this.ptb_logout.Location = new System.Drawing.Point(1072, 17);
+            this.ptb_logout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptb_logout.Name = "ptb_logout";
+            this.ptb_logout.Size = new System.Drawing.Size(49, 50);
+            this.ptb_logout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_logout.TabIndex = 4;
+            this.ptb_logout.TabStop = false;
+            this.ptb_logout.Click += new System.EventHandler(this.ptb_logout_Click);
+            // 
+            // ptb_avatar
+            // 
+            this.ptb_avatar.Image = global::QuanLyNhanVien.Properties.Resources.User;
+            this.ptb_avatar.Location = new System.Drawing.Point(1000, 17);
+            this.ptb_avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptb_avatar.Name = "ptb_avatar";
+            this.ptb_avatar.Size = new System.Drawing.Size(49, 50);
+            this.ptb_avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_avatar.TabIndex = 2;
+            this.ptb_avatar.TabStop = false;
+            // 
+            // ptb_title
+            // 
+            this.ptb_title.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(25)))), ((int)(((byte)(62)))));
+            this.ptb_title.Image = global::QuanLyNhanVien.Properties.Resources.main_menu;
+            this.ptb_title.Location = new System.Drawing.Point(35, 21);
+            this.ptb_title.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ptb_title.Name = "ptb_title";
+            this.ptb_title.Size = new System.Drawing.Size(45, 46);
+            this.ptb_title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptb_title.TabIndex = 0;
+            this.ptb_title.TabStop = false;
+            // 
             // GUI_MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,12 +435,12 @@
             this.Palette = this.UI_Main;
             this.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Custom;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainScreen_FormClosing);
             this.pn_select.ResumeLayout(false);
             this.pn_select.PerformLayout();
             this.pn_title.ResumeLayout(false);
             this.pn_title.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_logout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_avatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_title)).EndInit();
             this.ResumeLayout(false);
 
@@ -445,7 +460,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonCheckButton btn_ca;
         private System.Windows.Forms.Label lb_title;
         private System.Windows.Forms.Label lb_logo;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptb_avatar;
         private System.Windows.Forms.Label lb_username;
+        private System.Windows.Forms.PictureBox ptb_logout;
     }
 }

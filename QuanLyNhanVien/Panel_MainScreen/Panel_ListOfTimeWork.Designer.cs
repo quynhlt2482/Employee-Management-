@@ -28,28 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtg_nhanvien = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.dtg_ca = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             this.ptb_add = new System.Windows.Forms.PictureBox();
             this.ptb_delete = new System.Windows.Forms.PictureBox();
             this.ptb_edit = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_ca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).BeginInit();
             this.SuspendLayout();
             // 
-            // dtg_nhanvien
+            // dtg_ca
             // 
-            this.dtg_nhanvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_nhanvien.Location = new System.Drawing.Point(43, 119);
-            this.dtg_nhanvien.Name = "dtg_nhanvien";
-            this.dtg_nhanvien.RowHeadersWidth = 51;
-            this.dtg_nhanvien.RowTemplate.Height = 24;
-            this.dtg_nhanvien.Size = new System.Drawing.Size(1103, 598);
-            this.dtg_nhanvien.StateCommon.Background.Color1 = System.Drawing.Color.White;
-            this.dtg_nhanvien.StateCommon.Background.Color2 = System.Drawing.Color.White;
-            this.dtg_nhanvien.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.dtg_nhanvien.TabIndex = 10;
+            this.dtg_ca.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtg_ca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtg_ca.Location = new System.Drawing.Point(43, 119);
+            this.dtg_ca.Name = "dtg_ca";
+            this.dtg_ca.RowHeadersWidth = 51;
+            this.dtg_ca.RowTemplate.Height = 24;
+            this.dtg_ca.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtg_ca.Size = new System.Drawing.Size(1103, 598);
+            this.dtg_ca.StateCommon.Background.Color1 = System.Drawing.Color.White;
+            this.dtg_ca.StateCommon.Background.Color2 = System.Drawing.Color.White;
+            this.dtg_ca.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
+            this.dtg_ca.TabIndex = 10;
+            this.dtg_ca.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtg_ca_CellClick);
             // 
             // ptb_add
             // 
@@ -71,6 +74,7 @@
             this.ptb_delete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptb_delete.TabIndex = 13;
             this.ptb_delete.TabStop = false;
+            this.ptb_delete.Click += new System.EventHandler(this.ptb_delete_Click);
             // 
             // ptb_edit
             // 
@@ -92,10 +96,10 @@
             this.Controls.Add(this.ptb_add);
             this.Controls.Add(this.ptb_delete);
             this.Controls.Add(this.ptb_edit);
-            this.Controls.Add(this.dtg_nhanvien);
+            this.Controls.Add(this.dtg_ca);
             this.Name = "Panel_ListOfTimeWork";
             this.Text = "Panel_ListOfTimeWork";
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_nhanvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtg_ca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_delete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_edit)).EndInit();
@@ -108,6 +112,6 @@
         private System.Windows.Forms.PictureBox ptb_add;
         private System.Windows.Forms.PictureBox ptb_delete;
         private System.Windows.Forms.PictureBox ptb_edit;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_nhanvien;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dtg_ca;
     }
 }

@@ -1,4 +1,7 @@
-﻿using QuanLyNhanVien.Modal;
+﻿using BUS;
+using DAL;
+using DTO;
+using QuanLyNhanVien.Modal;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +16,18 @@ namespace QuanLyNhanVien.Panel_MainScreen
 {
     public partial class Panel_ListOfTimeKeepingDetail : Form
     {
-        public Panel_ListOfTimeKeepingDetail()
+        private readonly TimeKeepingDetailBUS timeKeepingDetailBUS = new TimeKeepingDetailBUS();
+        private readonly DepartmentBUS departmentBUS = new DepartmentBUS();
+
+        private string selectedTimeKeepingDetailID;
+        private string TimeKeepingID;
+        public Panel_ListOfTimeKeepingDetail(string ID)
         {
+            this.TimeKeepingID = ID;
             InitializeComponent();
             AddMouseEventsToPictureBoxes();
+            LoadDepartments();
+            LoadTimeKeeping();        
         }
         private void AddMouseEventsToPictureBoxes()
         {
@@ -67,6 +78,85 @@ namespace QuanLyNhanVien.Panel_MainScreen
         {
             Modal_EditTimeKeepingDetail p = new Modal_EditTimeKeepingDetail();
             p.Show();
+        }
+
+
+        private void LoadDepartments()
+        {
+            try
+            {
+                string departmentId = EmployeeDAL.employeeSession.DepartmentId;
+                if (departmentId.ToLower() == "dep3")
+                {
+                    List<Department> departments = departmentBUS.GetAllDepartments();
+                    departmentCB.DataSource = departments;
+                    departmentCB.DisplayMember = "DepartmentName";
+                    departmentCB.ValueMember = "DepartmentID";
+                }
+                else
+                {
+                    Department department = departmentBUS.GetDepartmentByID(departmentId);
+                    List<Department> departmentList = new List<Department>
+                    { department };
+                    departmentCB.DataSource = departmentList;
+                    departmentCB.DisplayMember = "DepartmentName";
+                    departmentCB.ValueMember = "DepartmentID";
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error at LoadDepartments: " + ex.Message);
+            }
+        }
+
+        private void LoadTimeKeeping()
+        {
+            try
+            {
+                List<TimekeepingDetail> timekeepingDetails = timeKeepingDetailBUS.GetAllTimeKeepingDetail(TimeKeepingID);
+                dtg_chamcongchitiet.DataSource = ConvertToDataTable(timekeepingDetails);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error at LoadShift : {ex.Message}");
+            }
+        }
+        private DataTable ConvertToDataTable(List<TimekeepingDetail> timekeepingDetails)
+        {
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("Ngày công");
+            dataTable.Columns.Add("Thứ");
+            dataTable.Columns.Add("Thời gian vào làm");
+            dataTable.Columns.Add("Thời gian tan ca");
+            dataTable.Columns.Add("Thời gian trễ");
+            dataTable.Columns.Add("Ca làm");
+            dataTable.Columns.Add("Mã nhân viên");
+
+
+            foreach (var TimekeepingDetail in timekeepingDetails)
+            {
+
+                dataTable.Rows.Add(
+                    TimekeepingDetail.TkDetailID,
+                    TimekeepingDetail.DayOfweek,
+                    TimekeepingDetail.CheckIn.ToString("hh\\:mm"),
+                    TimekeepingDetail.CheckOut.ToString("hh\\:mm"),
+                    TimekeepingDetail.Late.ToString("hh\\:mm"),
+                    TimekeepingDetail.ShiftId,
+                    TimekeepingDetail.EmployeeID
+                );
+            }
+
+            return dataTable;
+        }
+        private void dtg_chamcongchitiet_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = dtg_chamcongchitiet.Rows[e.RowIndex];
+                selectedTimeKeepingDetailID = row.Cells["Ngày công"].Value.ToString();
+            }
         }
     }
 }
