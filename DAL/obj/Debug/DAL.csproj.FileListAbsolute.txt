@@ -2,8 +2,17 @@ D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DAL.dll
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DAL.pdb
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DTO.dll
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\bin\Debug\DTO.pdb
-D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.CopyComplete
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.dll
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.pdb
+E:\Employee-Management-\DAL\bin\Debug\DAL.dll
+E:\Employee-Management-\DAL\bin\Debug\DAL.pdb
+E:\Employee-Management-\DAL\bin\Debug\DTO.dll
+E:\Employee-Management-\DAL\bin\Debug\DTO.pdb
+E:\Employee-Management-\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\Employee-Management-\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\Employee-Management-\DAL\obj\Debug\DAL.csproj.Up2Date
+E:\Employee-Management-\DAL\obj\Debug\DAL.dll
+E:\Employee-Management-\DAL\obj\Debug\DAL.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache

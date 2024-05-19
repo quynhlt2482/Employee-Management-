@@ -36,12 +36,14 @@
             this.btn_them = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_tongngaylam = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tb_thu = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_machamcong = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
+            this.tb_mangaycong = new ComponentFactory.Krypton.Toolkit.KryptonTextBox();
             this.lb_thang = new System.Windows.Forms.Label();
             this.kryptonPalette1 = new ComponentFactory.Krypton.Toolkit.KryptonPalette(this.components);
+            this.dtp_late = new ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.cb_calam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,6 +60,7 @@
             this.cb_calam.StateCommon.ComboBox.Border.Width = 1;
             this.cb_calam.TabIndex = 113;
             this.cb_calam.Text = "kryptonComboBox2";
+            this.cb_calam.SelectedIndexChanged += new System.EventHandler(this.cb_calam_SelectedIndexChanged);
             // 
             // dtp_checkout
             // 
@@ -114,6 +117,7 @@
             this.btn_them.StateCommon.Content.ShortText.Color2 = System.Drawing.Color.White;
             this.btn_them.TabIndex = 109;
             this.btn_them.Values.Text = "Xác nhận";
+            this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
             // label3
             // 
@@ -137,21 +141,22 @@
             this.label4.TabIndex = 107;
             this.label4.Text = "Thời gian vào làm";
             // 
-            // tb_tongngaylam
+            // tb_thu
             // 
-            this.tb_tongngaylam.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_tongngaylam.Location = new System.Drawing.Point(443, 121);
-            this.tb_tongngaylam.Name = "tb_tongngaylam";
-            this.tb_tongngaylam.Size = new System.Drawing.Size(324, 37);
-            this.tb_tongngaylam.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_tongngaylam.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tb_thu.Enabled = false;
+            this.tb_thu.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
+            this.tb_thu.Location = new System.Drawing.Point(443, 121);
+            this.tb_thu.Name = "tb_thu";
+            this.tb_thu.Size = new System.Drawing.Size(324, 37);
+            this.tb_thu.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.tb_thu.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_tongngaylam.StateCommon.Border.Rounding = 15;
-            this.tb_tongngaylam.StateCommon.Border.Width = 1;
-            this.tb_tongngaylam.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_tongngaylam.TabIndex = 106;
-            this.tb_tongngaylam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_thu.StateCommon.Border.Rounding = 15;
+            this.tb_thu.StateCommon.Border.Width = 1;
+            this.tb_thu.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_thu.TabIndex = 106;
+            this.tb_thu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -175,21 +180,22 @@
             this.label2.TabIndex = 104;
             this.label2.Text = "SỬA NGÀY CÔNG";
             // 
-            // tb_machamcong
+            // tb_mangaycong
             // 
-            this.tb_machamcong.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
-            this.tb_machamcong.Location = new System.Drawing.Point(38, 121);
-            this.tb_machamcong.Name = "tb_machamcong";
-            this.tb_machamcong.Size = new System.Drawing.Size(324, 37);
-            this.tb_machamcong.StateCommon.Back.Color1 = System.Drawing.Color.White;
-            this.tb_machamcong.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            this.tb_mangaycong.Enabled = false;
+            this.tb_mangaycong.InputControlStyle = ComponentFactory.Krypton.Toolkit.InputControlStyle.Custom1;
+            this.tb_mangaycong.Location = new System.Drawing.Point(38, 121);
+            this.tb_mangaycong.Name = "tb_mangaycong";
+            this.tb_mangaycong.Size = new System.Drawing.Size(324, 37);
+            this.tb_mangaycong.StateCommon.Back.Color1 = System.Drawing.Color.White;
+            this.tb_mangaycong.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
-            this.tb_machamcong.StateCommon.Border.Rounding = 15;
-            this.tb_machamcong.StateCommon.Border.Width = 1;
-            this.tb_machamcong.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_machamcong.TabIndex = 103;
-            this.tb_machamcong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_mangaycong.StateCommon.Border.Rounding = 15;
+            this.tb_mangaycong.StateCommon.Border.Width = 1;
+            this.tb_mangaycong.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_mangaycong.TabIndex = 103;
+            this.tb_mangaycong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lb_thang
             // 
@@ -215,12 +221,40 @@
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Back.Color2 = System.Drawing.Color.White;
             this.kryptonPalette1.HeaderStyles.HeaderForm.StateCommon.Content.Padding = new System.Windows.Forms.Padding(10, -1, -1, -1);
             // 
+            // dtp_late
+            // 
+            this.dtp_late.Enabled = false;
+            this.dtp_late.Location = new System.Drawing.Point(445, 312);
+            this.dtp_late.Name = "dtp_late";
+            this.dtp_late.Size = new System.Drawing.Size(325, 35);
+            this.dtp_late.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
+            | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
+            this.dtp_late.StateCommon.Border.Rounding = 15;
+            this.dtp_late.StateCommon.Border.Width = 1;
+            this.dtp_late.StateCommon.Content.Padding = new System.Windows.Forms.Padding(1);
+            this.dtp_late.TabIndex = 115;
+            this.dtp_late.ValueNullable = new System.DateTime(2024, 5, 15, 16, 28, 0, 0);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Gray;
+            this.label5.Location = new System.Drawing.Point(444, 281);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(102, 20);
+            this.label5.TabIndex = 114;
+            this.label5.Text = "Thời gian trễ";
+            // 
             // Modal_EditTimeKeepingDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtp_late);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.cb_calam);
             this.Controls.Add(this.dtp_checkout);
             this.Controls.Add(this.dtp_checkin);
@@ -228,10 +262,10 @@
             this.Controls.Add(this.btn_them);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tb_tongngaylam);
+            this.Controls.Add(this.tb_thu);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.tb_machamcong);
+            this.Controls.Add(this.tb_mangaycong);
             this.Controls.Add(this.lb_thang);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -253,11 +287,13 @@
         private ComponentFactory.Krypton.Toolkit.KryptonButton btn_them;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_tongngaylam;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_thu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_machamcong;
+        private ComponentFactory.Krypton.Toolkit.KryptonTextBox tb_mangaycong;
         private System.Windows.Forms.Label lb_thang;
         private ComponentFactory.Krypton.Toolkit.KryptonPalette kryptonPalette1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDateTimePicker dtp_late;
+        private System.Windows.Forms.Label label5;
     }
 }

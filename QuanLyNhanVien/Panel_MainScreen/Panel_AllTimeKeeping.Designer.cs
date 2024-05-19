@@ -63,6 +63,7 @@
             this.tb_nam.Name = "tb_nam";
             this.tb_nam.Size = new System.Drawing.Size(144, 27);
             this.tb_nam.TabIndex = 24;
+            this.tb_nam.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_nam_KeyDown);
             // 
             // cb_thang
             // 

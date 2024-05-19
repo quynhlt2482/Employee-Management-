@@ -27,5 +27,20 @@ namespace BUS
         {
             return timeKeepingDAL.GetAllTimeKeeping();
         }
+
+        public List<Timekeeping> GetAllTimeKeepingYear(int year)
+        {
+            return timeKeepingDAL.GetAllTimeKeepingYear(year);
+        }
+
+        public List<Timekeeping> GetAllTimeKeepingYearMonth(int year, int month)
+        {
+            return timeKeepingDAL.GetAllTimeKeepingYearMonth(year, month);
+        }
+
+        public List<Timekeeping> GetAllTimeKeepingMonth(int month)
+        {
+            return timeKeepingDAL.GetAllTimeKeepingMonth(month);
+        }
     }
 }

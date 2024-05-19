@@ -19,13 +19,15 @@ D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\De
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_ChangeManager.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
-D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddPayroll.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditEmployee.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditPayroll.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_AllTimeKeeping.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfContact.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfPayroll.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfSalary.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
 D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ConfirmEdit.resources
