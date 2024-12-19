@@ -1,26 +1,41 @@
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Docking.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Navigator.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Workspace.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Docking.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GUI.csproj.AssemblyReference.cache
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Login.resources
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GUI.csproj.GenerateResource.cache
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GUI.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\GUI.csproj.Up2Date
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\BUS.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\bin\Debug\DTO.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.MainScreen.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe.config
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.exe
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\QuanLyNhanVien.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\BUS.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\DAL.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\DTO.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\BUS.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\DAL.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\DTO.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Docking.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Navigator.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Ribbon.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\bin\Debug\ComponentFactory.Krypton.Workspace.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.AssemblyReference.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.SuggestedBindingRedirects.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.GUI_Login.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.GUI_MainScreen.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddEmployee.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_ChangeManager.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddShift.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeeping.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_AddTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditEmployee.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditShift.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Modal.Modal_EditTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_AllTimeKeeping.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfContact.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfSalary.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_MainScreen.Panel_ListOfTimeKeepingDetail.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_Logged.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ConfirmEdit.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfTimeWork.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfDepartment.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Panel_ListOfEmployee.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.Properties.Resources.resources
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.GenerateResource.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\GUI.csproj.CopyComplete
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.exe
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\QuanLyNhanVien\obj\Debug\QuanLyNhanVien.pdb

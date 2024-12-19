@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>F:\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
     <Reference Include="ComponentFactory.Krypton.Docking">
       <HintPath>F:\Krypton-master\Bin\ComponentFactory.Krypton.Docking.dll</HintPath>
     </Reference>
@@ -48,8 +51,10 @@
     <Reference Include="ComponentFactory.Krypton.Workspace">
       <HintPath>F:\Krypton-master\Bin\ComponentFactory.Krypton.Workspace.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,25 +66,178 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.cs">
+    <Compile Include="Modal\Modal_AddEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Modal\Modal_AddEmployee.Designer.cs">
+      <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainScreen.cs">
+    <Compile Include="Modal\Modal_ChangeManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainScreen.Designer.cs">
-      <DependentUpon>MainScreen.cs</DependentUpon>
+    <Compile Include="Modal\Modal_ChangeManager.Designer.cs">
+      <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_AddShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddShift.Designer.cs">
+      <DependentUpon>Modal_AddShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeeping.Designer.cs">
+      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_AddTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Modal_AddTimeKeepingDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditEmployee.Designer.cs">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditShift.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditShift.Designer.cs">
+      <DependentUpon>Modal_EditShift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modal\Modal_EditTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modal\Modal_EditTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Modal_EditTimeKeepingDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_AllTimeKeeping.Designer.cs">
+      <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfContact.Designer.cs">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfSalary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfSalary.Designer.cs">
+      <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.Designer.cs">
+      <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_Logged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_Logged.Designer.cs">
+      <DependentUpon>Panel_Logged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ConfirmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ConfirmEdit.Designer.cs">
+      <DependentUpon>Panel_ConfirmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfTimeWork.Designer.cs">
+      <DependentUpon>Panel_ListOfTimeWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfDepartment.Designer.cs">
+      <DependentUpon>Panel_ListOfDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_MainScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_MainScreen.Designer.cs">
+      <DependentUpon>GUI_MainScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Panel_MainScreen\Panel_ListOfEmployee.Designer.cs">
+      <DependentUpon>Panel_ListOfEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainScreen.resx">
-      <DependentUpon>MainScreen.cs</DependentUpon>
+    <EmbeddedResource Include="GUI_MainScreen.resx">
+      <DependentUpon>GUI_MainScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddEmployee.resx">
+      <DependentUpon>Modal_AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_ChangeManager.resx">
+      <DependentUpon>Modal_ChangeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddShift.resx">
+      <DependentUpon>Modal_AddShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddTimeKeeping.resx">
+      <DependentUpon>Modal_AddTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_AddTimeKeepingDetail.resx">
+      <DependentUpon>Modal_AddTimeKeepingDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditEmployee.resx">
+      <DependentUpon>Modal_EditEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditShift.resx">
+      <DependentUpon>Modal_EditShift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modal\Modal_EditTimeKeepingDetail.resx">
+      <DependentUpon>Modal_EditTimeKeepingDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_AllTimeKeeping.resx">
+      <DependentUpon>Panel_AllTimeKeeping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfContact.resx">
+      <DependentUpon>Panel_ListOfContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfSalary.resx">
+      <DependentUpon>Panel_ListOfSalary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfTimeKeepingDetail.resx">
+      <DependentUpon>Panel_ListOfTimeKeepingDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_Logged.resx">
+      <DependentUpon>Panel_Logged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ConfirmEdit.resx">
+      <DependentUpon>Panel_ConfirmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfTimeWork.resx">
+      <DependentUpon>Panel_ListOfTimeWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfDepartment.resx">
+      <DependentUpon>Panel_ListOfDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel_MainScreen\Panel_ListOfEmployee.resx">
+      <DependentUpon>Panel_ListOfEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,20 +263,84 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Icon\main-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\check in_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\department.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\detail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\edit 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\delete %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\add-user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\x-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\seo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\out.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BUS\BUS.csproj">
       <Project>{bbe21213-a3e6-4038-9e30-a9d13986d94c}</Project>
       <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{07fa5862-edae-416d-a512-5fdbd07465df}</Project>
+      <Name>DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{f101a587-74c9-41ca-9d58-2c192b5fc099}</Project>
       <Name>DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icon\main-menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icon\menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

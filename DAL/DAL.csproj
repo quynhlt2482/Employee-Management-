@@ -41,7 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DepartmentDAL.cs" />
+    <Compile Include="EmployeeContractDAL.cs" />
+    <Compile Include="EmployeeDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleDAL.cs" />
+    <Compile Include="ShiftDAL.cs" />
+    <Compile Include="SQLConnector.cs" />
+    <Compile Include="TimeKeepingDAL.cs" />
+    <Compile Include="TimeKeepingDetailDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">

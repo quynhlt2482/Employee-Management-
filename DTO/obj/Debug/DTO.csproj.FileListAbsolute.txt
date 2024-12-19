@@ -1,6 +1,5 @@
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\bin\Debug\DTO.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\bin\Debug\DTO.pdb
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\obj\Debug\DTO.dll
-C:\Users\Administrator\OneDrive\Desktop\BMCSDL\CUOI KY\QuanLyNhanVien\DTO\obj\Debug\DTO.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DTO\bin\Debug\DTO.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DTO\bin\Debug\DTO.pdb
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DTO\obj\Debug\DTO.dll
+D:\HOC TAP\BAO MAT CSDL\DO AN CUOI KI\Employee-Management-\DTO\obj\Debug\DTO.pdb
